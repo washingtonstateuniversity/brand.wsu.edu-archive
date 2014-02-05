@@ -1,0 +1,93 @@
+/*
+ Theme Name:     WSU Brand
+ Theme URI:      http://brand.wsu.edu
+ Description:    A set of standard, customizable templates for official Washington State University websites
+ Author:         WSU University Communications
+ Author URI:     http://ucomm.wsu.edu
+ Template:       spine
+ Version:        0.0.1
+*/
+
+@import url("../spine/style.css");
+
+body {
+	color: #5e6a71;
+	font-size: 12px;
+	line-height: 16px;
+	}
+.column.one > article {
+	padding-right: 15px;
+	xtext-align: justify;
+	}
+.column.two > article {
+	padding-left: 15px;
+	xtext-align: justify;
+	}
+figure {
+	width: 100%;
+	}
+figure img {
+	
+	}
+main > header {
+	left: 0;
+	height: 5em;
+	overflow: hidden;
+	background-color: transparent;
+	}
+main > header hgroup {
+	bottom: -5px;
+	position: absolute;
+	left: 0;
+	padding-left: 30px;
+	width: 2000px;
+	background: #5e6a71;
+	display: block;
+	height: 5em;
+	border-top: 5px #5e6a71 solid;
+	}
+.size-lt-large main > header hgroup {
+	left: 0px;
+	}
+main > header div:first-of-type {
+	display: none;
+	}
+main > header div:last-of-type {
+	display: block;
+	color: #464f54;
+	text-transform: lowercase;
+	font-size: 5em;
+	line-height: 1em;
+	}
+.unbound header {
+	color: #5e6a71;
+	background: #262a2d;
+	height: 100px;
+	}
+h3 {
+	color: #568a90;
+	font-size: 1.3em;
+	line-height: 1.4em;
+	}
+h4 {
+	color: #5e6a71;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	}
+button {
+	color: #b67024;
+	border-radius: 0px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #a6adb0;
+	background: white;
+	text-shadow: none;
+	}
+button:hover {
+	color: white;
+	background-color: #b67024;
+	border-color: #b67024;
+	}
+.article-title {
+	display: none;
+	}
