@@ -59,11 +59,6 @@ main > header div:last-of-type {
 	font-size: 5em;
 	line-height: 1em;
 	}
-.unbound header {
-	color: #5e6a71;
-	background: #262a2d;
-	height: 100px;
-	}
 h3 {
 	color: #568a90;
 	font-size: 1.3em;

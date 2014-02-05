@@ -78,8 +78,8 @@ main article > h2 {
 	}
 main section article ul li {
 	list-style: none;
-	font-size: 2.5em;
-	line-height: 1em;
+	font-size: 2em;
+	line-height: 1.5em;
 	color: #a6adb0;
 	padding: 0px;
 	margin: 0px;
@@ -121,6 +121,10 @@ main section article ul li {
 		<li>genuine</li>
 		<li>relational</li>
 	</ul>
+	
+	<section class="details">
+	
+	</section>
 
 </article>
 
@@ -148,6 +152,11 @@ main section article ul li {
 		<li>advancing knowledge</li>
 		<li>making a better world</li>
 	</ul>
+	
+	<button class="detail"></button>
+	<section class="details">
+	
+	</section>
 
 </article>
 
