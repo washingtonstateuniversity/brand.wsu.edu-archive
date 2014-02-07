@@ -18,7 +18,6 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-$('figure').stellar();
 
 /*    var $window = $(window);
     var velocity = 0.4;
@@ -39,11 +38,7 @@ $('figure').stellar();
 main {
 	padding-bottom: 200px;
 }
-main section {
-	padding-bottom: 20px;
-	position: relative;
-	xxbackground: white;
-	}
+
 .large main section,
 .xlarge main section {
 	xxmin-width: 732px;
@@ -66,15 +61,19 @@ main section figure {
 	}
 main .single .column article {
 	max-width: 732px;
-	padding-bottom: 50px;
+	xwidth: 732px;
+	}
+main article {
+	position: relative;
 	}
 main article > h2 {
 	font-size: 64px;
-	margin-top: -48px;
-	position: relative;
-	top: -36px;
+	font-weight: 700;
+	margin: 0px;
+	position: absolute;
+	top: -58px;
 	color: white;
-	margin-bottom: -36px;
+	xmargin-bottom: -48px;
 	}
 main section article ul li {
 	list-style: none;
@@ -104,7 +103,7 @@ main section article ul li {
 
 <section id="we-are" class="row single unbound recto">
 
-<div class="column one">
+<div class="column one row sidebar">
 
 <figure style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/cougcheek.jpg');">
 
@@ -122,9 +121,17 @@ main section article ul li {
 		<li>relational</li>
 	</ul>
 	
-	<section class="details">
-	
-	</section>
+	<button class="detail"></button>
+	<div class="details">
+		<div class="column one">
+			<?php 
+			$column = get_post_meta( get_the_ID(), 'section-1-1', true );
+			if( ! empty( $column ) ) { echo $column; }
+			?>
+		</div>
+		<div class="column two">
+		</div>
+	</div><!--/.details-->
 
 </article>
 
@@ -134,13 +141,9 @@ main section article ul li {
 
 <section id="we-believe" class="row single unbound recto">
 
-<div class="column one">
+<div class="column one row sidebar">
 
-<figure class="lax" style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/eyeshield.jpg');">
-
-	<!--<img class="fill-width" src="/wp-content/themes/brand/images/pages/who-we-are/eyeshield.jpg">-->
-
-</figure>
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/eyeshield.jpg');"></figure>
 
 <article>
 
@@ -154,9 +157,14 @@ main section article ul li {
 	</ul>
 	
 	<button class="detail"></button>
-	<section class="details">
-	
-	</section>
+	<div class="details">
+		<div class="column one">
+			<?php 
+			$column = get_post_meta( get_the_ID(), 'section-2-1', true );
+			if( ! empty( $column ) ) { echo $column; }
+			?>
+		</div>
+	</div><!--/.details-->
 
 </article>
 
@@ -166,13 +174,9 @@ main section article ul li {
 
 <section id="we-pursue" class="row single unbound recto">
 
-<div class="column one">
+<div class="column one nested thirds">
 
-<figure class="lax" style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/weexpress.jpg');">
-
-	<!--<img class="fill-width" src="/wp-content/themes/brand/images/pages/who-we-are/eyeshield.jpg">-->
-
-</figure>
+<figure class="lax" style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/weexpress.jpg');"></figure>
 
 <article>
 
@@ -184,7 +188,26 @@ main section article ul li {
 		<li>challenging involvement</li>
 		<li>premier experience</li>
 	</ul>
-
+	
+	<button class="detail"></button>
+	<div class="details">
+		<div class="column one">
+			<?php 
+			$column = get_post_meta( get_the_ID(), 'section-3-1', true );
+			if( ! empty( $column ) ) { echo $column; }
+			?>
+		</div>
+		<div class="column two">
+			<?php 
+			$column = get_post_meta( get_the_ID(), 'section-3-2', true );
+			if( ! empty( $column ) ) { echo $column; }
+			?>
+		</div>
+		<div class="column three">
+			
+		</div>
+	</div><!--/.details-->
+	
 </article>
 
 </div>
@@ -193,13 +216,9 @@ main section article ul li {
 
 <section id="we-offer" class="row single unbound recto">
 
-<div class="column one">
+<div class="column one row sidebar">
 
-<figure class="lax" style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/finally.jpg');">
-
-	<!--<img class="fill-width" src="/wp-content/themes/brand/images/pages/who-we-are/eyeshield.jpg">-->
-
-</figure>
+<figure class="lax" style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/finally.jpg');"></figure>
 
 <article>
 
@@ -211,6 +230,16 @@ main section article ul li {
 		<li>groundbreaking research</li>
 		<li>preparation to lead wisely</li>
 	</ul>
+	
+	<button class="detail"></button>
+	<div class="details">
+		<div class="column one">
+			<?php 
+			$column = get_post_meta( get_the_ID(), 'section-4-1', true );
+			if( ! empty( $column ) ) { echo $column; }
+			?>
+		</div>
+	</div><!--/.details-->
 
 </article>
 
@@ -237,6 +266,14 @@ main section article ul li {
 		<li>then we have</li>
 		<li>for you</li>
 	</ul>
+	
+	<button class="detail"></button>
+	<section class="details">
+		<?php 
+		$section_one_one = get_post_meta( get_the_ID(), 'section-5-1', true );
+		if( ! empty( $section_one_one ) ) { echo $section_one_one; }
+		?>
+	</section>
 
 </article>
 

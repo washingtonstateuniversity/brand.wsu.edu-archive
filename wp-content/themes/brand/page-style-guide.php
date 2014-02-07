@@ -10,19 +10,18 @@
 
 <main>
 
-<?php main_header(); ?>
+<?php get_template_part('parts/headers'); ?>
 
-
-<section class="row margin">
+<section class="row margin indent">
 	
 	<div class="column one">
 		
 		<article>
 			<header>
-				<h2>In a hurry?</h2>
-				<p>Here are answers to common questions.</p>
+				<h2>Clear. Concise. Consistent.</h2>
+				<p>Editorial Style Guide</p>
 			</header>
-			<section class="details">
+			<section>
 			<?php 
 			$section_one_one = get_post_meta( get_the_ID(), 'section-1-1', true );
 			if( ! empty( $section_one_one ) ) { echo $section_one_one; }
@@ -34,65 +33,86 @@
 	
 </section>
 
-<section class="row margin">
-	
-	<div class="column one">
-		
-		<article>
-			<header>
-				<h2>In a hurry?</h2>
-				<p>Here are answers to common questions.</p>
-			</header>
-			<section class="details">
-				<?php 
-				$section_one_one = get_post_meta( get_the_ID(), 'section-2-1', true );
-				if( ! empty( $section_one_one ) ) { echo $section_one_one; }
-				?>
-			</section>
-		</article>
-		
-	</div>
-	
-</section>
-
-
-<section id="" class="row single">
-
-<div class="column one">
+<section id="we-offer" class="row margin indent">
 
 	<div class="column one">
-		
+
 		<article>
 			<header>
-				<h2>In a hurry?</h2>
+				<h2>In a Hurry?</h2>
 				<p>Here are answers to common questions.</p>
 			</header>
-			<section class="details">
-				<?php 
-				$section_one_one = get_post_meta( get_the_ID(), 'section-2-1', true );
-				if( ! empty( $section_one_one ) ) { echo $section_one_one; }
-				?>
-			</section>
-		</article>
-		
-	</div>
-
-</section>
-
-<section id="we-pursue" class="row single unbound recto">
-
-<div class="column one">
-
-	<div class="column one">
-		
-		<article>
-			<header>
-				<h2>In a hurry?</h2>
-				<p>Here are answers to common questions.</p>
-			</header>
+			<button class="glassine detail"></button>
 			<section class="details">
 			<?php 
 			$section_one_one = get_post_meta( get_the_ID(), 'section-2-1', true );
+			if( ! empty( $section_one_one ) ) { echo $section_one_one; }
+			?>
+			</section>
+		</article>
+
+	</div>
+
+</section>
+
+<section class="row margin indent">
+	
+	<div class="column one">
+		
+		<article>
+			<header>
+				<h2>Capitalization</h2>
+				<p>not always a capital idea</p>
+			</header>
+			<button class="glassine detail"></button>
+			<section class="details">
+				<?php 
+				$section_one_one = get_post_meta( get_the_ID(), 'section-3-1', true );
+				if( ! empty( $section_one_one ) ) { echo $section_one_one; }
+				?>
+			</section>
+		</article>
+		
+	</div>
+	
+</section>
+
+
+<section id="" class="row margin indent">
+
+	<div class="column one">
+		
+		<article>
+			<button class="glassine detail"></button>
+			<header>
+				<h2>Punctuation</h2>
+				<p>deliver the intended meaning</p>
+			</header>
+			<section class="details">
+				<?php 
+				$section_one_one = get_post_meta( get_the_ID(), 'section-4-1', true );
+				if( ! empty( $section_one_one ) ) { echo $section_one_one; }
+				?>
+			</section>
+		</article>
+		
+	</div>
+
+</section>
+
+<section id="we-pursue" class="row margin indent">
+
+	<div class="column one">
+		
+		<article>
+			<button class="glassine detail"></button>
+			<header>
+				<h2>Spelling</h2>
+				<p>doing it correctly is like wearing a pressed shirt and clean shoes</p>
+			</header>
+			<section class="details">
+			<?php 
+			$section_one_one = get_post_meta( get_the_ID(), 'section-5-1', true );
 			if( ! empty( $section_one_one ) ) { echo $section_one_one; }
 			?>
 			</section>
@@ -102,58 +122,29 @@
 
 </section>
 
-<section id="we-offer" class="row single unbound recto">
+<section id="we-offer" class="row margin indent">
 
-<div class="column one">
+	<div class="column one">
 
-<figure class="lax" style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/finally.jpg');">
+		<article>
+			<header>
+				<h2>Numbers</h2>
+				<p>a simple equation for readability</p>
+			</header>
+			<button class="glassine detail"></button>
+			<section class="details">
+			<?php 
+			$section_one_one = get_post_meta( get_the_ID(), 'section-6-1', true );
+			if( ! empty( $section_one_one ) ) { echo $section_one_one; }
+			?>
+			</section>
+		</article>
 
-	<!--<img class="fill-width" src="/wp-content/themes/brand/images/pages/who-we-are/eyeshield.jpg">-->
-
-</figure>
-
-<article>
-
-	<h2>we offer</h2>
-
-	<ul>
-		<li>undergraduate degrees</li>
-		<li>graduate and professional degrees</li>
-		<li>groundbreaking research</li>
-		<li>preparation to lead wisely</li>
-	</ul>
-
-</article>
-
-</div>
+	</div>
 
 </section>
 
-<section id="we-promise" class="row single unbound recto">
 
-<div class="column one">
-
-<figure class="crimson-back">
-
-	<!--<img class="fill-width" src="/wp-content/themes/brand/images/pages/who-we-are/eyeshield.jpg">-->
-
-</figure>
-
-<article>
-
-	<h2>we promise</h2>
-
-	<ul>
-		<li>if you</li>
-		<li>then we have</li>
-		<li>for you</li>
-	</ul>
-
-</article>
-
-</div>
-
-</section>
 
 </main>
 

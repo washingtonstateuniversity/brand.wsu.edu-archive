@@ -2,8 +2,8 @@
 
 function brand_scripts() {
 	wp_enqueue_script(
-		'stellar.js',
-		get_stylesheet_directory_uri() . '/scripts/jquery.stellar.min.js',
+		'brand.js',
+		get_stylesheet_directory_uri() . '/scripts/brand.js',
 		array( 'jquery' )
 	);
 }
