@@ -1,0 +1,11 @@
+# Ignore editor files
+.idea
+*.sublime*
+
+# Ignore WSUWP Indie WordPress files
+/wordpress
+/wp-config.php
+/wp-content/uploads
+/wp-content/plugins
+/wp-content/themes
+!wp-content/themes/brand
