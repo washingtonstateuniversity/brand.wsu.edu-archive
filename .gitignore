@@ -1,4 +1,5 @@
 # Ignore editor files
+.DS_Store
 .idea
 *.sublime*
 
