@@ -30,7 +30,7 @@ section.halves .column.two > article {
 	padding-left: 15px;
 	}
 section.indent {
-	border-top: 1px gray solid;
+	xborder-top: 1px gray solid;
 	padding: 0px;
 	margin: 0px 30px;
 	}
@@ -80,7 +80,8 @@ button.detail {
 	width: 100%;
 	text-align: right;
 	position: relative;
-	height: 40px;
+	xheight: 40px;
+	overflow: visible;
 	}
 button.detail:hover {
 	color: #888044;
@@ -90,6 +91,7 @@ button.detail::before {
 	font-family: "Iconography";
 	content: "s";
 	font-size: 3em;
+	line-height: 14px;
 	position: absolute;
 	right: 15px;
 	top: 0;
@@ -139,10 +141,15 @@ h2 {
 	color: #568a90;
 	}
 
-h3 {
+h3, h3 small {
 	color: #568a90;
 	font-size: 1.3em;
 	line-height: 1.4em;
+	text-transform: lowercase;
+	}
+h3 small {
+	color: #5e6a71;
+	font-size: 1em;
 	}
 h4 {
 	color: #4F868E;
@@ -163,6 +170,10 @@ blockquote {
 big {
 	font-size: 1.1em;
 	}
+p big {
+	color: #4F868E;
+	font-size: 2em;
+	}
 
 .column > aside:first-of-type {
 	text-align: center;
@@ -180,6 +191,9 @@ big {
 	font-family: "Lucida Grande","Lucida Sans Unicode", "Arial", sans-serif;
 	}
 
+samp {
+	color: #8F7E35;
+	}
 
 .em-15 { font-size: 1.5em; }
 .em-2 { font-size: 2em; }

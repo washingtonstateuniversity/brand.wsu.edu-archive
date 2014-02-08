@@ -105,7 +105,7 @@ main section article ul li {
 
 <div class="column one row sidebar">
 
-<figure style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/cougcheek.jpg');">
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/cougcheek.jpg');">
 
 </figure>
 
@@ -143,12 +143,11 @@ main section article ul li {
 
 <div class="column one row sidebar">
 
-<figure style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/eyeshield.jpg');"></figure>
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/eyeshield.jpg');"></figure>
 
 <article>
 
 	<h2>we believe in</h2>
-
 	<ul>
 		<li>community</li>
 		<li>challenging limits</li>
@@ -176,7 +175,7 @@ main section article ul li {
 
 <div class="column one nested thirds">
 
-<figure class="lax" style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/weexpress.jpg');"></figure>
+<figure class="lax" style="background-image: url('/wp-content/themes/brand/images/pages/brand/weexpress.jpg');"></figure>
 
 <article>
 
@@ -218,7 +217,7 @@ main section article ul li {
 
 <div class="column one row sidebar">
 
-<figure class="lax" style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/finally.jpg');"></figure>
+<figure class="lax" style="background-image: url('/wp-content/themes/brand/images/pages/brand/finally.jpg');"></figure>
 
 <article>
 
@@ -253,7 +252,7 @@ main section article ul li {
 
 <figure class="crimson-back">
 
-	<!--<img class="fill-width" src="/wp-content/themes/brand/images/pages/who-we-are/eyeshield.jpg">-->
+	<!--<img class="fill-width" src="/wp-content/themes/brand/images/pages/brand/eyeshield.jpg">-->
 
 </figure>
 
