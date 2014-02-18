@@ -12,8 +12,8 @@
 
 body {
 	color: #5e6a71;
-	font-size: 12px;
-	line-height: 16px;
+	font-size: 13px;
+	line-height: 18px;
 	background: white;
 	}
 main {
@@ -22,11 +22,23 @@ main {
 		url('/wp-content/themes/brand/images/elements/main-background.png') left top repeat-y;
 	padding-bottom: 150px;
 	}
-section.halves .column.one > article {
+main p {
+	line-height: 1.6em;
+	}
+	
+a, a:visited:hover { color: #C69214; }
+
+a:visited {	color: #77580C;	}
+a:hover { color: #77580C; }
+
+.halves .column.one > article
+.halves article .column:nth-of-type(odd)
+.halves article div .column:nth-of-type(odd)  {
 	padding-right: 15px;
 	xtext-align: justify;
 	}
-section.halves .column.two > article {
+.halves .column.two > article,
+.halves article .column:nth-of-type(even) {
 	padding-left: 15px;
 	}
 section.indent {
@@ -37,6 +49,10 @@ section.indent {
 section.indent.single .column > article:first-of-type,
 section.indent.margin .column > article:first-of-type {
 	padding: 0px;
+	}
+article.intro {
+	font-size: 1.2em;
+	line-height: 1.6em;
 	}
 figure {
 	width: 100%;
@@ -64,6 +80,7 @@ div.details {
 	border-top: 1px #B5BABE solid;
 	display: none;
 	padding-top: 20px;
+	padding-bottom: 20px;
 	}
 .detailed .details {
 	display: block;
@@ -75,6 +92,7 @@ div.details {
 	padding-left: 15px;
 	}
 button.detail {
+	color: #8F7E35;
 	border: none;
 	background: transparent;
 	width: 100%;
@@ -82,25 +100,22 @@ button.detail {
 	position: relative;
 	xheight: 40px;
 	overflow: visible;
+	padding: 15px 0px;
+	padding-right: 25px;
+	background: url('/wp-content/themes/brand/images/elements/plus-green.svg') right center no-repeat;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	}
-button.detail:hover {
-	color: #888044;
-	background: transparent;
+.detailed button.detail {
+	background-image: url('/wp-content/themes/brand/images/elements/x-green.svg');
 	}
-button.detail::before {
-	font-family: "Iconography";
-	content: "s";
-	font-size: 3em;
-	line-height: 14px;
-	position: absolute;
-	right: 15px;
-	top: 0;
+button:focus {
+	outline: none;
 	}
-xxbutton.detail:hover::before {
-	content: "S";
-	}
-section.detailed button.detail::before {
-	content: "x";
+
+:not(p) big {
+	font-size: 1.2em;
+	line-height: 1.6em;
 	}
 
 main > header {
@@ -137,24 +152,32 @@ main > header div:last-of-type {
 main article { 
 	padding: 0px 30px;
 	}
-h2 {
+main h2 {
 	color: #568a90;
 	}
 
-h3, h3 small {
+main h3, h3 small {
 	color: #568a90;
 	font-size: 1.3em;
 	line-height: 1.4em;
 	text-transform: lowercase;
 	}
-h3 small {
+main h3 small {
 	color: #5e6a71;
 	font-size: 1em;
 	}
-h4 {
+main h4 {
 	color: #4F868E;
 	font-size: 1.2em;
 	line-height: 1.3em;
+	padding-bottom: .3em;
+	padding-top: .6em;
+	}
+main h5 {
+	font-size: 1.1em;
+	line-height: 1.2em;
+	padding-bottom: .3em;
+	padding-top: .6em;
 	}
 
 .article-title {
@@ -167,32 +190,103 @@ blockquote {
 	color: #8D959A;
 	margin-left: 30px;
 	}
-big {
-	font-size: 1.1em;
+xx.column :not(p) big {
+	font-size: 1.8;
+	line-height: 2em;
+	font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+	font-style: italic;
 	}
+.intro big,
 p big {
 	color: #4F868E;
 	font-size: 2em;
+	font-weight: bold;
+	line-height: 1em;
 	}
 
-.column > aside:first-of-type {
+
+.column aside.striped {
 	text-align: center;
 	padding: 30px 80px;
 	font-style: italic;
+	font-size: 1.3em;
+	line-height: 2em;
 	}
-.column > aside:first-of-type {
+.column aside.striped {
 	font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
 	}
-.column > aside:first-of-type strong {
+.column aside.striped strong {
 	display: block;
 	color: #981e32;
 	font-weight: 700;
 	font-style: normal;
 	font-family: "Lucida Grande","Lucida Sans Unicode", "Arial", sans-serif;
 	}
+article.columnar {
+	padding: 0px;
+	}
+article.columnar header {
+	padding: 0px 30px;
+	}
+.halves article.columnar .column:nth-of-type(odd) {
+	padding: 15px 15px 15px 30px;
+	}
+.halves article.columnar .column:nth-of-type(even) {
+	padding: 15px 30px 15px 15px;
+	}
+.size-lt-large article.columnar .column {
+	padding: 30px;
+	}
 
 samp {
 	color: #8F7E35;
+	}
+/* Why isn't this working? */
+main small, main p small {
+	line-height: .5em;
+	}
+	
+ul[class*="download"] {
+	width: 100%;
+	}
+ul[class*="download"] li,
+aside ul[class*="download"] li {
+	list-style: none;
+	float: left;
+	width: 40%;
+	border: none;
+	}
+ul[class*="download"] li a {
+	color: #ADA400;
+	display: block;
+	background: white;
+	border: 1px #B5BABE solid;
+	padding: 3px 6px;
+	xwidth: 120px;
+	text-align: center;
+	}
+ul[class*="download"] li a:hover {
+	color: white;
+	background: #ADA400;
+	border-color: #ADA400;
+	}
+
+main:not(.wireframe) .column hr {
+	margin: 10px 30px;
+	}
+main:not(.wireframe) article hr {
+	margin: 10px 0px;
+	}
+	
+article .unbound.recto {
+	margin-left: -30px;
+	}
+.sidebar .column.one .unbound.recto .rebound {
+	max-width: 468px;
+	}
+article .unbound.recto .rebound {
+	padding: 20px 30px;
+	margin: 20px 0px;
 	}
 
 .em-15 { font-size: 1.5em; }
@@ -200,3 +294,18 @@ samp {
 .em-25 { font-size: 2.5em; }
 .em-3 { font-size: 3em; }
 .em-35 { font-size: 3.5em; }
+
+/* Pages */
+.page-id-101 article {
+	padding-top: 150px;
+	}
+.page-id-21 main section { background:
+	url('/wp-content/themes/brand/images/pages/print/brochures.png') 85% top no-repeat,
+	url('/wp-content/themes/brand/images/pages/print/pieces.png') 15px bottom no-repeat }
+.page-id-21 .size-lt-medium main section { background: url('/wp-content/themes/brand/images/pages/print/pieces.png') 15px bottom no-repeat }
+.page-id-21 article { padding-top: 150px; padding-bottom: 700px; }
+.page-id-21 article ul li { padding-bottom: .2em; }
+
+.page-id-103 main section { background:
+	url('/wp-content/themes/brand/images/pages/video/emotion.png') 85% -15px no-repeat }
+.page-id-103 article { padding-top: 150px; padding-bottom: 200px; }

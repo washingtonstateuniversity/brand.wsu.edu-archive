@@ -8,7 +8,7 @@
 <style>
 
 section.single header {
-	color: #EFF0F1;
+	color: #e8eaed;
 	font-size: 3em;
 	line-height: .8em;
 	padding-left: 30px;
@@ -17,7 +17,7 @@ section.single {
 	
 	}
 section.single ol {
-	background: #EFF0F1;
+	background: #e8eaed;
 	padding: 20px 30px;
 	}
 section.single ol li {
@@ -61,7 +61,7 @@ main section:first-of-type .column.one article {
 	</article>
 	</div>
 	<div class="column two">
-		<aside class="serif">
+		<aside class="serif striped">
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-1-2', true );
 		if( ! empty( $column ) ) { echo $column; }
@@ -71,7 +71,7 @@ main section:first-of-type .column.one article {
 
 </section>
 
-<section class="row single">
+<section class="row single unbound recto">
 
 	<div class="column one">
 		<header>brand consistency checklist</header>

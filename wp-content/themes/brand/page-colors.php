@@ -273,6 +273,19 @@ dl.tertiaries dd.bg::before {
 dd.bg-white {
 	border: 1px black solid;
 	}
+	
+#primary-secondary .column.two {
+	padding-top: 100px;
+	text-align: center;
+	}
+#primary-secondary .column.two aside ul.downloads li:only-child {
+	float: none;
+	width: 100%;
+	}
+#primary-secondary .column.two aside ul.downloads li a {
+	margin: 0px auto;
+	width: 50%;
+	}
 
 </style>
 
@@ -432,14 +445,14 @@ $('dl.values').click(function() {
 
 
 
-<section class="row halves">
+<section id="primary-secondary" class="row sidebar">
 	
 	<div class="column one">
 		
 		<article>
 		<?php 
-		$section_one_one = get_post_meta( get_the_ID(), 'section-1-1', true );
-		if( ! empty( $section_one_one ) ) { echo $section_one_one; }
+		$column = get_post_meta( get_the_ID(), 'section-1-1', true );
+		if( ! empty( $column ) ) { echo $column; }
 		?>
 		</article>
 		
@@ -447,12 +460,12 @@ $('dl.values').click(function() {
 	
 	<div class="column two">
 	
-		<article>
+		<aside>
 		<?php 
-		$section_one_two = get_post_meta( get_the_ID(), 'section-1-2', true );
-		if( ! empty( $section_one_two ) ) { echo $section_one_two; }
+		$column = get_post_meta( get_the_ID(), 'section-1-2', true );
+		if( ! empty( $column ) ) { echo $column; }
 		?>
-		</article>
+		</aside>
 	
 	</div>
 	
