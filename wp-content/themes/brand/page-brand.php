@@ -1,36 +1,6 @@
 <?php get_header(); ?>
 
 <script>
-$(document).ready(function(){
-    $('section[data-type="background"]').each(function(){
-        var $bgobj = $(this); // assigning the object
-     
-        $(window).scroll(function() {
-            var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-             
-            // Put together our final background position
-            var coords = '50% '+ yPos + 'px';
- 
-            // Move the background
-            $bgobj.css({ backgroundPosition: coords });
-        }); 
-    });    
-});
-
-$(document).ready(function(){
-
-/*    var $window = $(window);
-    var velocity = 0.4;
-    function update() {
-    	var pos = $window.scrollTop();
-		$('.lax').each(function() {
-			var $element = $(this);
-			var height = $element.height();
-			$(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); });
-	};
-    $window.bind('scroll', update); */
-
-});
 
 </script>
 
@@ -39,16 +9,9 @@ main {
 	padding-bottom: 200px;
 }
 
-.large main section,
-.xlarge main section {
-	xxmin-width: 732px;
-	}
-main section article {
-	xxmargin-top: 300px;
-	}
 main section figure {
 	background-repeat: no-repeat;
-	height: 300px;
+	height: 400px;
 	}
 .size-gt-small main section figure {
 	background-position: left top;
@@ -69,10 +32,12 @@ main article {
 main article > h2 {
 	font-size: 64px;
 	font-weight: 700;
-	margin: 0px;
+	margin: 0px !important;
+	padding: 0px !important;
+	line-height: 1em;
 	position: absolute;
-	top: -58px;
-	color: white;
+	top: -56px;
+	color: white !important;
 	xmargin-bottom: -48px;
 	}
 main section article ul li {
@@ -83,19 +48,22 @@ main section article ul li {
 	padding: 0px;
 	margin: 0px;
 	}
-.size-gt-small #we-are article ul {
-	margin-left: 220px;
-	}
-.size-gt-small #we-are article ul {
-	margin-left: 220px;
-	}
-.size-gt-small #we-believe article ul {
-	text-align: right;
-	}
-.size-gt-small #we-pursue article ul {
-	margin-left: 80px;
+.size-gt-small #we-are article ul { margin-left: 220px; }
+.size-gt-small #we-believe article ul { text-align: right; }
+.size-gt-small #we-pursue article ul { margin-left: 80px; }
+.size-gt-small #we-offer article ul { margin-left: 260px; }
+
+xx.details .column.one {
+	padding-bottom: 40px;
 	}
 
+button.detail::after {
+	content: "more";
+	display: inline-block;
+	}
+.detailed button.detail::after {
+	content: "";
+	}
 
 </style>
 
@@ -105,7 +73,7 @@ main section article ul li {
 
 <div class="column one row sidebar">
 
-<figure style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/cougcheek.jpg');">
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/cougcheek.jpg');">
 
 </figure>
 
@@ -114,11 +82,11 @@ main section article ul li {
 	<h2>we are</h2>
 
 	<ul>
-		<li>inquisitive</li>
 		<li>knowledgeable</li>
+		<li>inquisitive</li>
+		<li>confident</li>
+		<li>approachable</li>
 		<li>enthusiastic</li>
-		<li>genuine</li>
-		<li>relational</li>
 	</ul>
 	
 	<button class="detail"></button>
@@ -128,8 +96,6 @@ main section article ul li {
 			$column = get_post_meta( get_the_ID(), 'section-1-1', true );
 			if( ! empty( $column ) ) { echo $column; }
 			?>
-		</div>
-		<div class="column two">
 		</div>
 	</div><!--/.details-->
 
@@ -143,20 +109,20 @@ main section article ul li {
 
 <div class="column one row sidebar">
 
-<figure style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/eyeshield.jpg');"></figure>
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/eyeshield.jpg');"></figure>
 
 <article>
 
 	<h2>we believe in</h2>
-
 	<ul>
-		<li>community</li>
+		<li>creating a better future</li>
+		<li>inspiring creativity</li>
+		<li>driving innovation</li>
 		<li>challenging limits</li>
-		<li>advancing knowledge</li>
-		<li>making a better world</li>
+		<li>supportive community</li>
 	</ul>
 	
-	<button class="detail"></button>
+	<!--<button class="detail"></button>
 	<div class="details">
 		<div class="column one">
 			<?php 
@@ -172,25 +138,29 @@ main section article ul li {
 
 </section>
 
-<section id="we-pursue" class="row single unbound recto">
+<section id="we-pursue" class="row halves guttered marginalized wide">
 
-<div class="column one nested thirds">
+<div class="unbound recto">
 
-<figure class="lax" style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/weexpress.jpg');"></figure>
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/hoodie.jpg');"></figure>
 
-<article>
+<div class="rebound">
+
+<article class="padless">
 
 	<h2>we pursue</h2>
 
 	<ul>
-		<li>world-class faculty</li>
-		<li>leading research</li>
-		<li>challenging involvement</li>
-		<li>premier experience</li>
+		<li>eminent faculty</li>
+		<li>life-changing research</li>
+		<li>hands-on learning</li>
+		<li>enriching experiences</li>
+		<li>influential graduates</li>
 	</ul>
 	
 	<button class="detail"></button>
 	<div class="details">
+	
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-3-1', true );
@@ -203,14 +173,13 @@ main section article ul li {
 			if( ! empty( $column ) ) { echo $column; }
 			?>
 		</div>
-		<div class="column three">
-			
-		</div>
+
 	</div><!--/.details-->
 	
 </article>
 
-</div>
+</div><!--/rebound-->
+</div><!--/unbound-->
 
 </section>
 
@@ -218,7 +187,7 @@ main section article ul li {
 
 <div class="column one row sidebar">
 
-<figure class="lax" style="background-image: url('/wp-content/themes/brand/images/pages/who-we-are/finally.jpg');"></figure>
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/finally.jpg');"></figure>
 
 <article>
 
@@ -227,11 +196,11 @@ main section article ul li {
 	<ul>
 		<li>undergraduate degrees</li>
 		<li>graduate and professional degrees</li>
-		<li>groundbreaking research</li>
 		<li>preparation to lead wisely</li>
+		<li>educated citizens</li>
 	</ul>
 	
-	<button class="detail"></button>
+	<!--<button class="detail"></button>
 	<div class="details">
 		<div class="column one">
 			<?php 
@@ -251,11 +220,7 @@ main section article ul li {
 
 <div class="column one">
 
-<figure class="crimson-back">
-
-	<!--<img class="fill-width" src="/wp-content/themes/brand/images/pages/who-we-are/eyeshield.jpg">-->
-
-</figure>
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/orange.jpg');"></figure>
 
 <article>
 
@@ -267,13 +232,13 @@ main section article ul li {
 		<li>for you</li>
 	</ul>
 	
-	<button class="detail"></button>
-	<section class="details">
+	<!--<button class="detail"></button>
+	<div class="details">
 		<?php 
 		$section_one_one = get_post_meta( get_the_ID(), 'section-5-1', true );
 		if( ! empty( $section_one_one ) ) { echo $section_one_one; }
 		?>
-	</section>
+	</div>-->
 
 </article>
 
