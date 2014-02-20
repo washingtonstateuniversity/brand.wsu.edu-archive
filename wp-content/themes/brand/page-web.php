@@ -4,7 +4,7 @@
 
 <style>
 
-.row .column {
+.wireframe .row .column {
 	min-height: 198px;
 	xbox-shadow: inset -2px -2px 1px rgba(137,137,137,0.1);
 	box-shadow: inset 0px 0px 1px rgba(137,137,137,0.6);
@@ -13,9 +13,7 @@
 /* GRID */
 
 /* ------------------- */
-#siteID {
-	display: none;
-	}
+
 #binder {
 	position: relative;
 	}
@@ -39,7 +37,7 @@ x#cropping {
 .grid12 #grid {
 	background: transparent url('http://nbj.me/wp-content/themes/dev/depot/images/elements/grid12.png') repeat-y left top;
 	}
-section.row::before {
+.wireframe section.row::before {
 	display: block;
 	background: #5e6a71;
 	padding: 0px 0px;
@@ -54,36 +52,42 @@ section.row::before {
 	color: white;
 	font-size: 10px;
 	}
-.row.eighths::before { content: "eighths"; }
-.row.twelfths::before { content: "twelfths"; }
-.row.quarters::before { content: "quarters"; }
-.row.single::before { content: "single"; }
-.row.halves::before { content: "halves"; }
-.row.sidebar::before { content: "sidebar"; }
-.row.triptych::before { content: "triptych"; }
-.row.thirds::before { content: "thirds"; }
-.row.margin::before { content: "margin"; }
+.wireframe .row.eighths::before { content: "eighths"; }
+.wireframe .row.twelfths::before { content: "twelfths"; }
+.wireframe .row.quarters::before { content: "quarters"; }
+.wireframe .row.single::before { content: "single"; }
+.wireframe .row.halves::before { content: "halves"; }
+.wireframe .row.sidebar::before { content: "sidebar"; }
+.wireframe .row.triptych::before { content: "triptych"; }
+.wireframe .row.thirds::before { content: "thirds"; }
+.wireframe .row.margin::before { content: "margin"; }
+
 	
 /* Column Numbering */
-.column:not(.note)::after { 
+.wireframe .column:not(.note)::after { 
 	color: rgba(255,255,255,0.5);
-	background-color: rgba(182,188,191,0.3);
+	background-color: rgba(182,188,191,0.5);
 	padding: 5px 10px;
 	position: absolute;
 	right: 0; bottom: 0;
 	}
-.row:not(.nest) .column.one::after { content:"1"; }
-.row:not(.nest) .column.two::after { content:"2"; }
-.row:not(.nest) .column.three::after { content:"3"; }
-.row:not(.nest) .column.four::after { content:"4"; }
-.row:not(.nest) .column.five::after { content:"5"; }
-.row:not(.nest) .column.six::after { content:"6"; }
-.row:not(.nest) .column.seven::after { content:"7"; }
-:not(.nest) .column.eight::after { content:"8"; }
-:not(.nest) .column.nine::after { content:"9"; }
-:not(.nest) .column.ten::after { content:"10"; }
-:not(.nest) .column.eleven::after { content:"11"; }
-:not(.nest) .column.twelve::after { content:"12"; }
+.wireframe .row:not(.nest) .column.one::after { content:"1"; }
+.wireframe .row:not(.nest) .column.two::after { content:"2"; }
+.wireframe .row:not(.nest) .column.three::after { content:"3"; }
+.wireframe .row:not(.nest) .column.four::after { content:"4"; }
+.wireframe .row:not(.nest) .column.five::after { content:"5"; }
+.wireframe .row:not(.nest) .column.six::after { content:"6"; }
+.wireframe .row:not(.nest) .column.seven::after { content:"7"; }
+.wireframe :not(.nest) .column.eight::after { content:"8"; }
+.wireframe :not(.nest) .column.nine::after { content:"9"; }
+.wireframe :not(.nest) .column.ten::after { content:"10"; }
+.wireframe :not(.nest) .column.eleven::after { content:"11"; }
+.wireframe :not(.nest) .column.twelve::after { content:"12"; }
+
+.wireframe .row .column.one-twelfth::after { content:"1/12"; }
+.wireframe .row .column.two-twelfths::after { content:"2/12"; }
+.wireframe .row .column.three-twelfths::after { content:"3/12"; }
+.wireframe .row .column.six-twelfths::after { content:"6/12"; }
 
 /* Column Measurements */
 .column::before { 
@@ -97,22 +101,23 @@ section.row::before {
 	margin: 0px auto;
 	text-align: center;
 	}
-.single .column::before { content:"\2190 792 \2192"; }
-.sidebar .column.one::before { content:"\2190 528 \2192"; }
-.sidebar .column.two::before,
-.thirds .column::before { content:"\2190 264 \2192"; }
-.margin .column.one::before { content:"\2190 594 \2192"; }
-.margin .column.two::before,
-.quarters .column::before,
-.triptych .column.one::before,
-.triptych .column.three::before,
-.halves .halves .column::before { content:"\2190 198 \2192"; }
-.halves .column::before,
-.triptych .column.two::before { content:"\2190 396 \2192"; }
-.halves .quarters .column::before { content:"\2190 99 \2192"; }
-.quarters .thirds .column::before { content:"\2190 66 \2192"; }
+.wireframe .single .column::before { content:"\2190 792 \2192"; }
+.wireframe .sidebar .column.one::before { content:"\2190 528 \2192"; }
+.wireframe .sidebar .column.two::before,
+.wireframe .thirds .column::before { content:"\2190 264 \2192"; }
+.wireframe .margin .column.one::before { content:"\2190 594 \2192"; }
+.wireframe .margin .column.two::before,
+.wireframe .quarters .column::before,
+.wireframe .triptych .column.one::before,
+.wireframe .triptych .column.three::before,
+.wireframe .halves .halves .column::before { content:"\2190 198 \2192"; }
+.wireframe .halves .column::before,
+.wireframe .triptych .column.two::before { content:"\2190 396 \2192"; }
+.wireframe .halves .quarters .column::before { content:"\2190 99 \2192"; }
+.wireframe .quarters .thirds .column::before { content:"\2190 66 \2192"; }
+.wireframe .halves .thirds .column::before { content:"\2190 132 \2192"; }
 
-.row .row::after {
+.wireframe .row .row::after {
 	display: block;
 	background: #5e6a71;
 	padding: 0px 0px;
@@ -188,6 +193,31 @@ section.row::before {
 	content: "standard colors can be applied with classes like .crimson-back and .green-back";
 	}
 	
+main section:nth-of-type(even) {
+	background: rgba(0,0,0,0.05)
+	}
+section > big {
+	padding: 100px 100px 10px 100px;
+	font-size: 2em;
+	line-height: 1.1em;
+	display: block;
+	}
+#unprecedented .column.one {
+	padding-top: 100px;
+	}
+#unprecedented .column.two {
+	position: relative;
+	}
+#unprecedented .column.two aside {
+	position: absolute;
+	bottom: 0px;
+	padding-bottom: 20px;
+	}
+	
+button {
+	padding: 2px 4px;
+	}
+	
 </style>
 
 <script>
@@ -195,14 +225,14 @@ section.row::before {
 	$(document).ready(function(){
 
 	// 
-	$('li#grid-behavior a').on('click', function() {
+	$('#flexible button').on('click', function() {
 		var grid = $(this).attr('data-grid');
 		$('#binder').removeClass('fluid fixed hybrid').addClass(grid);
 		return false;
 	});
 	
 	// Change Spine color
-	$('li#color-samples a').on('click', function() {
+	$('#spine-palettes dd').on('click', function() {
 		var color = $(this).attr('data-color');
 		$('#spine').removeClass('white lightest lighter light gray dark darker darkest crimson transparent');
 		$('#spine').addClass(color);
@@ -218,7 +248,7 @@ section.row::before {
 	});
 	
 	// Change Campus
-	$('li#campus-sigs a').on('click', function() {
+	$('#campus-ready a').on('click', function() {
 		var campus = $(this).attr('data-campus');
 			campus = campus + '-signature';
 		$('#jacket').removeClass().addClass(campus);
@@ -238,15 +268,11 @@ section.row::before {
 
 <span id="grid" onclick="$('#jacket').removeClass('grid').removeClass('grid12');"></span>
 
-<main class="skeleton wireframe">
+<main class="skeleton">
 
-<section class="row triptych">
-	<div class="column one"></div>
-	<div class="column two"></div>
-	<div class="column three"></div>
-</section>
+<?php get_template_part('parts/headers'); ?>
 
-<section class="row sidebar equalize">
+<section id="unprecedented" class="row sidebar equalize">
 
 	<div class="column one">
 
@@ -258,64 +284,160 @@ section.row::before {
 					<?php the_content(); ?>
 				</article>
 			<?php endwhile; // end of the loop. ?>
-		
+
 	</div><!--/column-->
 
-	<div class="column two">
+	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/www.png') 0% -10px no-repeat;">
 		
 		<aside>
-		<header>Spine Features</header>
-		<ul>
-			<li>Minimal and Flexible</li>
-			<li id="grid-behavior"><strong>Flexible Grid:</strong> <a href="#" data-grid="fluid">Fluid</a>, <a href="#" data-grid="fixed">Fixed</a>, <a href="#" data-grid="hybrid">Hybrid</a>; <a href="#" onclick="$('#jacket').addClass('grid').addClass('grid12');">Twelfths</a>, <a href="#" onclick="$('#jacket').addClass('grid');">Fifteenths</a>; Nested Columns; Gutterless</li>
-			<li><strong>Minimal Resizing:</strong> Three page layouts by default — large, medium, small — and only two content area sizes</li>
-			<li><strong>Tools:</strong> Combined Search and Index (including navigation); Info; Share (addthis); Print using reponsive</li>
-			<li><strong>Mobile Friendly Nav:</strong> Couplets, after testing </li>
-			<li><strong>Resolution Independence:</strong> Custom Symbolset; SVG Marks; <code>EM</code> based menu and enlarged for touch</li>
-			<li id="color-samples"><strong>Spine Colors:</strong> Preset <a href="#" data-color="white">Default</a>, <a href="#" data-color="lightest">Lightest</a>, <a href="#" data-color="lighter">Lighter</a>, <a href="#" data-color="light">Light</a>, <a href="#" data-color="gray">Gray</a>, <a href="#" data-color="dark">Dark</a>, <a href="#" data-color="darker">Darker</a>, <a href="#" data-color="darkest">Darkest</a>, <a href="#" data-color="crimson">Crimson</a>, <a href="#" data-color="transparent">Transparent</a></li>
-			<li id="folio-samples"><strong>Large Formats: </strong>990 Container by <a href="#" data-max="max-default">default</a> with maximum widths of <a href="#" data-max="max-1188">1188</a>, <a href="#" data-max="max-1386">1386</a>, <a href="#" data-max="max-1584">1584</a>, <a href="#" data-max="max-1782">1782</a>, <a href="#" data-max="max-1980">1980</a></li>
-			<li><strong>Homepage:</strong> A <a href="http://nbj.me/wp-content/themes/dev/depot/images/demo/croppedspine.png">cropped</a> <a href="http://nbj.me/wp-content/themes/dev/depot/images/demo/croppedspine2.png">Spine</a> <a href="#" onclick="$('#spine').removeClass('bleed').toggleClass('cropped');$('#jacket').prepend('<div id=cropping></div>');">*</a> for an open <a href="http://spine.nbj.me">canvas</a></li>
-			<li><strong></strong>A "cracking" Spine, a "<a href="#" onclick="$('#spine').toggleClass('bloodless bleed');">bleeding</a>" spine </li>
-			<li id="campus-sigs"><strong>Campuses:</strong> <a href="#" data-campus="extension">Extension</a>, <a href="#" data-campus="globalcampus">Global Campus</a>, <a href="#" data-campus="spokane">Spokane</a>, <a href="#" data-campus="tricities">Tri-Cities</a>, <a href="#" data-campus="vancouver">Vancouver</a></li>
-			<!--<li><a href="">Emphasize Search</a></li>-->
-		</ul>
+		<h5>Under the hood</h5>
+		<p>The Spine includes an underlying framework which is responsible for providing the mobile friendly responsive design and more.
+			<button onclick="$('main').toggleClass('wireframe');">show framework</button>
+			
 		</aside>
 
 	</div><!--/column-->
+
+</section>
+
+<section id="flexible" class="row sideleft equalize">
+	<div class="column one" style="background: url('/wp-content/themes/brand/images/pages/web/squarecircle.png') right center no-repeat; background-size: 50%">
+	</div>
+	<div class="column two">
+		<article class="marginalize">
+		<header><h2>consistency and flexibility</h2></header>
+		<p>The framework makes every effort to achieve consistent positioning, graphics, and behavior within the Spine's vertical column while at the same time preserving the greatest degree of flexibility besides. For example, with a switch, the Spine supports three kinds of commonly used grids: <button data-grid="fluid">Fluid</button>, <button data-grid="fixed">Fixed</button>, and <button data-grid="hybrid">Hybrid</button>. Feel free to click one and observe its behavior as you shrink your window size. The default is "hybrid".</p>
+		</article>
+	</div>
+</section>
+
+<section id="responsive" class="row sidebar equalize">
+	<div class="column one">
+	<article class="marginalize">
+	<header><h2>responsive</h2></header>
+	<p><b>Big brother, meet your kid brother, the smartphone. We love him too.</b> The Spine framework provides a responsive grid that enables sites to flex and fold to fit whatever device. The default width is comprised of <button onclick="$('#jacket').addClass('grid');">fifteen</button> 66 pixel columns, the main content area being <button onclick="$('#jacket').addClass('grid').addClass('grid12');">twelve</button> of those.</p>
+	</article>
+	</div>
+	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/folds.png') center 10px no-repeat; background-size: auto 105%;"></div>
+</section>
+
+
+
+<section id="spine-palettes" class="row sidebar equalize reverse">
+	<style>
+	#spine-palettes dd { padding: .25em .5em; margin-bottom: .25em; }
+	#spine-palettes dd:hover { color: white; background-color: #A6192E; }
+	</style>
+	<div class="twelve-twelfths-max">
+	<div class="column one">
+		<article>
+		<header><h2>spine palettes</h2></header>
+		<p>To complement the style and tone of your design, the Spine can be easily switched between six sets of tints within our primary colors of gray and crimson. <strong>Try it out ...</strong></p>
+		
+		<dl>
+			<dd class="lightest-back light-text" data-color="lightest" style="box-shadow: inset 0 0 1px black;">Lightest</dd>
+			<dd class="lighter-back gray-text" data-color="lighter">Lighter</dd>
+			<dd class="light-back dark-text" data-color="light">Light</dd>
+			<dd class="gray-back lightly-text" data-color="gray">Gray</dd>
+			<dd class="dark-back lighter-text" data-color="dark">Dark</dd>
+			<dd class="darker-back light-text" data-color="darker">Darker</dd>
+			<dd class="darkest-back light-text" data-color="darkest">Darkest</dd>
+			<dd class="crimson-back white-text" data-color="crimson">Crimson</dd><br>
+			<dd class="white-back" data-color="white">Default White</dd> 
+			<dd style="background-color: rgba(255,255,255,0.5);" data-color="transparent">Transparent</dd>
+		</dl>
+		</article>
+	</div>
+	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/darkspine.png') right 20px no-repeat; background-size: 100%;">
+		
+		<br>
+		
+	</div>
+	</div>
+</section>
+
+<section id="cropping-bleeding" class="row sidebar equalize">
 	
-	<div class="column three three-fifteenths folio-only unequaled"></div>
-	<div class="column four three-fifteenths folio-only unequaled"></div>
-	<div class="column five three-fifteenths folio-only unequaled"></div>
-	<div class="column six three-fifteenths folio-only unequaled"></div>
-	<div class="column seven six-fifteenths folio-only unequaled"></div>
-	<div class="column eight six-fifteenths folio-only unequaled"></div>
-
-</section>
-
-<hr>
-
-<section id="color-backs" class="row halves nest xxnote">
-	<div class="column one row halves">
-		<div class="column one crimson-back"></div>
-		<div class="column two gray-back"></div>
+	<div class="column one">
+		<article>
+		<header><h2>cropping and bleeding</h2></header>
+		<p><b>It may be gruesome</b>, but for site cover pages, the Spine's head can be "severed" or <em><button onclick="$('#spine').removeClass('bleed').toggleClass('cropped');$('#jacket').prepend('<div id=cropping></div>');">cropped</button></em> leaving the full horizontal width of the page for design. Additionally, the Spine can be set to <button onclick="$('#spine').addClass('dark').addClass('bleed');">bleed</button> off the left edge of the browser window, <button onclick="$('#spine').removeClass('bloodless bleed');">or not</button>.</p>
+		</article>
 	</div>
-	<div class="column two row quarters">
-		<div class="column one orange-back"></div>
-		<div class="column two green-back"></div>
-		<div class="column three blue-back"></div>
-		<div class="column four yellow-back"></div>
+	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/cropped.png') left 10px no-repeat; background-size: 130% auto;">
+		<br>
 	</div>
+	
 </section>
 
-<hr>
-
-<section class="row single picture-frame">
-	<div id="full-image" class="column one note"><img class="fill-width grayscale" src="http://farm4.staticflickr.com/3736/9556743030_dfb3960037_b.jpg"></div>
+<section id="tool-belt" class="row sideleft equalize">
+	
+	<div class="column one" style="background: url('/wp-content/themes/brand/images/pages/web/tools.png') 70% center no-repeat; background-size: 80% auto;">
+	</div>
+	<div class="column two">
+		<article>
+		<header><h2>tool belt included</h2></header>
+		<p>Out-of-the-box, the Spine includes local and WSU-wide <strong>search</strong>, a consistent spot for <strong>contact</strong> information, easy access to <strong>share</strong> to the principal social networks, and a <strong>print</strong> tool that automatically formats the page for the printer.</p>
+		</article>
+	</div>
+	
 </section>
 
-<hr>
+<section id="nesting" class="row halves reverse">
+	
+	<div class="twelve-twelfths-max">
+	<div class="column one">
+		<article>
+		<header><h2>nesting and grouping</h2></header>
+		<p>Related articles and images can be nested so that they hang together in groups when the page flexes and folds for mobile. Notice how these nested color blocks hang together if you pull your browser window to a narrow width.</p>
+		</article>
+	</div>
+	<div class="column two row thirds">
+		<div class="column one orange-back three-twelfths-tall"></div>
+		<div class="column two green-back three-twelfths-tall"></div>
+		<div class="column three blue-back three-twelfths-tall"></div>
+		<!--<div class="column four yellow-back three-twelfths-tall"></div>-->
+	</div>
+	</div>
+	
+</section>
 
-<section class="row thirds guttered equalize">
+<section id="resolution" class="row sidebar">
+	<style>
+	
+	#resolution .column.two { background: url('http://repo.wsu.edu/spine/1/marks/wsu-signature-vertical.svg') center center no-repeat; background-size: auto;  }
+	#resolution:hover .column.two {
+		background-position: center 10px;
+		background-size: 300%;
+		}
+	</style>
+	<article class="padless">
+	<div class="column one marginalize">
+		<header><h2>resolution independence</h2></header>
+		<p><b>Those whiskers are ticklish at life size.</b> The Spine is built entirely with vector based graphics so that it is prepared for high resolution displays and zooming.</p>
+	</div>
+	<div class="column two three-twelfths-tall min-height" style="xxoverflow: hidden;">
+		<figure></figure>
+	</div>
+	</article>
+</section>
+
+<section id="campus-ready" class="row sideleft">
+	
+	<div class="column one">
+		<br>
+	</div>
+	<div class="column two">
+		
+		<article>
+		<header><h2>campus ready</h2></header>
+		<p>Related articles and images can be nested so that they hang together in groups when the page flexes and stacks for mobile: <button data-campus="extension">Extension</button>, <button data-campus="globalcampus">Global Campus</button>, <button data-campus="spokane">Spokane</button>, <button data-campus="tricities">Tri-Cities</button>, <button data-campus="vancouver">Vancouver</button></p>
+		</article>
+	</div>
+	
+</section>
+
+<!--<section class="row thirds guttered equalize">
 	<div class="column one">
 		<article>
 		<strong>The skeleton grid eschews padding and margins by default to allow for seamless designs. However, adding a "guttered" class, as in this section, provides gutters for equally spaced column interior content (30px).</strong><hr>
@@ -328,14 +450,20 @@ section.row::before {
 	<div class="column three">
 		<article><p>Nam a dolor diam. Sed bibendum sit amet arcu id vehicula. Duis dictum rhoncus velit vel porttitor. Nullam scelerisque fermentum massa. Proin suscipit facilisis tincidunt. Aenean et tempor augue. Nullam gravida feugiat diam, vel blandit turpis ornare et. Sed sed arcu quis augue ultricies porta id vitae ante. Donec at ante sed mauris mollis rutrum eu sit amet lectus. <hr> .equalize makes columns equally tall... or short</p></article>
 	</div>
-	<div class="column four six-fifteenths folio-only"></div>
 </section>
 
-<section class="row halves">
-	<div class="column one"></div>
-	<div class="column two"></div>
-	<div class="column three three-fifteenths folio-only"></div>
-	<div class="column four three-fifteenths folio-only"></div>
+<section class="row thirds marginalized guttered equalize">
+	<div class="column one">
+
+	</div>
+	<div class="column two">
+
+	</div>
+	<div class="column three">
+		<ul>
+		<li id="folio-samples"><strong>Large Formats: </strong>990 Container by <a href="#" data-max="max-default">default</a> with maximum widths of <a href="#" data-max="max-1188">1188</a>, <a href="#" data-max="max-1386">1386</a>, <a href="#" data-max="max-1584">1584</a>, <a href="#" data-max="max-1782">1782</a>, <a href="#" data-max="max-1980">1980</a></li>
+		</ul>
+	</div>
 </section>
 
 <section class="row triptych">
@@ -349,60 +477,21 @@ section.row::before {
 	<div class="column two"><img src="/wp-content/themes/spine/images/eg/2.png" class="fill-width"></div>
 	<div class="column three"><img src="/wp-content/themes/spine/images/eg/3.png" class="fill-width"></div>
 	<div class="column four"><img src="/wp-content/themes/spine/images/eg/4.png" class="fill-width"></div>
-	<div class="column five folio-only"></div>
-	<div class="column six folio-only"></div>
 </section>
 
-<section class="row margin">
-	<div class="column one">
-		<article>
-		<code>
-
-<textarea style="height: 150px;">
-<section class="row quarters">
-	<div class="column one"></div>
-	<div class="column two"></div>
-	<div class="column three"></div>
-	<div class="column four"></div>
-</section>
-</textarea>
-
-		</code>
-		</article>
+<section id="color-backs" class="row halves nest xxnote">
+	
+	<div class="column one row quarters">
+		<div class="column one orange-back"></div>
+		<div class="column two green-back"></div>
+		<div class="column three blue-back"></div>
+		<div class="column four yellow-back"></div>
 	</div>
-	<div class="column two"></div>
-</section>
-
-<section class="row halves">
-	<div class="column one"></div>
-	<div class="column two row thirds">
-		<div class="column one"></div>
-		<div class="column two"></div>
-		<div class="column three"></div>
+	<div class="column one row halves">
+		<div class="column one crimson-back"></div>
+		<div class="column two gray-back"></div>
 	</div>
-</section>
-
-<section class="row quarters nest">
-	<div class="column two row thirds">
-		<div class="column one"></div>
-		<div class="column two"></div>
-		<div class="column three"></div>
-	</div>
-	<div class="column two row thirds">
-		<div class="column one"></div>
-		<div class="column two"></div>
-		<div class="column three"></div>
-	</div>
-	<div class="column two row thirds">
-		<div class="column one"></div>
-		<div class="column two"></div>
-		<div class="column three"></div>
-	</div>
-	<div class="column two row thirds">
-		<div class="column one"></div>
-		<div class="column two"></div>
-		<div class="column three"></div>
-	</div>
+	
 </section>
 
 <section class="row halves">
@@ -417,7 +506,7 @@ section.row::before {
 
 <footer class="local">
 	<br>	
-</footer>
+</footer>-->
 
 </main><!--/#page-->
 

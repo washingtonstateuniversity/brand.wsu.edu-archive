@@ -8,7 +8,7 @@
 <style>
 
 section.single header {
-	color: #e8eaed;
+	color: #EFF0F1;
 	font-size: 3em;
 	line-height: .8em;
 	padding-left: 30px;
@@ -17,7 +17,7 @@ section.single {
 	
 	}
 section.single ol {
-	background: #e8eaed;
+	background: #EFF0F1;
 	padding: 20px 30px;
 	}
 section.single ol li {

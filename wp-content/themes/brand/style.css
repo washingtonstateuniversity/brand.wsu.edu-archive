@@ -13,7 +13,7 @@
 body {
 	color: #5e6a71;
 	font-size: 13px;
-	line-height: 18px;
+	line-height: 20px;
 	background: white;
 	}
 main {
@@ -37,9 +37,12 @@ a:hover { color: #77580C; }
 	padding-right: 15px;
 	xtext-align: justify;
 	}
-.halves .column.two > article,
-.halves article .column:nth-of-type(even) {
+xx.halves .column.two > article,
+xx.halves article .column:nth-of-type(even) {
 	padding-left: 15px;
+	}
+section.alternate {
+	background-color: #EFF0F1;
 	}
 section.indent {
 	xborder-top: 1px gray solid;
@@ -85,10 +88,10 @@ div.details {
 .detailed .details {
 	display: block;
 	}
-.column .column {
+x.column .column {
 	padding-bottom: 15px;
 	}
-.column.thirds .column.two {
+x.column.thirds .column.two {
 	padding-left: 15px;
 	}
 button.detail {
@@ -160,7 +163,7 @@ main h3, h3 small {
 	color: #568a90;
 	font-size: 1.3em;
 	line-height: 1.4em;
-	text-transform: lowercase;
+	xtext-transform: lowercase;
 	}
 main h3 small {
 	color: #5e6a71;
@@ -246,17 +249,31 @@ main small, main p small {
 	line-height: .5em;
 	}
 	
-ul[class*="download"] {
+dl.downloads {
 	width: 100%;
 	}
-ul[class*="download"] li,
-aside ul[class*="download"] li {
-	list-style: none;
-	float: left;
+dl.downloads dt {
+	color: #4F868E;
+	font-size: 1.2em;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	padding: 5px 0px;
+	}
+dl.downloads dd,
+aside dl.downloads dd {
 	width: 40%;
 	border: none;
 	}
-ul[class*="download"] li a {
+dl.downloads dd:only-of-type {
+	width: 100%;
+	text-align: center;
+	}
+dl.downloads dd:only-of-type a {
+	width: 30%;
+	margin: 0px auto;
+	}
+dl.downloads dd a {
 	color: #ADA400;
 	display: block;
 	background: white;
@@ -265,7 +282,7 @@ ul[class*="download"] li a {
 	xwidth: 120px;
 	text-align: center;
 	}
-ul[class*="download"] li a:hover {
+dl.downloads dd a:hover {
 	color: white;
 	background: #ADA400;
 	border-color: #ADA400;
@@ -309,3 +326,46 @@ article .unbound.recto .rebound {
 .page-id-103 main section { background:
 	url('/wp-content/themes/brand/images/pages/video/emotion.png') 85% -15px no-repeat }
 .page-id-103 article { padding-top: 150px; padding-bottom: 200px; }
+
+/* FAQ */
+.page-id-90 article {
+	background: url('/wp-content/themes/brand/images/pages/misc/qa.png') 70% -50px no-repeat;
+	padding-top: 200px;
+	}
+body[class*="faq"] dl,
+.page-id-90 dl {
+	margin-left: -2em;
+	margin-right: -2em;
+	}
+.page-id-90 dl:nth-of-type(odd) {
+	background-color: #EFF0F1;
+	background-color: #f4f4f5;
+	}
+body[class*="faq"] dl dt,
+.page-id-90 dl dt {
+	background: url('/wp-content/themes/brand/images/elements/plus-green.svg') 95% center no-repeat;
+	max-width: 792px;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 20em;
+	display: block;
+	margin-left: 2em;
+	}
+.page-id-90 dl.disclosed dt {
+	background-image: url('/wp-content/themes/brand/images/elements/x-green.svg');
+	}
+body[class*="faq"] dl dd,
+.page-id-90 dl dd {
+	display: none;
+	padding-right: 20em;
+	padding-bottom: 1em;
+	margin-left: 2em;
+	}
+.page-id-90 .size-lt-medium dl dt,
+.page-id-90 .size-lt-medium dl dd {
+	padding-right: 4em;
+	}
+	
+	
+	
+	

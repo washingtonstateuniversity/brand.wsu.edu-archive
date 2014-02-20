@@ -7,7 +7,7 @@
 <style>
 main {
 	padding-bottom: 200px;
-}
+	}
 
 main section figure {
 	background-repeat: no-repeat;
@@ -38,7 +38,6 @@ main article > h2 {
 	position: absolute;
 	top: -56px;
 	color: white !important;
-	xmargin-bottom: -48px;
 	}
 main section article ul li {
 	list-style: none;
@@ -52,8 +51,9 @@ main section article ul li {
 .size-gt-small #we-believe article ul { text-align: right; }
 .size-gt-small #we-pursue article ul { margin-left: 80px; }
 .size-gt-small #we-offer article ul { margin-left: 260px; }
+.size-gt-small #we-promise article ul { margin-left: 280px; }
 
-xx.details .column.one {
+.details .column.one {
 	padding-bottom: 40px;
 	}
 
@@ -69,7 +69,7 @@ button.detail::after {
 
 <main>
 
-<section id="we-are" class="row single unbound recto">
+<section id="we-are" class="row single">
 
 <div class="column one row sidebar">
 
@@ -83,10 +83,10 @@ button.detail::after {
 
 	<ul>
 		<li>knowledgeable</li>
-		<li>inquisitive</li>
-		<li>confident</li>
-		<li>approachable</li>
-		<li>enthusiastic</li>
+		<li>trailblazers</li>
+		<li>hands on</li>
+		<li>inclusive</li>
+		<li>genuine</li>
 	</ul>
 	
 	<button class="detail"></button>
@@ -105,7 +105,7 @@ button.detail::after {
 
 </section>
 
-<section id="we-believe" class="row single unbound recto">
+<section id="we-believe" class="row single">
 
 <div class="column one row sidebar">
 
@@ -116,10 +116,10 @@ button.detail::after {
 	<h2>we believe in</h2>
 	<ul>
 		<li>creating a better future</li>
-		<li>inspiring creativity</li>
-		<li>driving innovation</li>
 		<li>challenging limits</li>
-		<li>supportive community</li>
+		<li>driving innovation</li>
+		<li>broadening beliefs</li>
+		<li>nurturing community</li>
 	</ul>
 	
 	<!--<button class="detail"></button>
@@ -140,22 +140,18 @@ button.detail::after {
 
 <section id="we-pursue" class="row halves guttered marginalized wide">
 
-<div class="unbound recto">
-
 <figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/hoodie.jpg');"></figure>
-
-<div class="rebound">
 
 <article class="padless">
 
-	<h2>we pursue</h2>
+	<h2>we emphasize</h2>
 
 	<ul>
 		<li>eminent faculty</li>
 		<li>life-changing research</li>
-		<li>hands-on learning</li>
+		<li>engaged learning</li>
 		<li>enriching experiences</li>
-		<li>influential graduates</li>
+		<li>informed graduates</li>
 	</ul>
 	
 	<button class="detail"></button>
@@ -178,12 +174,10 @@ button.detail::after {
 	
 </article>
 
-</div><!--/rebound-->
-</div><!--/unbound-->
 
 </section>
 
-<section id="we-offer" class="row single unbound recto">
+<section id="we-offer" class="row single">
 
 <div class="column one row sidebar">
 
@@ -196,8 +190,8 @@ button.detail::after {
 	<ul>
 		<li>undergraduate degrees</li>
 		<li>graduate and professional degrees</li>
-		<li>preparation to lead wisely</li>
-		<li>educated citizens</li>
+		<li>leadership opportunities</li>
+		<li>committed citizens</li>
 	</ul>
 	
 	<!--<button class="detail"></button>
@@ -227,9 +221,10 @@ button.detail::after {
 	<h2>we promise</h2>
 
 	<ul>
-		<li>if you</li>
-		<li>then we have</li>
-		<li>for you</li>
+		<li>if you seek to do good in the world, </li>
+		<li>our learning community will</li>
+		<li>engage, challenge, and equip you</li>
+		<li>for life-long success</li>
 	</ul>
 	
 	<!--<button class="detail"></button>
