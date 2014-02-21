@@ -32,7 +32,7 @@ section:first-of-type article {
 	padding: 60px 30px;
 	}
 section:nth-of-type(even) {
-	background-color: #EFF0F1;
+	background-color: #f4f4f5;
 	}
 main section ~ section .column article {
 	padding: 0px;
@@ -69,13 +69,13 @@ main section ~ section button.detail {
 
 <?php get_template_part('parts/headers'); ?>
 
-<section class="row sidebar gutter wide">
+<section class="row sidebar marginalize gutter wide">
 	
 	<div class="column one">
 		
 		<?php while ( have_posts() ) : the_post(); ?>
 		
-		<article>
+		<article class="padless">
 			<?php the_content(); ?>
 		</article>
 		
