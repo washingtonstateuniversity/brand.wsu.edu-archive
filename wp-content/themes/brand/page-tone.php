@@ -46,7 +46,7 @@ ol li {
 	}
 	
 #applying {
-	background: #eaeaeb;
+	background: #f4f4f5;
 	}
 #applying article {
 	padding-bottom: 100px;
