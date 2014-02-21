@@ -154,17 +154,17 @@ x#cropping {
 	border-bottom: none;
 	}
 	
-.thirds.guttered .column {
+.thirds.gutter .column {
    background-color: white; 
    border: none;
    }
-.thirds.guttered .column article {
+.thirds.gutter .column article {
 	padding: 0px;
 	xborder: 1px #f2f4f5 solid;
 	background: #f2f4f5;
 	}
 
-.guttered article p { opacity: .3em; }
+.gutter article p { opacity: .3em; }
 	
 #binder main .note::after {
 	color: black;
@@ -248,7 +248,7 @@ button {
 	});
 	
 	// Change Campus
-	$('#campus-ready a').on('click', function() {
+	$('#campus-ready button').on('click', function() {
 		var campus = $(this).attr('data-campus');
 			campus = campus + '-signature';
 		$('#jacket').removeClass().addClass(campus);
@@ -301,7 +301,7 @@ button {
 </section>
 
 <section id="flexible" class="row sideleft equalize">
-	<div class="column one" style="background: url('/wp-content/themes/brand/images/pages/web/squarecircle.png') right center no-repeat; background-size: 50%">
+	<div class="column one" style="background: url('/wp-content/themes/brand/images/pages/web/squarecircle.png') center center no-repeat; background-size: auto 80%">
 	</div>
 	<div class="column two">
 		<article class="marginalize">
@@ -344,7 +344,7 @@ button {
 			<dd class="darkest-back light-text" data-color="darkest">Darkest</dd>
 			<dd class="crimson-back white-text" data-color="crimson">Crimson</dd><br>
 			<dd class="white-back" data-color="white">Default White</dd> 
-			<dd style="background-color: rgba(255,255,255,0.5);" data-color="transparent">Transparent</dd>
+			<dd style="transparent-back" data-color="transparent">Transparent</dd>
 		</dl>
 		</article>
 	</div>
@@ -412,7 +412,7 @@ button {
 		}
 	</style>
 	<article class="padless">
-	<div class="column one marginalize">
+	<div class="column one marginalized">
 		<header><h2>resolution independence</h2></header>
 		<p><b>Those whiskers are ticklish at life size.</b> The Spine is built entirely with vector based graphics so that it is prepared for high resolution displays and zooming.</p>
 	</div>
@@ -437,10 +437,10 @@ button {
 	
 </section>
 
-<!--<section class="row thirds guttered equalize">
+<!--<section class="row thirds gutter equalize">
 	<div class="column one">
 		<article>
-		<strong>The skeleton grid eschews padding and margins by default to allow for seamless designs. However, adding a "guttered" class, as in this section, provides gutters for equally spaced column interior content (30px).</strong><hr>
+		<strong>The skeleton grid eschews padding and margins by default to allow for seamless designs. However, adding a "gutter" class, as in this section, provides gutters for equally spaced column interior content (30px).</strong><hr>
 		These columns have also been equalized with the "equalize" class to allow for aligning background images. Were using "border-box" box-sizing on our columns to enable padding without breaking our responsive math.<hr>
 		<p>Vestibulum cursus ultricies tellus, sed fermentum mauris mattis vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam condimentum ligula ut dictum scelerisque. Aenean mattis erat ac tortor accumsan, vitae tincidunt dui feugiat. Vestibulum hendrerit metus id justo tristique, a pharetra nibh lobortis. Sed eu dolor nec metus blandit egestas ac at elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ac mollis mauris. Sed aliquet ipsum in dapibus euismod.</p></article>
 	</div>
@@ -452,7 +452,7 @@ button {
 	</div>
 </section>
 
-<section class="row thirds marginalized guttered equalize">
+<section class="row thirds marginalize gutter equalize">
 	<div class="column one">
 
 	</div>

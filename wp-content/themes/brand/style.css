@@ -80,7 +80,7 @@ button:hover {
 	
 /* Details */
 div.details {
-	border-top: 1px #B5BABE solid;
+	xxborder-top: 1px #B5BABE solid;
 	display: none;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -262,15 +262,16 @@ dl.downloads dt {
 	}
 dl.downloads dd,
 aside dl.downloads dd {
-	width: 40%;
+	width: 48%;
 	border: none;
+	margin-bottom: 6px;
 	}
 dl.downloads dd:only-of-type {
 	width: 100%;
 	text-align: center;
 	}
 dl.downloads dd:only-of-type a {
-	width: 30%;
+	width: 50%;
 	margin: 0px auto;
 	}
 dl.downloads dd a {
@@ -288,11 +289,24 @@ dl.downloads dd a:hover {
 	border-color: #ADA400;
 	}
 
-main:not(.wireframe) .column hr {
-	margin: 10px 30px;
+main hr {
+	margin: 1em 2em;
+	height: 1px;
+	display: block;
+	clear: both;
 	}
-main:not(.wireframe) article hr {
-	margin: 10px 0px;
+
+main .marginalized .column hr {
+	margin: 1em 0;
+	}
+
+main .wide hr {
+	margin-left: 4em;
+	margin-right: 4em;
+	}
+xmain hr.tall {
+	margin-top: 2em;
+	margin-bottom: 2em;
 	}
 	
 article .unbound.recto {
