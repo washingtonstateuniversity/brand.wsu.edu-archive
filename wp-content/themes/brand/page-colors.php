@@ -278,14 +278,6 @@ dd.bg-white {
 	padding-top: 100px;
 	text-align: center;
 	}
-#primary-secondary .column.two aside ul.downloads li:only-child {
-	float: none;
-	width: 100%;
-	}
-#primary-secondary .column.two aside ul.downloads li a {
-	margin: 0px auto;
-	width: 50%;
-	}
 
 </style>
 
@@ -460,12 +452,10 @@ $('dl.values').click(function() {
 	
 	<div class="column two">
 	
-		<aside>
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-1-2', true );
 		if( ! empty( $column ) ) { echo $column; }
 		?>
-		</aside>
 	
 	</div>
 	

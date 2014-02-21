@@ -10,11 +10,14 @@
 	img {
 		box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 		}
-	ul.download {
-		padding-top: 50px;
+	main section {
+		padding-bottom: 50px;
 		}
 	main section:first-of-type {
 		padding-top: 75px;
+		}
+	section:nth-of-type(even) {
+		background-color: #EFF0F1;
 		}
 
 </style>
@@ -33,7 +36,7 @@
 		<?php endwhile; ?>
 	</div>
 	<div class="column two">
-		<dl class="downloads" style="margin-top: 75px;">
+		<dl class="downloads" style="margin-top: 100px;">
 			<dd><a href="">order</a></dd>
 		</dl>
 	</div>
@@ -46,7 +49,7 @@
 		<article>
 			<h3>letterhead</h3>
 			<img src="/wp-content/themes/brand/images/pages/stationery/letterhead.png" class="max-width" width="752px;">
-			<p>Customized MS Word templates for use with a desktop printer are available.</p>
+			<p><br>Customized MS Word templates for use with a desktop printer are available.</p>
 		</article>
 	</div>
 
@@ -68,11 +71,17 @@
 	<div class="column one">
 		<article>
 			<h3>business card</h3>
-			<img src="/wp-content/themes/brand/images/pages/stationery/businesscard.png" class="max-width" width="380px;">
-		
-		<br>
-		<p>Standard formats for additional correspondence materials, including Monarch letterhead and envelopes, note cards, and notepads, are being developed and will be available soon.</p>
-		
+			<img src="/wp-content/themes/brand/images/pages/stationery/businesscard.png" class="max-width" width="380px;">		
+		</article>
+	</div>
+
+</section>
+
+<section class="row sidebar">
+
+	<div class="column one">
+		<article>
+			<p>Standard formats for additional correspondence materials, including Monarch letterhead and envelopes, note cards, and notepads, are being developed and will be available soon.</p>
 		</article>
 	</div>
 
