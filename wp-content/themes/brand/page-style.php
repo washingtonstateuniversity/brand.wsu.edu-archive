@@ -38,12 +38,12 @@ main section ~ section .column article {
 	padding: 0px;
 	
 	}
-main section ~ section .column article .details {
+xmain section ~ section .column article .details {
 	padding: 30px;
 	}
 main section ~ section button.detail {
 	background-position: 750px center;
-	padding-left: 35px;
+	padding-left: 4.7em;
 	}
 
 .details li {
@@ -72,7 +72,7 @@ main section ~ section button.detail {
 		
 		<?php while ( have_posts() ) : the_post(); ?>
 		
-		<article class="intro">
+		<article>
 			<?php the_content(); ?>
 		</article>
 		
@@ -82,14 +82,14 @@ main section ~ section button.detail {
 	
 </section>
 
-<section id="quick-tips" class="row halves">
+<section id="quick-tips" class="row halves gutter wide">
 	<button class="detail unbound recto">
 	<header>
 			<h3>Quick Tips: <small>answers to common questions</small></h3>
 		</header>
 	</button>
 	<div class="details">
-	<article class="columnar">
+	<article class="padless">
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-2-1', true );
@@ -107,14 +107,14 @@ main section ~ section button.detail {
 
 </section>
 
-<section id="capitalization" class="row halves">
+<section id="capitalization" class="row halves gutter wide">
 	<button class="detail">
-	<header>
+		<header>
 			<h3>Capitalization: <small>not always a capital idea</small></h3>
 		</header>
 	</button>
 	<div class="details">
-	<article class="columnar">
+	<article class="padless">
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-3-1', true );
@@ -133,15 +133,15 @@ main section ~ section button.detail {
 </section>
 
 
-<section id="punctuation" class="row halves">
+<section id="punctuation" class="row halves gutter wide">
 
 	<button class="detail">
-	<header>
+		<header>
 			<h3>Punctuation: <small>deliver the intended meaning</small></h3>
 		</header>
 	</button>
 	<div class="details">
-	<article class="columnar">
+	<article class="padless">
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-4-1', true );
@@ -159,7 +159,7 @@ main section ~ section button.detail {
 
 </section>
 
-<section id="spelling" class="row halves">
+<section id="spelling" class="row halves gutter wide">
 
 	<button class="detail">
 		<header>
@@ -167,8 +167,8 @@ main section ~ section button.detail {
 		</header>
 	</button>
 	<div class="details">
-	<article class="columnar">
-		<header>Consult <a href="http://www.merriam-webster.com/"><em>Merriam-Webster's Collegiate Dictionary</em></a> for spelling and word breaks. American spellings are preferred over British.</header>
+	<article class="padless">
+		<p class="guttered wide">Consult <a href="http://www.merriam-webster.com/"><em>Merriam-Webster's Collegiate Dictionary</em></a> for spelling and word breaks. American spellings are preferred over British.</p>
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-5-1', true );
@@ -186,14 +186,14 @@ main section ~ section button.detail {
 
 </section>
 
-<section id="numbers" class="row halves">
+<section id="numbers" class="row halves gutter wide">
 	<button class="detail">
 		<header>
 			<h3>Numbers: <small>a simple equation for readability</small></h3>
 		</header>
 	</button>
 	<div class="details">
-	<article class="columnar">
+	<article class="padless">
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-6-1', true );
@@ -210,8 +210,6 @@ main section ~ section button.detail {
 	</div><!--/.details-->
 
 </section>
-
-
 
 </main>
 
