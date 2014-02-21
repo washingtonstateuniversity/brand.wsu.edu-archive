@@ -21,10 +21,12 @@ body,main {
 	}
 section#our-brand {
 	background-image: url('/wp-content/themes/brand/images/pages/home/confetti.jpg');
-	background-position: left bottom;
+	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	
+	}
+.size-gt-large section#our-brand {
+	background-position: left bottom;
 	}
 .size-lt-medium section#our-brand {
 	background-size: auto 100%;
@@ -32,10 +34,10 @@ section#our-brand {
 section#our-brand article {
 	background-image: url('/wp-content/themes/brand/images/pages/home/ourbrand.png');
 	background-repeat: no-repeat;
-	background-position: 30px 60px;
+	background-position: 15px 60px;
 	background-size: auto 500px;
 	font-size: 12px;
-	min-height: 550px;
+	min-height: 530px;
 	}
 
 	
@@ -64,7 +66,6 @@ section#our-brand article {
 	<div class="column one">
 
 		<article>
-			
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-2-1', true );
 				if( ! empty( $column ) ) { echo $column; }
