@@ -20,7 +20,7 @@
 	
 </section>
 
-<section id="campaign" class="row halves marginalized guttered wide">
+<section id="campaign" class="row halves marginalize gutter wide">
 
 	<article class="padless">
 		<figure style="text-align: center; padding-top: 40px;" class="marginalized twelve-twelfths-max"><img src="/wp-content/themes/brand/images/pages/campaigns/campaign.png"></figure>
@@ -41,7 +41,7 @@
 
 </section>
 
-<section id="anniversary" class="row halves marginalized guttered wide alternate">
+<section id="anniversary" class="row halves marginalize gutter wide alternate">
 
 	<article class="padless">
 		<div class="column one">
