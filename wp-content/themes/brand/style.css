@@ -202,7 +202,7 @@ xx.column :not(p) big {
 .intro big,
 p big {
 	color: #4F868E;
-	font-size: 2em;
+	font-size: 1.6em;
 	font-weight: bold;
 	line-height: 1em;
 	}
@@ -327,7 +327,8 @@ article .unbound.recto .rebound {
 .em-35 { font-size: 3.5em; }
 
 /* Pages */
-.page-id-101 article {
+.page-id-101 article,
+xx.page-id-165 article {
 	padding-top: 150px;
 	}
 .page-id-21 main section { background:
