@@ -18,10 +18,16 @@ section > article > header {
 	font-size: 1.5em;
 	padding: 15px 30px 0px 30px;
 	}
+
 #our-voice {
 	padding-bottom: 20px;
 	}
-	
+#brand-drivers {
+	background-color: #f4f4f5;
+	}
+#best-practices {
+	background-color: #eaeaeb;
+	}
 button.detail {
 	height: auto;
 	overflow: visible;
@@ -69,7 +75,7 @@ main section button.detail {
 
 </section>
 
-<section id="brand-drivers" class="row sidebar gutter wide gray-er-back">
+<section id="brand-drivers" class="row sidebar gutter wide">
 	<button class="detail unbound recto guttered">
 		<header>
 			<h2>key messages and benefits</h2>
@@ -95,7 +101,7 @@ main section button.detail {
 
 </section>
 
-<section id="best-practices" class="row sidebar gutter wide gray-lightest-back">
+<section id="best-practices" class="row sidebar gutter wide">
 	<button class="detail unbound recto guttered">
 		<header>
 			<h2>best practices</h2>
