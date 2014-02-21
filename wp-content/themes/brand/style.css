@@ -327,10 +327,8 @@ article .unbound.recto .rebound {
 .em-35 { font-size: 3.5em; }
 
 /* Pages */
-.page-id-101 article,
-xx.page-id-165 article {
-	padding-top: 150px;
-	}
+
+
 .page-id-21 main section { background:
 	url('/wp-content/themes/brand/images/pages/print/brochures.png') 85% top no-repeat,
 	url('/wp-content/themes/brand/images/pages/print/pieces.png') 15px bottom no-repeat }
@@ -338,9 +336,8 @@ xx.page-id-165 article {
 .page-id-21 article { padding-top: 150px; padding-bottom: 700px; }
 .page-id-21 article ul li { padding-bottom: .2em; }
 
-.page-id-103 main section { background:
-	url('/wp-content/themes/brand/images/pages/video/emotion.png') 85% -15px no-repeat }
-.page-id-103 article { padding-top: 150px; padding-bottom: 200px; }
+.page-id-27 main section { background:	url('/wp-content/themes/brand/images/pages/misc/schwag.png') 60% -15px no-repeat }
+.page-id-27 article { padding-top: 150px; }
 
 /* FAQ */
 .page-id-90 article {
@@ -381,6 +378,13 @@ body[class*="faq"] dl dd,
 	padding-right: 4em;
 	}
 	
+.page-id-101 article { padding-top: 150px; }
+.page-id-101 main section { background:	url('/wp-content/themes/brand/images/pages/misc/social.png') 85% -15px no-repeat }
 	
+.page-id-103 main section { background:	url('/wp-content/themes/brand/images/pages/video/emotion.png') 85% -15px no-repeat }
+.page-id-103 article { padding-top: 150px; padding-bottom: 200px; }
+
+.page-id-105 .size-gt-medium .column.two { background:	url('/wp-content/themes/brand/images/pages/misc/sign.png') 85% -15px no-repeat; height: 600px; }
+.page-id-105 .size-gt-medium .column { padding-top: 150px; }
 	
 	
