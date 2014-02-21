@@ -45,6 +45,9 @@ main section ~ section button.detail {
 	background-position: 750px center;
 	padding-left: 4.7em;
 	}
+.size-lt-large main section ~ section button.detail {
+	background-position: 90% center;
+	}
 
 .details li {
 	list-style: none;
@@ -66,7 +69,7 @@ main section ~ section button.detail {
 
 <?php get_template_part('parts/headers'); ?>
 
-<section class="row sidebar">
+<section class="row sidebar gutter wide">
 	
 	<div class="column one">
 		

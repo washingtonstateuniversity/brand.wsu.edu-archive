@@ -21,14 +21,24 @@ section > article > header {
 #our-voice {
 	padding-bottom: 20px;
 	}
-#brand-drivers {
-	padding-top: 20px;
+	
+button.detail {
+	height: auto;
+	overflow: visible;
 	}
-ul li {
-	xlist-style: none;
-	xpadding-left: 0px;
-	xmargin-left: 0px;
-	padding-bottom: 10px;
+button.detail header {
+	text-align: left;
+	}
+button.detail header h3 {
+	display: inline-block;
+	margin: 0px;
+	}
+main section button.detail {
+	background-position: 750px center;
+	padding-left: 4.7em;
+	}
+.size-lt-large main section button.detail {
+	background-position: 90% center;
 	}
 
 </style>
@@ -37,12 +47,12 @@ ul li {
 
 <?php get_template_part('parts/headers'); ?>
 
-<section id="our-voice" class="row sidebar">
+<section id="our-voice" class="row sidebar gutter wide">
 
 	<div class="column one">
 	<?php while ( have_posts() ) : the_post(); ?>
 		
-		<article class="intro">
+		<article class="padless">
 			<?php the_content(); ?>
 		</article>
 		
@@ -59,29 +69,48 @@ ul li {
 
 </section>
 
-<section id="brand-drivers" class="row halves gray-lightest-back">
-
-	<article class="columnar">
-
-	<header>Strive to incorporate these key WSU messages and benefits in your messaging.</header>
-	
-	<div class="column one">
-		
-		<?php 
-		$column = get_post_meta( get_the_ID(), 'section-2-1', true );
-		if( ! empty( $column ) ) { echo $column; }
-		?>
-		
-	</div>
-	
-	<div class="column two">
-		<?php 
-		$column = get_post_meta( get_the_ID(), 'section-2-2', true );
-		if( ! empty( $column ) ) { echo $column; }
-		?>
-	</div>
-	
+<section id="brand-drivers" class="row sidebar gutter wide gray-er-back">
+	<button class="detail unbound recto guttered">
+		<header>
+			<h2>key messages and benefits</h2>
+		</header>
+	</button>
+	<div class="details">
+	<article class="padless">
+		<div class="column one">
+			<?php 
+			$column = get_post_meta( get_the_ID(), 'section-2-1', true );
+			if( ! empty( $column ) ) { echo $column; }
+			?>
+			<?php 
+			$column = get_post_meta( get_the_ID(), 'section-2-2', true );
+			if( ! empty( $column ) ) { echo $column; }
+			?>
+		</div>
+		<div class="column two">
+			
+		</div>
 	</article>
+	</div><!--/.details-->
+
+</section>
+
+<section id="best-practices" class="row sidebar gutter wide gray-lightest-back">
+	<button class="detail unbound recto guttered">
+		<header>
+			<h2>best practices</h2>
+		</header>
+	</button>
+	<div class="details">
+	<article class="padless">
+		<div class="column one">
+			<?php 
+			$column = get_post_meta( get_the_ID(), 'section-3-1', true );
+			if( ! empty( $column ) ) { echo $column; }
+			?>
+		</div>
+	</article>
+	</div><!--/.details-->
 
 </section>
 
