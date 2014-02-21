@@ -13,6 +13,9 @@ main section figure {
 	background-repeat: no-repeat;
 	height: 400px;
 	}
+main section ~ section figure {
+	margin-top: 20px;
+	}
 .size-gt-small main section figure {
 	background-position: left top;
 	background-size: 100% auto;
@@ -22,23 +25,25 @@ main section figure {
 	background-position: left top;
 	background-size: auto 400px;
 	}
-main .single .column article {
+xxmain .single .column article {
 	max-width: 732px;
 	xwidth: 732px;
 	}
-main article {
-	position: relative;
-	}
-main article > h2 {
+figcaption {
 	font-size: 64px;
 	font-weight: 700;
 	margin: 0px !important;
 	padding: 0px !important;
 	line-height: 1em;
 	position: absolute;
-	top: -56px;
-	color: white !important;
+	left: 30px;
+	bottom: -8px;
+	color: white;
 	}
+main section article ul:first-of-type {
+	padding-top: 30px;
+	}
+
 main section article ul li {
 	list-style: none;
 	font-size: 2em;
@@ -49,7 +54,7 @@ main section article ul li {
 	}
 .size-gt-small #we-are article ul { margin-left: 220px; }
 .size-gt-small #we-believe article ul { text-align: right; }
-.size-gt-small #we-pursue article ul { margin-left: 80px; }
+.size-gt-small #we-emphasize article ul { margin-left: 80px; }
 .size-gt-small #we-offer article ul { margin-left: 260px; }
 .size-gt-small #we-promise article ul { margin-left: 280px; }
 
@@ -71,15 +76,15 @@ button.detail::after {
 
 <section id="we-are" class="row single">
 
-<div class="column one row sidebar">
-
 <figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/cougcheek.jpg');">
-
+	<figcaption>we are</figcaption>
 </figure>
 
-<article>
+<div class="column one row sidebar gutter wide">
 
-	<h2>we are</h2>
+<article class="padless">
+
+	<header class="hidden">we are</header>
 
 	<ul>
 		<li>knowledgeable</li>
@@ -91,6 +96,9 @@ button.detail::after {
 	
 	<button class="detail"></button>
 	<div class="details">
+	
+		<hr>
+		
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-1-1', true );
@@ -107,13 +115,15 @@ button.detail::after {
 
 <section id="we-believe" class="row single">
 
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/eyeshield.jpg');">
+	<figcaption>we believe in</figcaption>
+</figure>
+
 <div class="column one row sidebar">
 
-<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/eyeshield.jpg');"></figure>
+<article class="padless">
 
-<article>
-
-	<h2>we believe in</h2>
+	<header class="hidden">we believe in</header>
 	<ul>
 		<li>creating a better future</li>
 		<li>challenging limits</li>
@@ -138,14 +148,17 @@ button.detail::after {
 
 </section>
 
-<section id="we-pursue" class="row halves guttered marginalized wide">
+<section id="we-emphasize" class="row single wide">
 
-<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/hoodie.jpg');"></figure>
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/hoodie.jpg');">
+	<figcaption>we emphasize</figcaption>
+</figure>
+
+<div class="column one row halves gutter wide">
 
 <article class="padless">
-
-	<h2>we emphasize</h2>
-
+	
+	<header class="hidden">we emphasize</header>
 	<ul>
 		<li>eminent faculty</li>
 		<li>life-changing research</li>
@@ -156,6 +169,8 @@ button.detail::after {
 	
 	<button class="detail"></button>
 	<div class="details">
+		
+		<hr>
 	
 		<div class="column one">
 			<?php 
@@ -174,18 +189,21 @@ button.detail::after {
 	
 </article>
 
+</div>
 
 </section>
 
 <section id="we-offer" class="row single">
 
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/finally.jpg');">
+	<figcaption>we offer</figcaption>
+</figure>
+
 <div class="column one row sidebar">
 
-<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/finally.jpg');"></figure>
+<article class="padless">
 
-<article>
-
-	<h2>we offer</h2>
+	<header class="hidden">we offer</header>
 
 	<ul>
 		<li>undergraduate degrees</li>
@@ -212,13 +230,15 @@ button.detail::after {
 
 <section id="we-promise" class="row single unbound recto">
 
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/orange.jpg');">
+	<figcaption>we promise</figcaption>
+</figure>
+
 <div class="column one">
 
-<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/orange.jpg');"></figure>
+<article class="padless">
 
-<article>
-
-	<h2>we promise</h2>
+	<header class="hidden">we promise</header>
 
 	<ul>
 		<li>if you seek to do good in the world, </li>
