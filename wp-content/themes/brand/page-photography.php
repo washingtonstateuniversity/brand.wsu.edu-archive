@@ -17,11 +17,14 @@ main section ~ section figure {
 	margin-top: 20px;
 	}
 
-.column.two {
-	font-size: 1.5em;
+.photo .column.two {
+	font-size: 1.3em;
 	line-height: 1.2em;
 	padding: 2em 2em 2em 4em;
-	}	
+	}
+.photo .column.two ul li {
+	padding-bottom: .1em;
+	}
 
 .size-gt-small main section figure {
 	background-position: center center;
@@ -44,12 +47,15 @@ figcaption {
 	color: rgba(255,255,255,0.7);
 	}
 
+#library {
+	background-color: #f4f4f5;
+	}
 
 </style>
 
 <main>
 
-<section id="esteemed" class="row halves">
+<section id="esteemed" class="row halves photo">
 
 	<article class="padless">
 
@@ -70,7 +76,7 @@ figcaption {
 
 </section>
 
-<section id="current" class="row halves">
+<section id="current" class="row halves photo">
 
 	<article class="padless">
 
@@ -91,7 +97,7 @@ figcaption {
 
 </section>
 
-<section id="friendly" class="row halves">
+<section id="friendly" class="row halves photo">
 
 	<article class="padless">
 
@@ -112,7 +118,7 @@ figcaption {
 
 </section>
 
-<section id="impactful" class="row halves">
+<section id="impactful" class="row halves photo">
 
 	<article class="padless">
 
@@ -125,7 +131,7 @@ figcaption {
 	<div class="column two gutter wide">
 	
 		<header class="hidden">impactful</header>
-		<?php  $column = get_post_meta( get_the_ID(), 'section-1-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-4-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
 	
 	</div>
 	
@@ -133,7 +139,7 @@ figcaption {
 
 </section>
 
-<section id="enthusiastic" class="row halves">
+<section id="enthusiastic" class="row halves photo">
 
 	<article class="padless">
 
@@ -146,7 +152,7 @@ figcaption {
 	<div class="column two gutter wide">
 	
 		<header class="hidden">enthusiastic</header>
-		<?php  $column = get_post_meta( get_the_ID(), 'section-1-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-5-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
 	
 	</div>
 	
@@ -154,7 +160,7 @@ figcaption {
 
 </section>
 
-<section id="handson" class="row halves">
+<section id="handson" class="row halves photo">
 
 	<article class="padless">
 
@@ -167,7 +173,7 @@ figcaption {
 	<div class="column two gutter wide">
 	
 		<header class="hidden">hands-on</header>
-		<?php  $column = get_post_meta( get_the_ID(), 'section-1-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-6-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
 	
 	</div>
 	
@@ -176,7 +182,7 @@ figcaption {
 </section>
 
 
-<section id="creative" class="row halves">
+<section id="creative" class="row halves photo">
 
 	<article class="padless">
 
@@ -185,11 +191,11 @@ figcaption {
 	</figure>
 	
 	<div class="column one">&nbsp;</div>
-	
+		
 	<div class="column two gutter wide">
 	
 		<header class="hidden">hands-on</header>
-		<?php  $column = get_post_meta( get_the_ID(), 'section-1-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-7-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
 	
 	</div>
 	
@@ -197,16 +203,23 @@ figcaption {
 
 </section>
 
-<section id="library" class="row halves">
+<section id="library" class="row halves marginalize gutter wide equalize">
+
+	<style>
+		dl.downloads { height: 50px; }
+	</style>
 
 	<article class="padless">
 	
-	<div class="column one">&nbsp;</div>
+	<div class="column one">
+		
+		<?php  $column = get_post_meta( get_the_ID(), 'section-8-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		
+	</div>
 	
-	<div class="column two gutter wide">
-	
-		<header class="hidden">hands-on</header>
-		<?php  $column = get_post_meta( get_the_ID(), 'section-1-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+	<div class="column two center absolutely">
+			
+		<?php  $column = get_post_meta( get_the_ID(), 'section-8-2', true ); if( ! empty( $column ) ) { echo $column; } ?>
 	
 	</div>
 	
