@@ -34,7 +34,7 @@ section#our-brand {
 section#our-brand article {
 	background-image: url('/wp-content/themes/brand/images/pages/home/ourbrand.png');
 	background-repeat: no-repeat;
-	background-position: 15px 60px;
+	background-position: 15px 10px;
 	background-size: auto 500px;
 	font-size: 12px;
 	min-height: 530px;
