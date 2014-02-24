@@ -37,7 +37,7 @@ section.single ol li:nth-of-type(3)::before { content: "3"; }
 section.single ol li:nth-of-type(4)::before { content: "4"; }
 
 main section:first-of-type {
-	background: url('/wp-content/themes/brand/images/pages/standards/brand.png') right 0px no-repeat;
+	background: url('/wp-content/themes/brand/images/pages/standards/brand.png') 60% 0px no-repeat;
 	}
 
 main section:first-of-type .column.one article {
@@ -73,13 +73,11 @@ main section:first-of-type .column.one article {
 
 <section class="row single unbound recto">
 
-	<div class="column one">
 		<header>brand consistency checklist</header>
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-2-1', true );
 		if( ! empty( $column ) ) { echo $column; }
 		?>
-	</div>
 
 </section>
 

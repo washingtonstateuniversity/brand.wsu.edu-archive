@@ -4,13 +4,13 @@
 
 <?php get_template_part('parts/headers'); ?>
 
-<section class="row sidebar alternate marginalized wide">
+<section class="row halves alternate marginalize wide">
 	
 	<div class="column one">
 		
 		<?php while ( have_posts() ) : the_post(); ?>
 		
-		<article class="padless">
+		<article class="intro padless">
 			<?php the_content(); ?>
 		</article>
 		
@@ -23,7 +23,7 @@
 <section id="campaign" class="row halves marginalize gutter wide">
 
 	<article class="padless">
-		<figure style="text-align: center; padding-top: 40px;" class="marginalized twelve-twelfths-max"><img src="/wp-content/themes/brand/images/pages/campaigns/campaign.png"></figure>
+		<figure style="text-align: center; padding-top: 40px;" class="twelve-twelfths-max"><img src="/wp-content/themes/brand/images/pages/campaigns/campaign.png"></figure>
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-2-1', true );

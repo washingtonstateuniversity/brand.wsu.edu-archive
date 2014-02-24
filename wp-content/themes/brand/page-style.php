@@ -5,9 +5,13 @@
 </script>
 
 <style>
+
+main section:first-of-type .column.one {
+	padding-top: 100px;
+	}
 main section:first-of-type {
-	background: url('/wp-content/themes/brand/images/pages/editorial-style/clearconciseconsistent.png') 80% -15px no-repeat;
-	background-size: 30% auto;
+	background: url('/wp-content/themes/brand/images/pages/editorial-style/clearconciseconsistent.png') 75% -5px no-repeat;
+	background-size: 225px auto;
 	}
 button.detail {
 	height: auto;
@@ -16,51 +20,44 @@ button.detail {
 	}
 button.detail header {
 	text-align: left;
-	padding: 15px 0px;
+	padding: 2em 0px;
 	}
 button.detail header h3 {
 	display: inline-block;
 	margin: 0px;
 	}
-.details,
-.detailed .details {
-	xborder-top: none;
-	border-top-color: white;
-	border-top-style: dotted;
-	}
-section:first-of-type article {
-	padding: 60px 30px;
-	}
 section:nth-of-type(even) {
 	background-color: #f4f4f5;
 	}
-main section ~ section .column article {
-	padding: 0px;
-	
-	}
-xmain section ~ section .column article .details {
-	padding: 30px;
-	}
 main section ~ section button.detail {
 	background-position: 750px center;
+	border-right: 2em transparent solid;
 	padding-left: 4.7em;
+	padding-right: 6em;
+	}
+.size-lt-large main section ~ section button.detail {
+	padding-left: 3em;
 	}
 .size-lt-large main section ~ section button.detail {
 	background-position: 90% center;
+	border-right-width: 1em;
+	background-position: 
 	}
-
 .details li {
 	list-style: none;
 	margin: 0px;
-	padding: 0px 0px 15px 0px;
+	padding: 0px 0px 1em 0px;
 	}
 #spelling strong {
-	color: #ADA400;
+	xcolor: #ADA400;
 	}
 .details ul li ul li  {
 	padding-left: 1.5em;
 	padding-bottom: 0px;
 	padding-top: .2em;
+	}
+samp ul {
+	padding-bottom: 0;
 	}
 
 </style>
@@ -88,7 +85,7 @@ main section ~ section button.detail {
 <section id="quick-tips" class="row halves gutter wide">
 	<button class="detail unbound recto">
 	<header>
-			<h3>Quick Tips: <small>answers to common questions</small></h3>
+			<h2>Quick Tips: <small>answers to common questions</small></h2>
 		</header>
 	</button>
 	<div class="details">
@@ -113,7 +110,7 @@ main section ~ section button.detail {
 <section id="capitalization" class="row halves gutter wide">
 	<button class="detail">
 		<header>
-			<h3>Capitalization: <small>not always a capital idea</small></h3>
+			<h2>Capitalization: <small>not always a capital idea</small></h2>
 		</header>
 	</button>
 	<div class="details">
@@ -140,7 +137,7 @@ main section ~ section button.detail {
 
 	<button class="detail">
 		<header>
-			<h3>Punctuation: <small>deliver the intended meaning</small></h3>
+			<h2>Punctuation: <small>deliver the intended meaning</small></h2>
 		</header>
 	</button>
 	<div class="details">
@@ -162,15 +159,17 @@ main section ~ section button.detail {
 
 </section>
 
-<section id="spelling" class="row halves gutter wide">
+<section id="spelling" class="row single">
 
 	<button class="detail">
 		<header>
-			<h3>Spelling: <small>it's good grooming</small></h3>
+			<h2>Spelling: <small>it's good grooming</small></h2>
 		</header>
 	</button>
 	<div class="details">
 	<article class="padless">
+		<div class="column one row halves gutter wide">
+		
 		<p class="guttered wide">Consult <a href="http://www.merriam-webster.com/"><em>Merriam-Webster's Collegiate Dictionary</em></a> for spelling and word breaks. American spellings are preferred over British.</p>
 		<div class="column one">
 			<?php 
@@ -184,6 +183,8 @@ main section ~ section button.detail {
 			if( ! empty( $column ) ) { echo $column; }
 			?>
 		</div>
+		
+		</div>
 	</article>
 	</div><!--/.details-->
 
@@ -192,7 +193,7 @@ main section ~ section button.detail {
 <section id="numbers" class="row halves gutter wide">
 	<button class="detail">
 		<header>
-			<h3>Numbers: <small>a simple equation for readability</small></h3>
+			<h2>Numbers: <small>a simple equation for readability</small></h2>
 		</header>
 	</button>
 	<div class="details">

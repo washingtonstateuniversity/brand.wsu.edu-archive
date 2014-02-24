@@ -8,9 +8,8 @@
 <style>
 
 main section:first-of-type .column.one {
-	padding-top: 130px;
+	padding-top: 100px;
 	}
-
 section > article {
 	padding: 0px;
 	}
@@ -18,15 +17,8 @@ section > article > header {
 	font-size: 1.5em;
 	padding: 15px 30px 0px 30px;
 	}
-
 #our-voice {
 	padding-bottom: 20px;
-	}
-#brand-drivers {
-	background-color: #f4f4f5;
-	}
-#best-practices {
-	background-color: #eaeaeb;
 	}
 button.detail {
 	height: auto;
@@ -46,6 +38,9 @@ main section button.detail {
 .size-lt-large main section button.detail {
 	background-position: 90% center;
 	}
+.detailed button.detail {
+	padding-bottom: 1em;
+	}
 
 </style>
 
@@ -53,7 +48,7 @@ main section button.detail {
 
 <?php get_template_part('parts/headers'); ?>
 
-<section id="our-voice" class="row sidebar gutter wide">
+<section id="our-voice" class="row sidebar gutter wide alternate">
 
 	<div class="column one">
 	<?php while ( have_posts() ) : the_post(); ?>
@@ -101,7 +96,7 @@ main section button.detail {
 
 </section>
 
-<section id="best-practices" class="row sidebar gutter wide">
+<section id="best-practices" class="row sidebar gutter wide alternate">
 	<button class="detail unbound recto guttered">
 		<header>
 			<h2>best practices</h2>

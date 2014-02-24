@@ -6,44 +6,49 @@
 
 <style>
 main {
-	padding-bottom: 200px;
+	padding-bottom: 400px;
+	background: white;
+	xbackground: #EFF0F1;
 	}
 
 main section figure {
 	background-repeat: no-repeat;
 	height: 400px;
 	}
-main section ~ section figure {
-	margin-top: 20px;
+section {
+	background: url('/wp-content/themes/brand/images/elements/main-background-lightest.png') left top repeat-y;
+	}
+section figure {
+	background-attachment: fixed;
+	}
+
+
+.size-small main section figure {
+	height: 300px;
+	background-repeat: none;
+	background-position: center top;
+	background-size: auto 350px;
+	xbackground-attachment: scroll;
 	}
 .size-gt-small main section figure {
-	background-position: left top;
+	height: 300px;
+	background-position: center top;
 	background-size: 100% auto;
 	}
-.size-small main section figure {
-	background-repeat: none;
-	background-position: left top;
-	background-size: auto 400px;
+.size-gt-medium main section figure {
+	height: 400px;
+	background-position: center top;
+	background-size: 100% auto;
 	}
-xxmain .single .column article {
-	max-width: 732px;
-	xwidth: 732px;
+.size-gt-large main section figure {
+	height: 600px;
+	background-position: center top;
+	background-size: 100% auto;
 	}
-figcaption {
-	font-size: 64px;
-	font-weight: 700;
-	margin: 0px !important;
-	padding: 0px !important;
-	line-height: 1em;
-	position: absolute;
-	left: 30px;
-	bottom: -8px;
-	color: white;
-	}
+
 main section article ul:first-of-type {
 	padding-top: 30px;
 	}
-
 main section article ul li {
 	list-style: none;
 	font-size: 2em;
@@ -51,6 +56,13 @@ main section article ul li {
 	color: #a6adb0;
 	padding: 0px;
 	margin: 0px;
+	background: none;
+	}
+article ul:first-of-type {
+	margin-left: 4em;
+	}
+.size-small article ul:first-of-type {
+	margin-left: 2em;
 	}
 .size-gt-small #we-are article ul { margin-left: 220px; }
 .size-gt-small #we-believe article ul { text-align: right; }
@@ -62,6 +74,7 @@ main section article ul li {
 	padding-bottom: 40px;
 	}
 
+
 button.detail::after {
 	content: "more";
 	display: inline-block;
@@ -69,6 +82,13 @@ button.detail::after {
 .detailed button.detail::after {
 	content: "";
 	}
+	
+.size-gt-medium #we-offer ul li:nth-of-type(1) {  }
+.size-gt-medium #we-offer ul li:nth-of-type(2) { padding-left: 2em; }
+.size-gt-medium #we-offer ul li:nth-of-type(3) { padding-left: 4em; }
+.size-gt-medium #we-offer ul li:nth-of-type(4) { padding-left: 6em; }
+
+
 
 </style>
 
@@ -77,7 +97,7 @@ button.detail::after {
 <section id="we-are" class="row single">
 
 <figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/cougcheek.jpg');">
-	<figcaption>we are</figcaption>
+	<figcaption><big>we are</big></figcaption>
 </figure>
 
 <div class="column one row sidebar gutter wide">
@@ -115,8 +135,8 @@ button.detail::after {
 
 <section id="we-believe" class="row single">
 
-<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/eyeshield.jpg');">
-	<figcaption>we believe in</figcaption>
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/protection.jpg');">
+	<figcaption><big>we believe in</big></figcaption>
 </figure>
 
 <div class="column one row sidebar">
@@ -150,8 +170,8 @@ button.detail::after {
 
 <section id="we-emphasize" class="row single wide">
 
-<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/hoodie.jpg');">
-	<figcaption>we emphasize</figcaption>
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/shrooms.jpg');">
+	<figcaption><big>we emphasize</big></figcaption>
 </figure>
 
 <div class="column one row halves gutter wide">
@@ -170,7 +190,7 @@ button.detail::after {
 	<button class="detail"></button>
 	<div class="details">
 		
-		<hr>
+		<hr class="short">
 	
 		<div class="column one">
 			<?php 
@@ -195,8 +215,8 @@ button.detail::after {
 
 <section id="we-offer" class="row single">
 
-<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/finally.jpg');">
-	<figcaption>we offer</figcaption>
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/gradjump.jpg');">
+	<figcaption><big>we offer</big></figcaption>
 </figure>
 
 <div class="column one row sidebar">
@@ -230,8 +250,8 @@ button.detail::after {
 
 <section id="we-promise" class="row single unbound recto">
 
-<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/orange.jpg');">
-	<figcaption>we promise</figcaption>
+<figure style="background-image: url('/wp-content/themes/brand/images/pages/brand/foreground.jpg');">
+	<figcaption><big>we promise</big></figcaption>
 </figure>
 
 <div class="column one">

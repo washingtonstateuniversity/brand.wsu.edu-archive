@@ -8,7 +8,7 @@
 
 
 #wsu-signatures center img {
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
 	}
@@ -21,9 +21,9 @@ img.wsu-signature-vertical { width: 264px; }
 section:nth-of-type(even) {
 	background-color: #EFF0F1;
 	}
-section {
-	padding-top: 50px;
-	padding-bottom: 25px;
+div.details .column {
+	xpadding-top: 50px;
+	padding-bottom: 40px;
 	}
 .detailed button.detail {
 	margin-bottom: 0px;
@@ -40,7 +40,7 @@ section {
 	<div class="column one row halves gutter wide">
 	
 		
-		<center><img src="/wp-content/themes/brand/images/pages/logos/wsu-signature-default.svg" class="wsu-signature-default"></center>
+		<center style="margin-top: 100px;"><img src="/wp-content/themes/brand/images/pages/logos/wsu-signature-default.svg" class="wsu-signature-default"></center>
 		<center><img src="/wp-content/themes/brand/images/pages/logos/wsu-signature-horizontal.svg" class="wsu-signature-horizontal"></center>
 		<center><img src="/wp-content/themes/brand/images/pages/logos/wsu-signature-vertical.svg" class="wsu-signature-vertical"></center>
 		
@@ -51,9 +51,9 @@ section {
 			</header>
 		</button>
 		
-		<article class="padless">
-		
 		<div class="details">
+		
+		<article class="padless">
 			<hr>
 			<div class="column one">
 				<?php 
@@ -88,7 +88,7 @@ section {
 				?>
 			</div>
 			<div class="column six">
-				<img src="/wp-content/themes/brand/images/pages/logos/clearspace.png">
+				<img src="/wp-content/themes/brand/images/pages/logos/figures/clearspace.png" class="max-width">
 			</div>
 			<hr>
 			<div id="clear-space" class="column seven">
@@ -104,13 +104,10 @@ section {
 				?>
 			</div>
 			
+		</article>
+			
 		</div><!--/.details-->
 
-		
-		</article>
-		
-
-		
 	</div>
 	
 </section>
@@ -129,22 +126,22 @@ section {
 
 	<div class="row halves primary-sigs">
 	
-		<center class="column one"><img src="/wp-content/themes/brand/images/pages/logos/wsu-spokane-signature-primary.svg"></center>
-		<center class="column two"><img src="/wp-content/themes/brand/images/pages/logos/wsu-globalcampus-signature-primary.svg"></center>
+		<center class="column one"><img src="/wp-content/themes/brand/images/pages/logos/campus/wsu-spokane-signature-primary.svg"></center>
+		<center class="column two"><img src="/wp-content/themes/brand/images/pages/logos/campus/wsu-globalcampus-signature-primary.svg"></center>
 	
 	</div>
 	
 	<div class="row single horizontal-sigs">
 	
-		<center class="column one"><img src="/wp-content/themes/brand/images/pages/logos/wsu-vancouver-signature-horizontal.svg"></center>
-		<center class="column two"><img src="/wp-content/themes/brand/images/pages/logos/wsu-extension-signature-horizontal.svg"></center>
+		<center class="column one"><img src="/wp-content/themes/brand/images/pages/logos/campus/wsu-vancouver-signature-horizontal.svg"></center>
+		<center class="column two"><img src="/wp-content/themes/brand/images/pages/logos/campus/wsu-extension-signature-horizontal.svg"></center>
 	
 	</div>
 	
 	<div class="row halves vertical-sigs">
 	
-		<center class="column one"><img src="/wp-content/themes/brand/images/pages/logos/wsu-healthsciences-signature-vertical.svg"></center>
-		<center class="column two"><img src="/wp-content/themes/brand/images/pages/logos/wsu-tricities-signature-vertical.svg"></center>
+		<center class="column one"><img src="/wp-content/themes/brand/images/pages/logos/campus/wsu-healthsciences-signature-vertical.svg"></center>
+		<center class="column two"><img src="/wp-content/themes/brand/images/pages/logos/campus/wsu-tricities-signature-vertical.svg"></center>
 	
 	</div>
 	
@@ -157,8 +154,9 @@ section {
 			</header>
 		</button>
 		
-		<article class="padless">
 		<div class="details">
+		
+		<article class="padless">
 		
 			<hr>
 			
@@ -175,24 +173,60 @@ section {
 				?>
 			</div>
 			
+		</article>
+			
 		</div><!--/.details-->
 
-		
-		</article>
-				
 	</div>
 	
 </section>
 
 <section id="unit-signatures" class="row single">
 
+	<style>
+		.unit-sigs img { width: 320px; margin-bottom: 0px; }
+		#unit-signatures .unit-sigs div.column { height: 130px; }
+	</style>
+
 	<h2 class="marginalized">unit</h2>
 	
-	<div class="column one row halves gutter wide">
+	<div class="column one row halves gutter wide unit-sigs">
 	
-		<center>
-		<img src="/wp-content/themes/brand/images/pages/logos/units.png" class="wsu-units">
-		</center>
+		<div class="column one">
+			<img src="/wp-content/themes/brand/images/pages/logos/unit/wsu-college-cahnrs-unit.svg" class="max-width centered absolutely">
+		</div>
+		
+		<div class="column two">
+			<img src="/wp-content/themes/brand/images/pages/logos/unit/wsu-college-education.svg" class="max-width centered absolutely">
+		</div>
+				
+		<div class="column three">
+			<img src="/wp-content/themes/brand/images/pages/logos/unit/wsu-office-chancellor.svg" class="max-width centered absolutely">
+		</div>
+		
+		<div class="column four">
+			<img src="/wp-content/themes/brand/images/pages/logos/unit/wsu-department-ccgrs.svg" class="max-width centered absolutely">
+		</div>
+		
+		<div class="column five">
+			<img src="/wp-content/themes/brand/images/pages/logos/unit/wsu-office-studentdevelopment.svg" class="max-width centered absolutely">
+		</div>
+		
+		<div class="column six">
+			<img src="/wp-content/themes/brand/images/pages/logos/unit/wsu-unit-honorscollege.svg" class="max-width centered absolutely">
+		</div>
+		
+		<div class="column seven">
+			<img src="/wp-content/themes/brand/images/pages/logos/unit/wsu-college-murrow.svg" class="max-width centered absolutely">
+		</div>
+		
+		<div class="column eight">
+			<img src="/wp-content/themes/brand/images/pages/logos/unit/wsu-unit-viticultureenology.svg" class="max-width centered absolutely">
+		</div>
+	
+	</div>
+	
+	<div class="column one row halves gutter wide">
 		
 		<button class="detail">
 			<header>
@@ -200,9 +234,9 @@ section {
 			</header>
 		</button>
 		
-		<article class="padless">
-		
 		<div class="details">
+		
+		<article class="padless">
 		
 			<hr>
 			
@@ -219,23 +253,68 @@ section {
 				?>
 			</div>
 			
+		</article>
+			
 		</div><!--/.details-->
 
-		</article>
-
-	</div>
+	</div><!--/.column.row.halves-->
 	
 </section>
 
 <section id="abbreviated-signatures" class="row single">
 
+	<style>
+		#abbreviated-signatures img { margin-bottom: 60px; }
+		#abbreviated-signatures .abbreviated-vertical img { margin-bottom: 0px; }
+	</style>
+
 	<h2 class="marginalized">abbreviated campus and unit</h2>
 	
 	<div class="column one row halves gutter wide">
 	
-		<center>
-		<img src="/wp-content/themes/brand/images/pages/logos/abbreviated.png" class="wsu-units">
-		</center>
+		<div class="column one">
+			<img src="/wp-content/themes/brand/images/pages/logos/abbreviated/wsu-tricities-abbreviated-horizontal.svg" style="height: 50px;" class="max-width">
+		</div>
+		
+		<div class="column two">
+			<img src="/wp-content/themes/brand/images/pages/logos/abbreviated/wsu-education-abbreviated-horizontal.svg" style="height: 50px;" class="max-width">
+		</div>
+	
+	</div>
+	
+	<div class="column one row single gutter wide">
+	
+		<div class="column one">
+			<img src="/wp-content/themes/brand/images/pages/logos/abbreviated/wsu-psychology-abbreviated-horizontal.svg" style="height: 50px;" class="max-width">
+		</div>
+	
+	</div>
+	
+	<div class="column one row halves gutter wide">
+	
+		<div class="column one">
+			<img src="/wp-content/themes/brand/images/pages/logos/abbreviated/wsu-engineeringarchitecture-abbreviated-horizontal.svg" style="height: 100px;">
+		</div>
+		
+		<div class="column two">
+			<img src="/wp-content/themes/brand/images/pages/logos/abbreviated/wsu-viticulture-abbreviated-horizontal.svg" style="height: 100px;">
+		</div>
+	
+	</div>
+	
+	<div class="column one row halves gutter wide abbreviated-vertical">
+	
+		<div class="column one">
+			<img src="/wp-content/themes/brand/images/pages/logos/abbreviated/wsu-vancouver-abbreviated-vertical.svg">
+		</div>
+		
+		<div class="column two">
+			<img src="/wp-content/themes/brand/images/pages/logos/abbreviated/wsu-honorscollege-abbreviated-vertical.svg">
+		</div>
+	
+	</div>
+	
+	<div class="column one row halves gutter wide">
 		
 		<button class="detail">
 			<header>
@@ -273,7 +352,7 @@ section {
 
 	<style>
 	
-		#shield-spirit-marks .halves .column { background-size: 50%; background-repeat: no-repeat; background-position: center center; height: 396px; }
+		#shield-spirit-marks .halves figure .column { background-size: 50%; background-repeat: no-repeat; background-position: center center; height: 396px; }
 	
 	</style>
 
@@ -281,19 +360,18 @@ section {
 	
 	<div class="column one row halves gutter wide">
 
-		<div class="row halves">
-			<center class="column one" style="background-image: url(/wp-content/themes/brand/images/pages/logos/wsu-shield-mark.svg)"></center>
+		<article class="padless">
+		
+		<figure>
+			<center class="column one" style="background-image: url(/wp-content/themes/brand/images/pages/logos/wsu-shield-mark.svg); background-size: 45%;"></center>
 			<center class="column two" style="background-image: url(/wp-content/themes/brand/images/pages/logos/wsu-cougarhead.png)"></center>
-		</div>
+		</figure>
 		
 		<button class="detail">
 			<header>
 				<h3> </h3>
 			</header>
 		</button>
-		
-		<article class="padless">
-		
 		<div class="details">
 		
 			<hr>
@@ -325,13 +403,13 @@ section {
 	
 	<div class="row halves">
 		<center class="column one">
-			<img src="/wp-content/themes/brand/images/pages/logos/wsu-central-social-badge.png" style="width: 150px;">
-			<h3>central channels</h3>
+			<img src="/wp-content/themes/brand/images/pages/logos/social/wsu-central-social-badge.png" style="width: 150px;">
+			<h3 class="marginalized-top">central channels</h3>
 			<p>WSU Pullman<br> WSU Spokane<br> WSU Tri-Cities<br> WSU Vancouver<br> WSU Global Campus<br> Health Sciences<br> WSU Extension</p>
 		</center>
 		<center class="column two">
-			<img src="/wp-content/themes/brand/images/pages/logos/wsu-unit-social-badge.png" style="width: 150px;">
-			<h3>other channels</h3>
+			<img src="/wp-content/themes/brand/images/pages/logos/social/wsu-unit-social-badge.png" style="width: 150px;">
+			<h3 class="marginalized-top">other channels</h3>
 			<p>University units,<br> campaigns,<br> or individuals<br> representing WSU<br> in an official capacity</p>
 		</center>
 	</div>
@@ -375,7 +453,7 @@ section {
 	<h2 class="marginalized">seal</h2>
 	
 	<center class="column one">
-		<img src="/wp-content/themes/brand/images/pages/logos/wsu-seal.png" style="width: 150px;">
+		<img src="/wp-content/themes/brand/images/pages/logos/wsu-seal.png" style="width: 178px;">
 	</center>
 	
 	<div class="column one row sidebar gutter wide">

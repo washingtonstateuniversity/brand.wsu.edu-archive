@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 	$('button.detail').click( function() { $(this).parents('section').toggleClass('detailed'); });
 	
-	$('dl dt').click( function () { $(this).next('dd').slideToggle().parents('dl').toggleClass('disclosed'); })
+	$('body[class*="-90"] dl dt').click( function () { $(this).next('dd').toggle().parents('dl').toggleClass('disclosed'); })
 	
 
 });

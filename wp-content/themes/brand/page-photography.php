@@ -13,14 +13,15 @@ main section figure {
 	background-repeat: no-repeat;
 	height: 400px;
 	}
-main section ~ section figure {
+xmain section ~ section figure {
 	margin-top: 20px;
 	}
 
 .photo .column.two {
+	color: #a6adb0;
 	font-size: 1.3em;
-	line-height: 1.2em;
-	padding: 2em 2em 2em 4em;
+	line-height: 1.3em;
+	min-height: 25px;
 	}
 .photo .column.two ul li {
 	padding-bottom: .1em;
@@ -29,6 +30,7 @@ main section ~ section figure {
 .size-gt-small main section figure {
 	background-position: center center;
 	background-size: 100% auto;
+	position: relative !important;
 	}
 .size-small main section figure {
 	background-repeat: none;
@@ -36,19 +38,27 @@ main section ~ section figure {
 	background-size: auto 500px;
 	}
 figcaption {
-	font-size: 64px;
-	font-weight: 700;
-	margin: 0px !important;
+	
+	}
+figcaption big {
+	font-size: 100px !important;
 	padding: 0px !important;
+	margin: 0px !important;
 	line-height: 1em;
-	position: absolute;
 	left: 30px;
-	bottom: -8px;
+	bottom: -42px;
 	color: rgba(255,255,255,0.7);
 	}
 
 #library {
 	background-color: #f4f4f5;
+	}
+	
+.column.two.marginalize {
+	padding: 2em 2em 6em 0em !important;
+	}
+.size-lt-medium .column.two.marginalize {
+	padding: 2em !important;
 	}
 
 </style>
@@ -59,13 +69,13 @@ figcaption {
 
 	<article class="padless">
 
-	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/esteemed-1.jpg');">
-		<figcaption>esteemed</figcaption>
+	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/esteemed-3.jpg');">
+		<figcaption><big>esteemed</big></figcaption>
 	</figure>
 	
 	<div class="column one">&nbsp;</div>
 	
-	<div class="column two gutter wide">
+	<div class="column two marginalize">
 	
 		<header class="hidden">esteemed</header>
 		<?php  $column = get_post_meta( get_the_ID(), 'section-1-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
@@ -80,13 +90,13 @@ figcaption {
 
 	<article class="padless">
 
-	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/current-1.jpg');">
-		<figcaption>current</figcaption>
+	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/current-3.jpg');">
+		<figcaption><big>current</big></figcaption>
 	</figure>
 	
 	<div class="column one">&nbsp;</div>
 	
-	<div class="column two gutter wide">
+	<div class="column two marginalize">
 	
 		<header class="hidden">current</header>
 		<?php  $column = get_post_meta( get_the_ID(), 'section-2-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
@@ -101,13 +111,13 @@ figcaption {
 
 	<article class="padless">
 
-	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/friendly-2.jpg');">
-		<figcaption>friendly</figcaption>
+	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/friendly-3.jpg');">
+		<figcaption><big>friendly</big></figcaption>
 	</figure>
 	
 	<div class="column one">&nbsp;</div>
 	
-	<div class="column two gutter wide">
+	<div class="column two marginalize">
 	
 		<header class="hidden">friendly</header>
 		<?php  $column = get_post_meta( get_the_ID(), 'section-3-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
@@ -122,13 +132,13 @@ figcaption {
 
 	<article class="padless">
 
-	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/impactful-1.jpg');">
-		<figcaption>impactful</figcaption>
+	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/impactful-3.jpg');">
+		<figcaption><big>impactful</big></figcaption>
 	</figure>
 	
 	<div class="column one">&nbsp;</div>
 	
-	<div class="column two gutter wide">
+	<div class="column two marginalize">
 	
 		<header class="hidden">impactful</header>
 		<?php  $column = get_post_meta( get_the_ID(), 'section-4-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
@@ -143,13 +153,13 @@ figcaption {
 
 	<article class="padless">
 
-	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/enthusiastic-2.jpg');">
-		<figcaption>enthusiastic</figcaption>
+	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/enthusiastic-3.jpg');">
+		<figcaption><big>enthusiastic</big></figcaption>
 	</figure>
 	
 	<div class="column one">&nbsp;</div>
 	
-	<div class="column two gutter wide">
+	<div class="column two marginalize">
 	
 		<header class="hidden">enthusiastic</header>
 		<?php  $column = get_post_meta( get_the_ID(), 'section-5-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
@@ -164,13 +174,13 @@ figcaption {
 
 	<article class="padless">
 
-	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/handson-1.jpg');">
-		<figcaption>hands-on</figcaption>
+	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/handson-3.jpg');">
+		<figcaption><big>hands-on</big></figcaption>
 	</figure>
 	
 	<div class="column one">&nbsp;</div>
 	
-	<div class="column two gutter wide">
+	<div class="column two marginalize">
 	
 		<header class="hidden">hands-on</header>
 		<?php  $column = get_post_meta( get_the_ID(), 'section-6-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
@@ -186,13 +196,13 @@ figcaption {
 
 	<article class="padless">
 
-	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/creative-1.jpg');">
-		<figcaption>creative</figcaption>
+	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/creative-3.jpg');">
+		<figcaption><big>creative</big></figcaption>
 	</figure>
 	
 	<div class="column one">&nbsp;</div>
 		
-	<div class="column two gutter wide">
+	<div class="column two marginalize">
 	
 		<header class="hidden">hands-on</header>
 		<?php  $column = get_post_meta( get_the_ID(), 'section-7-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
@@ -203,7 +213,7 @@ figcaption {
 
 </section>
 
-<section id="library" class="row halves marginalize gutter wide equalize">
+<section id="library" class="row sidebar equalize">
 
 	<style>
 		dl.downloads { height: 50px; }

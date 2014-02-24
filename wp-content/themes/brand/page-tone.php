@@ -6,20 +6,25 @@
 
 <style>
 
+.descriptors {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
 .descriptors dl {
 	padding: 15px 0px;
 	}
 .descriptors dl dt {
 	color: #ecedee;
 	font-size: 6em;
+	letter-spacing: -5px;
 	width: 100%;
 	text-align: center;
 	display: block;
-	padding: 15px 0px;
+	padding: 10px 0px;
 	font-weight: 600;
 	}
 .descriptors dl dd {
-	margin-top: -30px;
+	margin-top: -25px;
 	color: #981e32;
 	font-style: italic;
 	font-size: 1.7em;
@@ -28,11 +33,14 @@
 	width: 100%;
 	text-align: center;
 	}
+.size-lt-medium .descriptors dl dd {
+	font-size: 1.3em;
+	}
 	
 .size-gt-small .descriptors dl:nth-of-type(1) dt { text-indent: -160px; }
-.size-gt-small .descriptors dl:nth-of-type(2) dt { text-indent: 380px; }
+.size-gt-small .descriptors dl:nth-of-type(2) dt { text-indent: 310px; }
 .size-gt-small .descriptors dl:nth-of-type(3) dt { text-indent: -60px; }
-.size-gt-small .descriptors dl:nth-of-type(4) dt { text-indent: 110px; }
+.size-gt-small .descriptors dl:nth-of-type(4) dt { text-indent: 85px; }
 
 .size-gt-small .descriptors dl:nth-of-type(1) dd { text-indent: 380px; }
 .size-gt-small .descriptors dl:nth-of-type(2) dd { text-indent: -160px; }
@@ -47,12 +55,6 @@ ol li {
 	
 #applying {
 	background: #f4f4f5;
-	}
-#applying article {
-	padding-bottom: 100px;
-	}
-#applying .column.one {
-	max-width: 528px;
 	}
 .size-gt-small .row.sidebar .column.one {
 	margin-left: 132px;

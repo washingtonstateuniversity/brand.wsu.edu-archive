@@ -18,28 +18,32 @@ body {
 	}
 main {
 	background: 
-		url('/wp-content/themes/brand/images/elements/main-background-bottom.png') left bottom no-repeat,
-		url('/wp-content/themes/brand/images/elements/main-background.png') left top repeat-y;
+		url('/wp-content/themes/brand/images/elements/main-background-bottom-lightest.png') left bottom no-repeat,
+		url('/wp-content/themes/brand/images/elements/main-background-lightest.png') left top repeat-y;
 	padding-bottom: 150px;
 	}
 main p {
 	line-height: 1.6em;
 	}
 	
-a, a:visited:hover { color: #C69214; }
+a, a:link, a:visited:hover { color: #C69214; color: #ADA400; }
 
-a:visited {	color: #77580C;	}
-a:hover { color: #77580C; }
+a:visited {	color: #77580C; color: #8F7E35;	}
+a:hover { color: #77580C; color: #8F7E35; }
+
+main ul li {
+	list-style: none;
+	background-image: url('/wp-content/themes/brand/images/elements/bulletpoint.png');
+	background-repeat: no-repeat;
+	background-position: 9px .7em;
+	padding-left: 20px;
+	margin: 0;
+	}
 
 .halves .column.one > article
 .halves article .column:nth-of-type(odd)
 .halves article div .column:nth-of-type(odd)  {
 	padding-right: 15px;
-	xtext-align: justify;
-	}
-xx.halves .column.two > article,
-xx.halves article .column:nth-of-type(even) {
-	padding-left: 15px;
 	}
 section.alternate {
 	background-color: #EFF0F1;
@@ -53,9 +57,10 @@ section.indent.single .column > article:first-of-type,
 section.indent.margin .column > article:first-of-type {
 	padding: 0px;
 	}
-article.intro {
-	font-size: 1.2em;
-	line-height: 1.6em;
+article.intro,
+p.intro {
+	font-size: 1.1em;
+	line-height: 1.5em;
 	}
 figure {
 	width: 100%;
@@ -80,46 +85,51 @@ button:hover {
 	
 /* Details */
 div.details {
-	xxborder-top: 1px #B5BABE solid;
 	display: none;
-	padding-top: 20px;
 	padding-bottom: 20px;
+	}
+main .details hr:first-child {
+	margin-bottom: 3em;
 	}
 .detailed .details {
 	display: block;
 	}
-x.column .column {
-	padding-bottom: 15px;
-	}
-x.column.thirds .column.two {
-	padding-left: 15px;
-	}
 button.detail {
 	color: #8F7E35;
+	color: #ADA400;
 	border: none;
 	background: transparent;
 	width: 100%;
 	text-align: right;
 	position: relative;
-	xheight: 40px;
 	overflow: visible;
-	padding: 15px 0px;
+	font-weight: normal;
+	padding: 2em 0px;
 	padding-right: 25px;
-	background: url('/wp-content/themes/brand/images/elements/plus-green.svg') right center no-repeat;
+	background: url('/wp-content/themes/brand/images/elements/plus-green-er.svg') right center no-repeat;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	}
+button.detail::before,
+button.detail:hover {
+	background-image: url('/wp-content/themes/brand/images/elements/plus-green.svg');
+	}
 .detailed button.detail {
-	background-image: url('/wp-content/themes/brand/images/elements/x-green.svg');
+	background-image: url('/wp-content/themes/brand/images/elements/x-green-er.svg');
+	}
+.size-lt-xlarge button.detail {
+	border-right: 2em transparent solid;
 	}
 
 button:focus {
 	outline: none;
 	}
 
-:not(p) big {
+article :not(p) big {
 	font-size: 1.2em;
 	line-height: 1.6em;
+	padding-bottom: 1.3em;
+	display: block;
 	}
 
 main > header {
@@ -133,7 +143,7 @@ main > header hgroup {
 	bottom: 0px;
 	position: absolute;
 	left: 0;
-	padding-left: 30px;
+	padding-left: 3.9em;
 	width: 2000px;
 	background: #5e6a71;
 	display: block;
@@ -152,23 +162,30 @@ main > header div:last-of-type {
 	text-transform: lowercase;
 	font-size: 5em;
 	line-height: 1em;
+	letter-spacing: -5px;
 	}
 main article { 
-	padding: 0px 30px;
+	padding: 0px 2em;
+	}
+.page-template-default .sidebar article {
+	padding: 0em;
+	}
+.page-template-default .sidebar .column {
+	padding: 4em;
 	}
 main h2 {
 	color: #568a90;
+	text-transform: lowercase;
 	}
-
-main h3, h3 small {
+main h2 small {
+	color: #5e6a71;
+	font-size: 1em;
+	}
+main h3 {
 	color: #568a90;
 	font-size: 1.3em;
 	line-height: 1.4em;
-	xtext-transform: lowercase;
-	}
-main h3 small {
-	color: #5e6a71;
-	font-size: 1em;
+	text-transform: lowercase;
 	}
 main h4 {
 	color: #4F868E;
@@ -176,6 +193,11 @@ main h4 {
 	line-height: 1.3em;
 	padding-bottom: .3em;
 	padding-top: .6em;
+	}
+main h2:not(.not-lowercase),
+main h3:not(.not-lowercase),
+main h4:not(.not-lowercase) {
+	text-transform: lowercase;
 	}
 main h5 {
 	font-size: 1.1em;
@@ -194,56 +216,40 @@ blockquote {
 	color: #8D959A;
 	margin-left: 30px;
 	}
-xx.column :not(p) big {
-	font-size: 1.8;
-	line-height: 2em;
-	font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-	font-style: italic;
-	}
+
 .intro big,
 p big {
 	color: #4F868E;
 	font-size: 1.6em;
 	font-weight: bold;
+	font-weight: normal
 	line-height: 1em;
 	}
 
 
 .column aside.striped {
 	text-align: center;
-	padding: 30px 80px;
+	padding: 50px 60px;
 	font-style: italic;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	line-height: 2em;
 	}
-.column aside.striped {
+.column aside.striped,
+samp {
 	font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
 	}
 .column aside.striped strong {
 	display: block;
 	color: #981e32;
 	font-weight: 700;
+	font-size: .9em;
 	font-style: normal;
 	font-family: "Lucida Grande","Lucida Sans Unicode", "Arial", sans-serif;
-	}
-article.columnar {
-	padding: 0px;
-	}
-article.columnar header {
-	padding: 0px 30px;
-	}
-.halves article.columnar .column:nth-of-type(odd) {
-	padding: 15px 15px 15px 30px;
-	}
-.halves article.columnar .column:nth-of-type(even) {
-	padding: 15px 30px 15px 15px;
-	}
-.size-lt-large article.columnar .column {
-	padding: 30px;
 	}
 
 samp {
 	color: #8F7E35;
+	color: #B67233;
 	}
 /* Why isn't this working? */
 main small, main p small {
@@ -255,7 +261,8 @@ dl.downloads {
 	}
 dl.downloads dt {
 	color: #4F868E;
-	font-size: 1.2em;
+	font-weight: normal;
+	font-size: 1em;
 	width: 100%;
 	text-align: center;
 	display: inline-block;
@@ -302,23 +309,19 @@ main .marginalized .column hr {
 	}
 
 main .wide hr {
+	margin-top: 0;
 	margin-left: 4em;
 	margin-right: 4em;
-	}
-xmain hr.tall {
-	margin-top: 2em;
-	margin-bottom: 2em;
-	}
-	
+	}	
 article .unbound.recto {
-	margin-left: -30px;
+	margin-left: -4em;
 	}
-.sidebar .column.one .unbound.recto .rebound {
+xx.sidebar .column.one .unbound.recto .rebound {
 	max-width: 468px;
 	}
 article .unbound.recto .rebound {
-	padding: 20px 30px;
-	margin: 20px 0px;
+	padding: 4em;
+	margin: 3em 0px;
 	}
 
 .em-15 { font-size: 1.5em; }
@@ -327,6 +330,35 @@ article .unbound.recto .rebound {
 .em-3 { font-size: 3em; }
 .em-35 { font-size: 3.5em; }
 
+/* Big Captions */
+figcaption big {
+	font-size: 100px;
+	letter-spacing: -7px;
+	font-weight: bold;
+	margin: 0px !important;
+	padding: 0px !important;
+	line-height: 1em;
+	position: absolute;
+	left: 30px;
+	bottom: -13px;
+	color: white;
+	}
+.size-lt-medium figcaption big {
+	font-size: 64px;
+	letter-spacing: 0px;
+	line-height: 1em;
+	bottom: -8px;
+	}
+
+/* Adjustments */
+.size-lt-medium .marginalize.wide .column:nth-of-type(1n+1) {
+	padding: 2em;
+	}
+.size-lt-medium .gutter.wide .column:nth-of-type(1n+1) {
+	padding-left: 2em;
+	padding-right: 2em;
+	}
+
 /* Pages */
 
 
@@ -334,14 +366,14 @@ article .unbound.recto .rebound {
 	url('/wp-content/themes/brand/images/pages/print/brochures.png') 85% top no-repeat,
 	url('/wp-content/themes/brand/images/pages/print/pieces.png') 15px bottom no-repeat }
 .page-id-21 .size-lt-medium main section { background: url('/wp-content/themes/brand/images/pages/print/pieces.png') 15px bottom no-repeat }
-.page-id-21 article { padding-top: 150px; padding-bottom: 700px; }
+.page-id-21 main section .column.one { padding-top: 98px; padding-bottom: 700px; }
 .page-id-21 article ul li { padding-bottom: .2em; }
 
 .page-id-24 main section { background:	url('/wp-content/themes/brand/images/pages/misc/presentations.png') 65% -15px no-repeat; min-height: 800px; }
-.page-id-24 article { padding-top: 100px; }
+.page-id-24 main section .column.one { padding-top: 100px; }
 
 .page-id-27 main section { background:	url('/wp-content/themes/brand/images/pages/misc/schwag.png') 60% -15px no-repeat }
-.page-id-27 article { padding-top: 150px; }
+.page-id-27 main section .column.one { padding-top: 85px; min-height: 700px; }
 
 /* FAQ */
 .page-id-90 article {
@@ -353,13 +385,21 @@ body[class*="faq"] dl,
 	margin-left: -2em;
 	margin-right: -2em;
 	}
+body[class*="faq"] main dl h4,
+.page-id-90 main dl h4 {
+	min-height: 3em;
+	height: 3em;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0px;
+	}
 .page-id-90 dl:nth-of-type(odd) {
 	background-color: #EFF0F1;
 	background-color: #f4f4f5;
 	}
 body[class*="faq"] dl dt,
 .page-id-90 dl dt {
-	background: url('/wp-content/themes/brand/images/elements/plus-green.svg') 95% center no-repeat;
+	background: url('/wp-content/themes/brand/images/elements/plus-green-er.svg') 95% center no-repeat;
 	max-width: 792px;
 	padding-top: 1em;
 	padding-bottom: 1em;
@@ -368,7 +408,7 @@ body[class*="faq"] dl dt,
 	margin-left: 2em;
 	}
 .page-id-90 dl.disclosed dt {
-	background-image: url('/wp-content/themes/brand/images/elements/x-green.svg');
+	background-image: url('/wp-content/themes/brand/images/elements/x-green-er.svg');
 	}
 body[class*="faq"] dl dd,
 .page-id-90 dl dd {
@@ -382,13 +422,15 @@ body[class*="faq"] dl dd,
 	padding-right: 4em;
 	}
 	
-.page-id-101 article { padding-top: 150px; }
-.page-id-101 main section { background:	url('/wp-content/themes/brand/images/pages/misc/social.png') 85% -15px no-repeat }
+.page-id-101 main section .column.one { padding-top: 95px; }
+.page-id-101 main section { background:	url('/wp-content/themes/brand/images/pages/misc/social.png') 85% -55px no-repeat }
 	
-.page-id-103 .size-gt-small main section .column.two { background:	url('/wp-content/themes/brand/images/pages/video/emotion.png') 0 -15px no-repeat; min-height: 500px; }
-.page-id-103 .size-gt-small article { padding-top: 150px; }
+.page-id-103 .size-gt-small main section .column.two { background:	url('/wp-content/themes/brand/images/pages/video/emotion.png') 0 -5px no-repeat; min-height: 600px; }
+.page-id-103 .size-gt-small main section .column.one { padding-top: 97px; }
 
 .page-id-105 .size-gt-small .column.two { background:	url('/wp-content/themes/brand/images/pages/misc/sign.png') 0 -15px no-repeat; height: 600px; }
-.page-id-105 .size-gt-small .column { padding-top: 150px; }
+.page-id-105 .size-gt-small .column { padding-top: 97px; }
+
+.page-id-165 .size-gt-small .column { padding-top: 65px; }
 	
 	
