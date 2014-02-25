@@ -115,7 +115,9 @@ main > header {
 	left: 0;
 	height: 5em;
 	overflow: hidden;
-	background-color: transparent;
+	background-color: #5e6a71;
+	padding: 0px;
+	position: relative;
 	}
 main > header hgroup {
 	bottom: -5px;
