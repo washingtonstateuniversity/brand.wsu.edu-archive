@@ -33,7 +33,7 @@ main section h2 {
 	padding-right: 20px;
 	}
 #university h2 small {
-	font-size: 20px;
+	font-size: 14px;
 	letter-spacing: 0px;
 	display: block;
 	padding-right: 60px;
@@ -132,7 +132,7 @@ dl.downloads dd:only-of-type a {
 
 	<div class="column one">
 		
-		<h2>university <small>singatures  shield social media badges</small></h2>
+		<h2>university <small>signatures  shield social media badges</small></h2>
 		
 		<dl class="downloads">
 			<dd><a href="">university wide</a></dd>
