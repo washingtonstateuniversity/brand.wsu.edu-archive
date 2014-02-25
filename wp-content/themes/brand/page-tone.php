@@ -5,7 +5,12 @@
 </script>
 
 <style>
-
+main section:first-of-type .column.one {
+	padding-top: 0;
+	}
+#attributes .column.one {
+	padding-top: 0;
+	}
 .descriptors {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -83,7 +88,7 @@ ol li {
 </section>
 
 
-<section id="attributes" class="row sidebar">
+<section id="attributes" class="row sidebar marginalize gutter wide">
 	
 	
 	<div class="column one">
@@ -98,7 +103,7 @@ ol li {
 	
 </section>
 
-<section id="applying" class="row sidebar unbound recto">
+<section id="applying" class="row sidebar unbound recto marginalize gutter wide">
 	
 	
 	<div class="column one">

@@ -11,10 +11,8 @@ section.single header {
 	color: #EFF0F1;
 	font-size: 3em;
 	line-height: .8em;
-	padding-left: 30px;
-	}
-section.single {
-	
+	padding-left: 1.25em;
+	padding-top: 1em;
 	}
 section.single ol {
 	background: #EFF0F1;
@@ -28,7 +26,7 @@ section.single ol li::before {
 	color: #981e32;
 	font-size: 2em;
 	position: absolute;
-	left: 30px;
+	left: 20px;
 	display: block;
 	}
 section.single ol li:nth-of-type(1)::before { content: "1"; }
@@ -40,20 +38,16 @@ main section:first-of-type {
 	background: url('/wp-content/themes/brand/images/pages/standards/brand.png') 60% 0px no-repeat;
 	}
 
-main section:first-of-type .column.one article {
-	padding-top: 135px;
-	}
-
 </style>
 
 <main>
 
 <?php get_template_part('parts/headers'); ?>
 
-<section class="row sidebar">
+<section class="row sidebar gutter wide">
 
 	<div class="column one">
-	<article>
+	<article class="padless">
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-1-1', true );
 		if( ! empty( $column ) ) { echo $column; }
@@ -61,7 +55,7 @@ main section:first-of-type .column.one article {
 	</article>
 	</div>
 	<div class="column two">
-		<aside class="serif striped">
+		<aside class="serif striped padless">
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-1-2', true );
 		if( ! empty( $column ) ) { echo $column; }

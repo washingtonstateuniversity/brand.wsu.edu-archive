@@ -22,7 +22,6 @@ section:nth-of-type(even) {
 	background-color: #EFF0F1;
 	}
 div.details .column {
-	xpadding-top: 50px;
 	padding-bottom: 40px;
 	}
 .detailed button.detail {
@@ -31,7 +30,7 @@ div.details .column {
 
 </style>
 
-<main class="fill-window-height">
+<main class="spine-custom-page">
 
 <?php get_template_part('parts/headers'); ?>
 
@@ -453,7 +452,7 @@ div.details .column {
 	<h2 class="marginalized">seal</h2>
 	
 	<center class="column one">
-		<img src="/wp-content/themes/brand/images/pages/logos/wsu-seal.png" style="width: 178px;">
+		<img src="/wp-content/themes/brand/images/pages/logos/wsu-seal.png">
 	</center>
 	
 	<div class="column one row sidebar gutter wide">

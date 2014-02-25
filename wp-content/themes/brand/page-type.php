@@ -14,12 +14,24 @@
 	padding-top: 50px;
 	}
 
-#stones figure {
-	padding-left: 30px;
-	padding-top: 80px;
+.size-gt-small #stones figure {
+	xxpadding-left: 30px;
+	padding-bottom: 30px;
 	}
 .stonesans {
 	
+	}
+main h2 {
+	padding-bottom: 1em;
+	}
+#webfonts strong {
+	color: #4F868E;
+	}
+#webfonts p {
+	padding-bottom: 0;
+	}
+#webfonts h5 {
+	margin-top: 1em;
 	}
 
 </style>
@@ -35,7 +47,7 @@
 			<img src="/wp-content/themes/brand/images/pages/type/Aa.png" width="200px">
 		</figure>
 	</div>
-	<div class="column two eight-twelfths vertically-align">
+	<div class="column two eight-twelfths">
 		<figure>
 			<img src="/wp-content/themes/brand/images/pages/type/letters.png" style="margin: 40px 0px 0px 20px;">
 		</figure>
@@ -43,31 +55,39 @@
 
 </section>
 
-<section id="stones" class="row halves">
+<section id="stones" class="row single gutter wide">
 
 	<div class="column one">
 		<figure>
-			<h4>ITC Stone Serif</h4>
-			<img src="/wp-content/themes/brand/images/pages/type/stoneserif.png">
-		</figure>
-		<figure class="stonesans">
-			<h4>ITC Stone Stone</h4>
-			<img src="/wp-content/themes/brand/images/pages/type/stonesans.png">
-		</figure>
-	</div>
-	<div class="column two">
-		
-		<figure>
-			<h4>ITC Stone Sans II</h4>
-			<img src="/wp-content/themes/brand/images/pages/type/stonesansii.png">
+			<h2 class="not-lowercase">ITC Stone Serif</h2>
+			<img src="/wp-content/themes/brand/images/pages/type/stone-serif.png">
 		</figure>
 	</div>
 
 </section>
 
-<section class="row halves">
+<section id="stones" class="row halves gutter wide">
 
-<article class="columnar">
+	<div class="column one">
+		<figure>
+			<h2 class="not-lowercase">ITC Stone Serif</h2>
+			<img src="/wp-content/themes/brand/images/pages/type/stone-sans-col1.png">
+		</figure>
+	</div>
+	<div class="column two">
+		<figure>
+			<h2>&nbsp;</h2>
+			<img src="/wp-content/themes/brand/images/pages/type/stone-sans-col2.png">
+		</figure>
+	</div>
+
+</section>
+
+<section class="row halves marginalize gutter wide">
+
+<article class="padless">
+
+	<hr>
 
 	<div class="column one">
 		<?php 
@@ -86,11 +106,12 @@
 
 </section>
 
-<section class="row single">
+<section id="webfonts" class="row single gutter wide">
 
 	<div class="column one">
+		<h2>web</h2>
 		<?php 
-		$column = get_post_meta( get_the_ID(), 'section-4-1', true );
+		$column = get_post_meta( get_the_ID(), 'section-3-1', true );
 		if( ! empty( $column ) ) { echo $column; }
 		?>
 	</div>

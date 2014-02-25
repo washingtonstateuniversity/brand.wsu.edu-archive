@@ -4,7 +4,7 @@
 
 <?php get_template_part('parts/headers'); ?>
 
-<section class="row halves alternate marginalize wide">
+<section class="row sidebar alternate marginalize wide">
 	
 	<div class="column one">
 		
@@ -34,7 +34,7 @@
 			<p>The campaign brand standards are in effect until its projected conclusion in the fall 2015.</p>
 			<dl class="downloads">
 				<dt>campaign standards</dt>
-				<dd><a href="">PDF</a></dd>
+				<dd><a href="/wp-content/themes/brand/downloads/campaign/WSU-Campaign-Guide.pdf">PDF</a></dd>
 			</dl>
 		</div>
 	</article>

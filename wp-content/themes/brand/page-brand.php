@@ -6,31 +6,33 @@
 
 <style>
 main {
-	padding-bottom: 400px;
+	xxpadding-bottom: 400px;
 	background: white;
 	xbackground: #EFF0F1;
 	}
 
 main section figure {
-	background-repeat: no-repeat;
-	height: 400px;
+	
 	}
 section {
 	background: url('/wp-content/themes/brand/images/elements/main-background-lightest.png') left top repeat-y;
 	}
 section figure {
-	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 400px;
+	xxbackground-attachment: fixed;
+	background-position: center center;
+	background-size: 100% auto;
 	}
 
 
-.size-small main section figure {
-	height: 300px;
+ .size-lt-medium main section figure {
+	xheight: 400px;
 	background-repeat: none;
 	background-position: center top;
-	background-size: auto 350px;
-	xbackground-attachment: scroll;
+	background-size: auto 100%;
 	}
-.size-gt-small main section figure {
+/* .size-gt-small main section figure {
 	height: 300px;
 	background-position: center top;
 	background-size: 100% auto;
@@ -44,11 +46,19 @@ section figure {
 	height: 600px;
 	background-position: center top;
 	background-size: 100% auto;
+	} */
+
+main section article {
+	height: 330px;
 	}
 
 main section article ul:first-of-type {
 	padding-top: 30px;
 	}
+xmain section article ul {
+	padding-bottom: 40px;
+	}
+
 main section article ul li {
 	list-style: none;
 	font-size: 2em;

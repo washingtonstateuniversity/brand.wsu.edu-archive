@@ -6,23 +6,34 @@
 
 <style>
 
-section .column.one {
+section#our-brand .column.one {
 	background: rgba(0,0,0,0.55);
 	min-height: 650px;
+	padding: 0;
 	}
 .column > article p {
 	color: white;
 	font-size: 2.5em;
-	line-height: 2.5em;
-	padding-left: 130px;
+	line-height: 3em;
+	padding-left: 200px;
+	padding-top: 2em;
 	}
 body,main {
 	background: black;
+	padding-bottom: 0;
 	}
 section#our-brand {
 	background-image: url('/wp-content/themes/brand/images/pages/home/confetti.jpg');
 	background-position: left top;
 	background-repeat: no-repeat;
+	background-size: 100% auto;
+	}
+.size-gt-medium section#our-brand {
+	background-position: left bottom;
+	background-size: 978px 714px;
+	}
+.size-gt-large section#our-brand {
+	background-position: left bottom;
 	background-size: 100% auto;
 	}
 .size-gt-large section#our-brand {
@@ -34,16 +45,16 @@ section#our-brand {
 section#our-brand article {
 	background-image: url('/wp-content/themes/brand/images/pages/home/ourbrand.png');
 	background-repeat: no-repeat;
-	background-position: 15px 10px;
-	background-size: auto 500px;
+	background-position: 50px 25px;
+	background-size: auto 630px;
 	font-size: 12px;
-	min-height: 530px;
+	min-height: 660px;
 	}
 
 	
 </style>
 
-<main class="fill-window-height">
+<main>
 
 <section id="our-brand" class="row sidebar unbound recto">
 		
@@ -61,11 +72,11 @@ section#our-brand article {
 	
 </section>
 
-<section id="quick-tips" class="row margin">
+<section class="row marginalize wide">
 
 	<div class="column one">
 
-		<article>
+		<article class="gray-darker-text">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-2-1', true );
 				if( ! empty( $column ) ) { echo $column; }
