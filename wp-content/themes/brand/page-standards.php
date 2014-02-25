@@ -46,7 +46,7 @@ main section:first-of-type {
 
 <section class="row sidebar gutter wide">
 
-	<div class="column one">
+	<div class="column one" style="padding-top: 9.5em;">
 	<article class="padless">
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-1-1', true );
@@ -54,7 +54,7 @@ main section:first-of-type {
 		?>
 	</article>
 	</div>
-	<div class="column two">
+	<div class="column two nav-top">
 		<aside class="serif striped padless">
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-1-2', true );

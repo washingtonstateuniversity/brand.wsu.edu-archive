@@ -21,7 +21,7 @@
 .stonesans {
 	
 	}
-main h2 {
+#stones h2 {
 	padding-bottom: 1em;
 	}
 #webfonts strong {
@@ -32,6 +32,13 @@ main h2 {
 	}
 #webfonts h5 {
 	margin-top: 1em;
+	}
+hr {
+	margin: 0 4em;
+	}
+h2 + h5 {
+	margin-top: 0px; 
+	padding-top: 0px;
 	}
 
 </style>
@@ -83,13 +90,13 @@ main h2 {
 
 </section>
 
-<section class="row halves marginalize gutter wide">
+<section class="row halves gutter wide">
+
+<hr class="tall">
 
 <article class="padless">
 
-	<hr>
-
-	<div class="column one">
+	<div class="column one marginalized-bottom">
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-2-1', true );
 		if( ! empty( $column ) ) { echo $column; }
@@ -107,6 +114,8 @@ main h2 {
 </section>
 
 <section id="webfonts" class="row single gutter wide">
+
+	<hr class="tall">
 
 	<div class="column one">
 		<h2>web</h2>

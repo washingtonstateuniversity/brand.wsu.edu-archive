@@ -8,24 +8,114 @@
 <style>
 
 main section:nth-of-type(odd) {
-	xdisplay: table-row;
-	xpadding: 20px 0px;
 	background-color: #f4f4f5;
 	}
-main section .column {
-	display: table-cell;
+main section {
+	min-height: 300px;
+	position: relative;
 	}
 main section h2 {
-	font-size: 120px;
-	line-height: 120px;
+	font-size: 90px;
+	line-height: 90px;
+	position: absolute;
+	z-index: 0;
+	letter-spacing: -5px;
+	padding: 0px;
+	margin: 0px;
+	}
+#university {
+	background: #f4f4f5 url('/wp-content/themes/brand/images/pages/misc/downarrow.png') left -25px no-repeat;
 	}
 #university h2 {
 	color: #981e32;
+	right: 0;
+	text-align: right;
+	padding-right: 20px;
+	}
+#university h2 small {
+	font-size: 20px;
+	letter-spacing: 0px;
+	display: block;
+	padding-right: 60px;
+	line-height: 1em;
 	}
 	
 #campuses h2,
-#colleges h3 {
+#colleges h2 {
+	color: rgba(81,135,143,0.3);
+	}
+#campuses h2 {
+	text-align: right;
+	left: 60px;
+	top: 20px;
+	}
+#colleges h2 {
+	right: 20px;
+	top: 20px;
+	}
 	
+#university dl.downloads {
+	top: 195px;
+	}
+
+
+.size-gt-small #university dl.downloads {
+	width: 100%;
+	text-align: center;
+	left: 240px;
+	top: 95px;
+	}
+dl.downloads {
+	z-index: 100;
+	position: absolute;
+	}
+dl.downloads dd,
+dl.downloads dd:nth-of-type(1n+1) {
+	xmax-width: 150px;
+	float: left;
+	margin: 0px;
+	clear: none !important;
+	width: 135px;
+	text-align: center;
+	padding: 0px;
+	}
+dl.downloads dd a,
+dl.downloads dd:only-of-type a {
+	display: block;
+	width: auto;
+	}
+#campuses dl.downloads {
+	width: 596px;
+	right: 20px;
+	top: 95px;
+	}
+.size-lt-medium #campuses dl.downloads {
+	left: 0em;
+	width: 396px;
+	}
+#campuses dl.downloads dd {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	}
+	
+#colleges dl.downloads {
+	top: 115px;
+	width: 792px;
+	max-width: 100%;
+	}
+.size-lt-large #colleges dl.downloads {
+	position: relative;
+	display: block;
+	}
+.size-lt-large #colleges dl.downloads dd {
+	float: none;
+	}
+
+#colleges dl.downloads dd {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	}
 
 
@@ -36,20 +126,13 @@ main section h2 {
 <?php get_template_part('parts/headers'); ?>
 
 
-<section id="university" class="row halves equalize marginalize gutter wide">
+<section id="university" class="row single marginalize gutter wide">
 
 <article class="padless">
 
 	<div class="column one">
 		
-		<h2>university</h2>
-		<p>University wide singatures<br>
-		Shield mark<br>
-		Social media badges (central, unit)</p>
-		
-	</div>
-	
-	<div class="column two">
+		<h2>university <small>singatures  shield social media badges</small></h2>
 		
 		<dl class="downloads">
 			<dd><a href="">university wide</a></dd>
@@ -61,17 +144,13 @@ main section h2 {
 
 </section>
 
-<section id="campuses" class="row halves equalize marginalize gutter wide">
+<section id="campuses" class="row single marginalize gutter wide">
 
 <article class="padless">
 
-	<div class="column one center-vertically">
+	<div class="column one">
 		
-		<h2>campuses</h2>
-		
-	</div>
-	
-	<div class="column two">
+		<h2>campus</h2>
 		
 		<dl id="downloads-campuses" class="downloads">
 			<dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Spokane_Logos.zip">Spokane</a></dd>
@@ -79,10 +158,12 @@ main section h2 {
 		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Vancouver_Logos.zip">Vancounver</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Global-Campus_Logos.zip">Global Campus</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Health-Sciences_Logos.zip">Health Sciences</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Extension_Logos.zip">Extension</a></dd>
+		    <!--<dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Extension_Logos.zip">Extension</a></dd>-->
 		</dl>
 		
 	</div>
+	
+	<br class="clearfix">
 	
 </article>
 
@@ -90,18 +171,14 @@ main section h2 {
 
 
 
-<section id="colleges" class="row halves marginalize gutter wide ">
+<section id="colleges" class="row single marginalize gutter wide ">
 
 <article class="padless">
 
-	<div class="column one center-vertically">
+	<div class="column one">
 		
-		<h2>colleges</h2>
-		
-	</div>
-	
-	<div class="column two">
-		
+		<h2>college</h2>
+			
 		<dl id="downloads-colleges" class="downloads">
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-CAHNRS_Logos.zip">CAHNRS</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Honors-College_Logos.zip">Honors</a></dd>
@@ -116,6 +193,24 @@ main section h2 {
 		</dl>
 		
 	</div>
+	
+</article>
+
+</section>
+
+<section id="colleges" class="row single marginalize gutter wide ">
+
+<article class="padless">
+
+	<div class="column one">
+		
+		<h3>stationery and business cards</h3>
+		<a class="brand-button" href="">Order</a>
+
+		
+	</div>
+	
+	
 	
 </article>
 

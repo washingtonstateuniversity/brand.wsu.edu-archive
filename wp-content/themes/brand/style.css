@@ -161,9 +161,12 @@ main.spine-default-page .sidebar > .column:first-child {
 main.spine-default-page section:first-of-type .column.one {
 	padding-top: 9.5em;
 	}
+.column.nav-top {
+	padding-top: 9.5em !important;
+	}
+
 main h2 {
 	color: #568a90;
-	text-transform: lowercase;
 	}
 main h2 small {
 	color: #5e6a71;
@@ -173,7 +176,6 @@ main h3 {
 	color: #568a90;
 	font-size: 1.3em;
 	line-height: 1.4em;
-	text-transform: lowercase;
 	}
 main h4 {
 	color: #4F868E;
@@ -184,7 +186,8 @@ main h4 {
 	}
 main h2:not(.not-lowercase),
 main h3:not(.not-lowercase),
-main h4:not(.not-lowercase) {
+main h4:not(.not-lowercase),
+main h5:not(.not-lowercase) {
 	text-transform: lowercase;
 	}
 main h5 {
@@ -270,7 +273,8 @@ dl.downloads dd:nth-of-type(even) {
 	padding-right: 0px;
 	}
 
-dl.downloads dd a {
+dl.downloads dd a,
+a.brand-button {
 	width: 75%;
 	color: #ADA400;
 	display: inline-block;
@@ -278,8 +282,14 @@ dl.downloads dd a {
 	border: 1px #B5BABE solid;
 	padding: 3px 6px;
 	text-align: center;
+	white-space: nowrap;
 	}
-dl.downloads dd a:hover {
+a.brand-button {
+	display: inline-block;
+	width: auto;
+	}
+dl.downloads dd a:hover,
+a.brand-button:hover {
 	color: white;
 	background: #ADA400;
 	border-color: #ADA400;
@@ -374,7 +384,9 @@ figcaption big {
 /* FAQ */
 .page-id-90 main section:first-of-type {
 	background: url('/wp-content/themes/brand/images/pages/misc/qa.png') 70% 0px no-repeat;
-	padding-top: 120px;
+	}
+.page-id-90 main section:first-of-type .column.one {
+	padding-top: 260px;
 	}
 body[class*="faq"] dl,
 .page-id-90 dl {

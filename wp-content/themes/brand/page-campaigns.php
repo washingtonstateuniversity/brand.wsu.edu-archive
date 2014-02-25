@@ -6,7 +6,7 @@
 
 <section class="row sidebar alternate marginalize wide">
 	
-	<div class="column one">
+	<div class="column one nav-top">
 		
 		<?php while ( have_posts() ) : the_post(); ?>
 		
