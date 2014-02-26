@@ -18,18 +18,22 @@ body {
 	}
 main {
 	background: 
-		url('/wp-content/themes/brand/images/elements/main-background-bottom-lightest.png') left bottom no-repeat,
-		url('/wp-content/themes/brand/images/elements/main-background-lightest.png') left top repeat-y;
+		url('/wp-content/themes/brand/images/elements/main-background-bottom-lighter.png') left bottom no-repeat,
+		url('/wp-content/themes/brand/images/elements/main-background-lighter.png') left top repeat-y;
 	padding-bottom: 150px;
 	}
 main p {
 	line-height: 1.6em;
 	}
 	
+h6,h5,h4,h3,h2,h1 {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	}
 a, a:link, a:visited:hover, button { color: #C69214; color: #ADA400; }
 
 a:visited {	color: #77580C; color: #8F7E35;	}
-a:hover { color: #77580C; color: #8F7E35; }
+a:hover,button:hover { color: #77580C; color: #8F7E35; }
 
 main ul li {
 	list-style: disc;
@@ -48,18 +52,20 @@ p.intro {
 figure {
 	width: 100%;
 	}
+
 button {
 	border-radius: 0px;
 	border-width: 1px;
 	border-style: solid;
-	border-color: #77580C
+	border-color: #B5BABE;
 	background: white;
 	text-shadow: none;
+	width: 80px;
 	}
 button:hover {
 	color: white;
-	background-color: #b67024;
-	border-color: #b67024;
+	background-color: #ADA400;
+	border-color: #ADA400;
 	}
 	
 /* Details */
@@ -288,7 +294,7 @@ a.brand-button {
 	}
 a.brand-button {
 	display: inline-block;
-	width: auto;
+	width: 5.75em;
 	}
 dl.downloads dd a:hover,
 a.brand-button:hover {

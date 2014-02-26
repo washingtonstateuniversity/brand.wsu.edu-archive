@@ -39,6 +39,9 @@ main section h2 {
 	padding-right: 60px;
 	line-height: 1em;
 	}
+#university h2 small span {
+	padding-right: 10px;
+	}
 	
 #campuses h2,
 #colleges h2 {
@@ -55,7 +58,11 @@ main section h2 {
 	}
 	
 #university dl.downloads {
-	top: 195px;
+	padding-top: 90px;
+	padding-left: 35%;
+	}
+.size-lt-large #university dl.downloads {
+	padding-top: 135px;
 	}
 
 
@@ -67,7 +74,7 @@ main section h2 {
 	}
 dl.downloads {
 	z-index: 100;
-	position: absolute;
+	xposition: absolute;
 	}
 dl.downloads dd,
 dl.downloads dd:nth-of-type(1n+1) {
@@ -75,7 +82,7 @@ dl.downloads dd:nth-of-type(1n+1) {
 	float: left;
 	margin: 0px;
 	clear: none !important;
-	width: 135px;
+	width: 9em;
 	text-align: center;
 	padding: 0px;
 	}
@@ -85,31 +92,30 @@ dl.downloads dd:only-of-type a {
 	width: auto;
 	}
 #campuses dl.downloads {
-	width: 596px;
-	right: 20px;
-	top: 95px;
+	width: 496px;
+	padding-left: 18%;
+	padding-top: 65px;
+	text-align: right;
 	}
 .size-lt-medium #campuses dl.downloads {
-	left: 0em;
-	width: 396px;
+	width: 90%;
+	padding-left: 10%;
+	padding-top: 100px;
 	}
 #campuses dl.downloads dd {
-	float: right;
+	float: none;
 	margin-left: 20px;
 	margin-bottom: 20px;
 	}
 	
 #colleges dl.downloads {
-	top: 115px;
-	width: 792px;
+	padding-top: 60px;
+	width: 100%;
 	max-width: 100%;
 	}
+
 .size-lt-large #colleges dl.downloads {
-	position: relative;
-	display: block;
-	}
-.size-lt-large #colleges dl.downloads dd {
-	float: none;
+	padding-top: 100px;
 	}
 
 #colleges dl.downloads dd {
@@ -132,7 +138,7 @@ dl.downloads dd:only-of-type a {
 
 	<div class="column one">
 		
-		<h2>university <small>signatures  shield social media badges</small></h2>
+		<h2>university <small> <span>signatures</span> <span>shield</span> <span>social media badges</span></small></h2>
 		
 		<dl class="downloads">
 			<dd><a href="">university wide</a></dd>
@@ -171,25 +177,25 @@ dl.downloads dd:only-of-type a {
 
 
 
-<section id="colleges" class="row single marginalize gutter wide ">
+<section id="colleges" class="row single marginalize gutter wide clearfix">
 
 <article class="padless">
 
-	<div class="column one">
+	<div class="column one clearfix">
 		
 		<h2>college</h2>
 			
-		<dl id="downloads-colleges" class="downloads">
+		<dl id="downloads-colleges" class="downloads clearfix">
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-CAHNRS_Logos.zip">CAHNRS</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Honors-College_Logos.zip">Honors</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Arts-Sciences_Logos.zip">Arts & Sciences</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Nursing_Logos.zip">Nursing</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Business_Logos.zip">Business</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Pharmacy_Logos.zip">Pharmacy</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Communication_Logos.zip">Murrow</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Education_Logos.zip">Education</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-VetMed_Logos.zip">Veterinary Med.</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Communication_Logos.zip">Murrow</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Engr-Arch_Logos.zip">Eng. & Arch.</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Honors-College_Logos.zip">Honors</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Nursing_Logos.zip">Nursing</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Pharmacy_Logos.zip">Pharmacy</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-VetMed_Logos.zip">Veterinary Med.</a></dd>
 		</dl>
 		
 	</div>
@@ -204,7 +210,7 @@ dl.downloads dd:only-of-type a {
 
 	<div class="column one">
 		
-		<h3>stationery and business cards</h3>
+		<h3 style="display: inline-block; padding-right: 30px;">stationery and business cards </h3>
 		<a class="brand-button" href="">Order</a>
 
 		
