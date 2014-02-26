@@ -27,20 +27,11 @@ section#our-brand {
 	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	}
-.size-gt-medium section#our-brand {
-	background-position: left bottom;
 	background-size: 978px 714px;
 	}
 .size-gt-large section#our-brand {
 	background-position: left bottom;
 	background-size: 100% auto;
-	}
-.size-gt-large section#our-brand {
-	background-position: left bottom;
-	}
-.size-lt-medium section#our-brand {
-	background-size: auto 100%;
 	}
 section#our-brand article {
 	background-image: url('/wp-content/themes/brand/images/pages/home/ourbrand.png');
@@ -77,10 +68,10 @@ section#our-brand article {
 	<div class="column one">
 
 		<article class="gray-darker-text">
-				<?php 
+				<!--<?php 
 				$column = get_post_meta( get_the_ID(), 'section-2-1', true );
 				if( ! empty( $column ) ) { echo $column; }
-				?>
+				?>-->
 		</article>
 
 	</div>
