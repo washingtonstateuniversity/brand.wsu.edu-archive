@@ -57,6 +57,11 @@ button {
 	color: white;
 	font-size: 10px;
 	}
+	
+main:not(.wireframe) .wireframe-only {
+	display: none;
+	}
+
 .wireframe .row.eighths::before { content: "eighths"; }
 .wireframe .row.twelfths::before { content: "twelfths"; }
 .wireframe .row.quarters::before { content: "quarters"; }
@@ -227,12 +232,19 @@ button {
 	}
 
 #controls dl {
-	border-top: 1px gray dotted;
-	margin-top: 5px;
+	border-top: 1px #D7DAD8 solid;
+	margin-top: 15px;
 	padding-top: 5px;
 	}
 #controls dl dt {
 	display: block;
+	}
+dt a {
+	font-size: .8em;
+	color: ;
+	}
+dt a:hover {
+	
 	}
 #controls dl dd {
 	display: block; float: left;
@@ -261,14 +273,14 @@ button {
 	$(document).ready(function(){
 
 	// 
-	$('#flexible button').on('click', function() {
+	$('.spine-behavior button').on('click', function() {
 		var grid = $(this).attr('data-grid');
 		$('#binder').removeClass('fluid fixed hybrid').addClass(grid);
 		return false;
 	});
 	
 	// Change Spine color
-	$('.spine-colors dd').on('click', function() {
+	$('.spine-colors button').on('click', function() {
 		var color = $(this).attr('data-color');
 		$('#spine').removeClass('white lightest lighter light gray dark darker darkest crimson transparent');
 		$('#spine').addClass(color);
@@ -284,7 +296,7 @@ button {
 	});
 	
 	// Change Campus
-	$('#campus-ready button').on('click', function() {
+	$('.spine-campuses button').on('click', function() {
 		var campus = $(this).attr('data-campus');
 			campus = campus + '-signature';
 		$('#jacket').removeClass().addClass(campus);
@@ -327,19 +339,25 @@ button {
 		
 			<dl class="spine-colors clearfix">
 				<dt>spine colors <a class="info "href="info">info</a></dt>
-				<dd class="white-back" data-color="white" style="box-shadow: inset 0 0 1px black;">Default</dd> 
-				<dd class="lightest-back light-text" data-color="lightest" style="box-shadow: inset 0 0 1px black;">Lightest</dd>
-				<dd class="lighter-back gray-text" data-color="lighter">Lighter</dd>
-				<dd class="light-back dark-text" data-color="light">Light</dd>
-				<dd class="gray-back lightly-text" data-color="gray">Gray</dd>
-				<dd class="dark-back lighter-text" data-color="dark">Dark</dd>
-				<dd class="darker-back light-text" data-color="darker">Darker</dd>
-				<dd class="darkest-back light-text" data-color="darkest">Darkest</dd>
-				<dd class="crimson-back white-text" data-color="crimson">Crimson</dd><br>
-				<dd style="transparent-back" data-color="transparent" style="box-shadow: inset 0 0 1px black;">Transparent</dd>
+				<dd><button class="white-back" data-color="white">Default</button></dd> 
+				<dd><button class="lightest-text" data-color="lightest">Lightest</button></dd>
+				<dd><button class="lighter-text" data-color="lighter">Lighter</button></dd>
+				<dd><button class="light-text" data-color="light">Light</button></dd>
+				<dd><button class="gray-text" data-color="gray">Gray</button></dd>
+				<dd><button class="dark-text" data-color="dark">Dark</button></dd>
+				<dd><button class="darker-text" data-color="darker">Darker</button></dd>
+				<dd><button class="darkest-text" data-color="darkest">Darkest</button></dd>
+				<dd><button class="crimson-text" data-color="crimson">Crimson</button></dd>
+				<dd><button style="transparent-back" data-color="transparent">Transparent</button></dd>
 			</dl>
 			
 			<dl class="spine-grids clearfix">
+				<dt>spine display <a class="info "href="info">info</a></dt>
+				<dd><button onclick="$('#spine').removeClass('bleed').toggleClass('cropped');">severed</button></dd> 
+				<dd><button onclick="$('#spine').removeClass('bloodless bleed');">bleeding</button></dd>
+			</dl>
+			
+			<dl class="spine-grids clearfix size-gt-medium-only">
 				<dt>grid columns <a class="info "href="info">info</a></dt>
 				<dd><button onclick="$('#jacket').addClass('grid');">container</button></dd> 
 				<dd><button onclick="$('#jacket').addClass('grid').addClass('grid12');">content</button></dd>
@@ -352,14 +370,20 @@ button {
 				<dd><button data-grid="hybrid">hybrid</button></dd>
 			</dl>
 			
-			<dl class="spine-framework">
-				<dt>Under the hood <a class="info "href="info">info</a></dt>
+			<dl class="spine-campuses clearfix">
+				<dt>campus ready <a class="info "href="info">info</a></dt>
+				<dd><button data-campus="spokane">Spokane</button></dd>
+				<dd><button data-campus="tricities">Tri-Cities</button></dd>
+				<dd><button data-campus="vancouver">Vancouver</button></dd>
+				<dd><button data-campus="globalcampus">Global Campus</button></dd>
+				<dd><button data-campus="extension">Extension</button></dd>
+			</dl>
+			
+			<dl class="spine-wireframe">
+				<dt>under the hood <a class="info "href="info">info</a></dt>
 				<dd><button onclick="$('main').toggleClass('wireframe');">framework</button></dd>
 			</dl>
 					
-			
-			
-
 	</div><!--/column-->
 
 </section>
@@ -414,7 +438,7 @@ button {
 	<div class="column one">
 		<article>
 		<header><h2>cropping and bleeding</h2></header>
-		<p><b>It may be gruesome</b>, but for site cover pages, the Spine's head can be "severed" or <em><button onclick="$('#spine').removeClass('bleed').toggleClass('cropped');$('#jacket').prepend('<div id=cropping></div>');">cropped</button></em> leaving the full horizontal width of the page for design. Additionally, the Spine can be set to <button onclick="$('#spine').addClass('dark').addClass('bleed');">bleed</button> off the left edge of the browser window, <button onclick="$('#spine').removeClass('bloodless bleed');">or not</button>.</p>
+		<p><b>It may be gruesome</b>, but for site cover pages, the Spine's head can be "severed" or .</p>
 		</article>
 	</div>
 	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/cropped.png') left 10px no-repeat; background-size: 130% auto;">
@@ -475,6 +499,13 @@ button {
 	</article>
 </section>
 
+<section class="row quarters picture-frame wireframe-only">
+	<div class="column one"><img src="/wp-content/themes/brand/images/pages/wireframe/1.png" class="fill-width"></div>
+	<div class="column two"><img src="/wp-content/themes/brand/images/pages/wireframe/2.png" class="fill-width"></div>
+	<div class="column three"><img src="/wp-content/themes/brand/images/pages/wireframe/3.png" class="fill-width"></div>
+	<div class="column four"><img src="/wp-content/themes/brand/images/pages/wireframe/4.png" class="fill-width"></div>
+</section>
+
 <section id="campus-ready" class="row sideleft">
 	
 	<div class="column one">
@@ -484,7 +515,7 @@ button {
 		
 		<article>
 		<header><h2>campus ready</h2></header>
-		<p>Related articles and images can be nested so that they hang together in groups when the page flexes and stacks for mobile: <button data-campus="extension">Extension</button>, <button data-campus="globalcampus">Global Campus</button>, <button data-campus="spokane">Spokane</button>, <button data-campus="tricities">Tri-Cities</button>, <button data-campus="vancouver">Vancouver</button></p>
+		<p>Related articles and images can be nested so that they hang together in groups when the page flexes and stacks for mobile: </p>
 		</article>
 	</div>
 	
@@ -525,12 +556,7 @@ button {
 	<div class="column three"></div>
 </section>
 
-<section class="row quarters picture-frame">
-	<div class="column one"><img src="/wp-content/themes/spine/images/eg/1.png" class="fill-width"></div>
-	<div class="column two"><img src="/wp-content/themes/spine/images/eg/2.png" class="fill-width"></div>
-	<div class="column three"><img src="/wp-content/themes/spine/images/eg/3.png" class="fill-width"></div>
-	<div class="column four"><img src="/wp-content/themes/spine/images/eg/4.png" class="fill-width"></div>
-</section>
+
 
 <section id="color-backs" class="row halves nest xxnote">
 	
