@@ -126,7 +126,8 @@ main.gray-er-back .bg-clear {
 	display: none;
 	} */
 
-#secondary-palettes figure.color.gray {
+#secondary-palettes figure.color.gray,
+#secondary-palettes figure.color.crimson {
 	position: absolute;
 	z-index: 0;
 	width: 100%;
@@ -138,8 +139,16 @@ center {
 	}
 center .half {
 	width: 50%;
+	min-width: ;
 	height: 100%;
 	float: left;
+	xposition: absolute;
+	}
+center .half:first-of-type {
+
+	}
+center .half:last-of-type {
+	xleft: 50%;
 	}
 center .half:first-of-type figure {
 	float: right;
@@ -174,7 +183,7 @@ center .half:last-of-type figure {
 	}
 
 button#switcher {
-	float: right;
+	xfloat: right;
 	margin: 0px 10px 0px 0px;
 	}
 button#switcher::before{
@@ -432,7 +441,7 @@ $('.secondaries .switch.green-text').click( function() {
 
 <?php get_template_part('parts/headers'); ?> 
 
-<section id="" class="row single controls unequaled">
+<section id="" class="row sidebar controls unequaled">
 
 	<div class="column one">
 		
@@ -441,7 +450,7 @@ $('.secondaries .switch.green-text').click( function() {
 			<dd class="gray-text" onclick="$('figure.orange-back.visible, figure.green-back.visible, figure.blue-back.visible, figure.yellow-back.visible').toggleClass('visible invisible'); $('figure.color.unvalued').toggleClass('unvalued valued');">gray</dd>
 		</dl>
 		<dl class="secondaries">
-			<button id="switcher" onclick="$('main').toggleClass('specified');"> </button>
+			
 			<dt>secondary</dt>
 			<dd class="switch on orange-text" onclick="$('figure.orange-back').toggleClass('visible invisible');">orange</dd>
 			<dd class="switch on green-text" onclick="$('figure.green-back').toggleClass('visible invisible');">green</dd>
@@ -460,8 +469,14 @@ $('.secondaries .switch.green-text').click( function() {
 			<dd class="switch off values" onclick="$('figure.color').toggleClass('unvalued valued');">values</dd>
 		</dl>
 		
-		
 	</div>
+	
+	<div class="column two center">
+	
+		<button id="switcher" onclick="$('main').toggleClass('specified');"> </button>
+	
+	</div>
+	
 </section>
 
 <div class="fluid">
@@ -480,7 +495,7 @@ $('.secondaries .switch.green-text').click( function() {
 			<dd class="crimson-back"></dd>
 			<dd class="crimson-back"></dd>
 			<dd class="crimson-back"></dd>
-			<dd class="crimson-er-back accent"><dl class="specs"><dd class="cmyk">7 100 82 26</dd> <dd class="rgb">166 25 46</dd> <dd class="hex">#a6192e</dd> <dd class="tone">187</dd></dl></dd>
+			<dd class="crimson-er-back accent"><dl class="specs"><dd class="cmyk">7 100 82 26</dd> <dd class="rgb">198 12 48</dd> <dd class="hex">#c60c30</dd> <dd class="tone">187</dd></dl></dd>
 		</dl>
 		</figure>
 	
@@ -491,6 +506,21 @@ $('.secondaries .switch.green-text').click( function() {
 	<center>
 	
 	<div class="half">
+	
+		<figure class="color crimson crimson-back unvalued unaccented">
+		<dl>
+			<dd class="crimson-back"></dd>
+			<dd class="crimson-back"></dd>
+			<dd class="crimson-back"></dd>
+			<dd class="crimson-back"></dd>
+			<dd class="crimson-back spot"><dl class="specs"><dd class="cmyk">27 99 78 23</dd> <dd class="rgb">152 30 50</dd> <dd class="hex">#981e32</dd> <dd class="tone">201</dd></dl></dd>
+			<dd class="crimson-back"></dd>
+			<dd class="crimson-back"></dd>
+			<dd class="crimson-back"></dd>
+			<dd class="crimson-er-back accent"><dl class="specs"><dd class="cmyk">7 100 82 26</dd> <dd class="rgb">
+			<dd class="crimson-er-back accent"><dl class="specs"><dd class="cmyk">7 100 82 26</dd> <dd class="rgb">198 12 48</dd> <dd class="hex">#c60c30</dd> <dd class="tone">187</dd></dl></dd>
+		</dl>
+		</figure>
 	
 		<figure class="color spectrum green green-back visible unvalued unaccented">
 			<dl>
