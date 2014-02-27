@@ -42,6 +42,11 @@ button {
 .grid12 #grid {
 	background: transparent url('http://nbj.me/wp-content/themes/dev/depot/images/elements/grid12.png') repeat-y left top;
 	}
+	
+main:not(.wireframe) .wireframe-only {
+	display: none;
+	}
+
 .wireframe section.row::before {
 	display: block;
 	background: #5e6a71;
@@ -57,11 +62,6 @@ button {
 	color: white;
 	font-size: 10px;
 	}
-	
-main:not(.wireframe) .wireframe-only {
-	display: none;
-	}
-
 .wireframe .row.eighths::before { content: "eighths"; }
 .wireframe .row.twelfths::before { content: "twelfths"; }
 .wireframe .row.quarters::before { content: "quarters"; }
@@ -203,7 +203,7 @@ main:not(.wireframe) .wireframe-only {
 	content: "standard colors can be applied with classes like .crimson-back and .green-back";
 	}
 	
-main section:nth-of-type(even) {
+main section:nth-of-type(even):not(.wireframe-only):not(.hidden) {
 	background: rgba(0,0,0,0.05)
 	}
 section > big {
@@ -227,8 +227,8 @@ section > big {
 button {
 	padding: 2px 4px;
 	}
-#controls {
-	padding-top: 150px;
+.size-lt-small #controls dl:first-of-type {
+	margin-top: 150px;
 	}
 
 #controls dl {
@@ -257,7 +257,7 @@ dt a:hover {
 	display: block;
 	float: left;
 	padding: 2px 0px;
-	width: 33%;
+	xwidth: 33%;
 	}
 .spine-wireframe button::before {
 	content: "show ";
@@ -288,7 +288,7 @@ dt a:hover {
 	});
 	
 	// Folio Sizes
-	$('li#folio-samples a').on('click', function() {
+	$('.spine-sizes button').on('click', function() {
 		var max = $(this).attr('data-max');
 		$('#binder').removeClass('max-default max-1188 max-1386 max-1584 max-1782 max-1980');
 		$('#binder').addClass('folio').addClass(max);
@@ -338,9 +338,9 @@ dt a:hover {
 	<div id="controls" class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/www.png') 0% -10px no-repeat;">
 		
 			<dl class="spine-colors clearfix">
-				<dt>spine colors <a class="info "href="info">info</a></dt>
-				<dd><button class="white-back" data-color="white">Default</button></dd> 
-				<dd><button class="lightest-text" data-color="lightest">Lightest</button></dd>
+				<dt>spine colors <a class="info" href="#spine-colors">info</a></dt>
+				<dd><button class="white-back gray-text" data-color="white">Default</button></dd> 
+				<dd><button class="lightest-back gray-text" data-color="lightest">Lightest</button></dd>
 				<dd><button class="lighter-text" data-color="lighter">Lighter</button></dd>
 				<dd><button class="light-text" data-color="light">Light</button></dd>
 				<dd><button class="gray-text" data-color="gray">Gray</button></dd>
@@ -348,11 +348,11 @@ dt a:hover {
 				<dd><button class="darker-text" data-color="darker">Darker</button></dd>
 				<dd><button class="darkest-text" data-color="darkest">Darkest</button></dd>
 				<dd><button class="crimson-text" data-color="crimson">Crimson</button></dd>
-				<dd><button style="transparent-back" data-color="transparent">Transparent</button></dd>
+				<dd><button class="transparent-back gray-lighter-text" data-color="transparent">Transparent</button></dd>
 			</dl>
 			
-			<dl class="spine-grids clearfix">
-				<dt>spine display <a class="info "href="info">info</a></dt>
+			<dl class="spine-column-options clearfix">
+				<dt>spine options <a class="info" href="#cropping-bleeding">info</a></dt>
 				<dd><button onclick="$('#spine').removeClass('bleed').toggleClass('cropped');">severed</button></dd> 
 				<dd><button onclick="$('#spine').removeClass('bloodless bleed');">bleeding</button></dd>
 			</dl>
@@ -364,14 +364,24 @@ dt a:hover {
 			</dl>
 			
 			<dl class="spine-behavior clearfix">
-				<dt>grid behavior <a class="info "href="info">info</a></dt>
+				<dt>grid behavior <a class="info" href="#spine-behavior">info</a></dt>
 				<dd><button data-grid="fluid">fluid</button></dd>
 				<dd><button data-grid="fixed">fixed</button></dd>
 				<dd><button data-grid="hybrid">hybrid</button></dd>
 			</dl>
 			
+			<dl class="spine-sizes clearfix">
+				<dt>extra large sizes <a class="info hidden" href="#spine-sizes">info</a></dt>
+				<dd><button data-max="max-990">default</button></dd>
+				<dd><button data-max="max-1188">1188</button></dd>
+				<dd><button data-max="max-1386">1386</button></dd>
+				<dd><button data-max="max-1584">1584</button></dd>
+				<dd><button data-max="max-1782">1782</button></dd>
+				<dd><button data-max="max-1980">1980</button></dd>
+			</dl>
+			
 			<dl class="spine-campuses clearfix">
-				<dt>campus ready <a class="info "href="info">info</a></dt>
+				<dt>campus ready <a class="info" href="#campus-ready">info</a></dt>
 				<dd><button data-campus="spokane">Spokane</button></dd>
 				<dd><button data-campus="tricities">Tri-Cities</button></dd>
 				<dd><button data-campus="vancouver">Vancouver</button></dd>
@@ -380,7 +390,7 @@ dt a:hover {
 			</dl>
 			
 			<dl class="spine-wireframe">
-				<dt>under the hood <a class="info "href="info">info</a></dt>
+				<dt>under the hood</dt>
 				<dd><button onclick="$('main').toggleClass('wireframe');">framework</button></dd>
 			</dl>
 					
@@ -388,13 +398,13 @@ dt a:hover {
 
 </section>
 
-<section id="flexible" class="row sideleft marginalize gutter wide equalize">
-	<div class="column one" style="background: url('/wp-content/themes/brand/images/pages/web/squarecircle.png') center center no-repeat; background-size: auto 80%">
+<section id="spine-behavior" class="row sideleft marginalize gutter wide equalize">
+	<div class="column one" style="background: url('/wp-content/themes/brand/images/pages/web/squarecircle.png') right center no-repeat; background-size: auto 60%">
 	</div>
 	<div class="column two">
 		<article class="marginalize">
 		<header><h2>consistency and flexibility</h2></header>
-		<p>The framework makes every effort to achieve consistent positioning, graphics, and behavior within the Spine's vertical column while at the same time preserving the greatest degree of flexibility besides. For example, with a switch, the Spine supports three kinds of commonly used grids: <button data-grid="fluid">Fluid</button>, <button data-grid="fixed">Fixed</button>, and <button data-grid="hybrid">Hybrid</button>. Feel free to click one and observe its behavior as you shrink your window size. The default is "hybrid".</p>
+		<p>The framework makes every effort to achieve consistent positioning, graphics, and behavior within the Spine's vertical column while at the same time preserving the greatest degree of flexibility besides. For example, with a switch, the Spine supports three kinds of commonly used grids: <strong>Fluid</strong>, <strong>Fixed</strong>, and <strong>Hybrid</strong>. Feel free to click one and observe its behavior as you shrink your window size. The default is "hybrid".</p>
 		</article>
 	</div>
 </section>
@@ -411,7 +421,7 @@ dt a:hover {
 
 
 
-<section id="spine-palettes" class="row sidebar equalize reverse marginalize gutter wide">
+<section id="spine-colors" class="row sidebar equalize reverse marginalize gutter wide">
 	<style>
 	#spine-palettes dd { padding: .25em .5em; margin-bottom: .25em; }
 	#spine-palettes dd:hover { color: white; background-color: #A6192E; }
@@ -419,8 +429,8 @@ dt a:hover {
 	<div class="twelve-twelfths-max">
 	<div class="column one">
 		<article>
-		<header><h2>spine palettes</h2></header>
-		<p>To complement the style and tone of your design, the Spine can be easily switched between six sets of tints within our primary colors of gray and crimson. <strong>Try it out ...</strong></p>
+		<header><h2>spine colors</h2></header>
+		<p>To complement the style and tone of your design, the Spine can be easily switched between six sets of tints within our primary colors of gray and crimson.</p>
 		
 		
 		</article>
@@ -454,8 +464,36 @@ dt a:hover {
 	<div class="column two">
 		<article>
 		<header><h2>tool belt included</h2></header>
-		<p>Out-of-the-box, the Spine includes local and WSU-wide <strong>search</strong>, a consistent spot for <strong>contact</strong> information, easy access to <strong>share</strong> to the principal social networks, and a <strong>print</strong> tool that automatically formats the page for the printer.</p>
+		<p>Out-of-the-box, the Spine includes local and WSU-wide <strong>search</strong>, a consistent presentation of <strong>contact</strong> information, easy <strong>sharing</strong> via the most popular social networks, and a <strong>print</strong> tool that automatically formats the page for letter-sized paper.</p>
 		</article>
+	</div>
+	
+</section>
+
+<section id="spine-sizes" class="row sidebar equalize marginalize gutter wide hidden">
+	
+	<div class="column one" style="">
+		<article>
+		<header><h2>your goldilocks</h2></header>
+		<p></p>
+		</article>
+	</div>
+	<div class="column two">
+		
+	</div>
+	
+</section>
+
+<section id="spine-sizes" class="row sidebar equalize marginalize gutter wide hidden">
+	
+	<div class="column one" style="">
+		<article>
+		<header><h2>your goldilocks</h2></header>
+		<p></p>
+		</article>
+	</div>
+	<div class="column two">
+		
 	</div>
 	
 </section>
@@ -479,7 +517,7 @@ dt a:hover {
 	
 </section>
 
-<section id="resolution" class="row sidebar">
+<section id="resolution" class="row sidebar gutter wide">
 	<style>
 	
 	#resolution .column.two { background: url('http://repo.wsu.edu/spine/1/marks/wsu-signature-vertical.svg') center center no-repeat; background-size: auto;  }
@@ -499,14 +537,24 @@ dt a:hover {
 	</article>
 </section>
 
-<section class="row quarters picture-frame wireframe-only">
-	<div class="column one"><img src="/wp-content/themes/brand/images/pages/wireframe/1.png" class="fill-width"></div>
-	<div class="column two"><img src="/wp-content/themes/brand/images/pages/wireframe/2.png" class="fill-width"></div>
-	<div class="column three"><img src="/wp-content/themes/brand/images/pages/wireframe/3.png" class="fill-width"></div>
-	<div class="column four"><img src="/wp-content/themes/brand/images/pages/wireframe/4.png" class="fill-width"></div>
+<section class="row quarters wireframe-only">
+	<div class="column one picture-frame"><img src="/wp-content/themes/brand/images/pages/wireframe/1.png" class="fill-width"></div>
+	<div class="column two picture-frame"><img src="/wp-content/themes/brand/images/pages/wireframe/2.png" class="fill-width"></div>
+	<div class="column three picture-frame"><img src="/wp-content/themes/brand/images/pages/wireframe/3.png" class="fill-width"></div>
+	<div class="column four picture-frame"><img src="/wp-content/themes/brand/images/pages/wireframe/4.png" class="fill-width"></div>
 </section>
 
-<section id="campus-ready" class="row sideleft">
+<section class="row halves  wireframe-only">
+	<div class="column one">
+
+	</div>
+	<div class="column two row">
+		<div class="column four-twelfths"></div>
+		<div class="column two-twelfths"></div>
+	</div>
+</section>
+
+<section id="campus-ready" class="row sideleft marginalize gutter wide">
 	
 	<div class="column one">
 		<br>
@@ -521,20 +569,22 @@ dt a:hover {
 	
 </section>
 
-<!--<section class="row thirds gutter equalize">
+<section class="row thirds gutter equalize wireframe-only">
 	<div class="column one">
 		<article>
 		<strong>The skeleton grid eschews padding and margins by default to allow for seamless designs. However, adding a "gutter" class, as in this section, provides gutters for equally spaced column interior content (30px).</strong><hr>
 		These columns have also been equalized with the "equalize" class to allow for aligning background images. Were using "border-box" box-sizing on our columns to enable padding without breaking our responsive math.<hr>
 		<p>Vestibulum cursus ultricies tellus, sed fermentum mauris mattis vitae. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam condimentum ligula ut dictum scelerisque. Aenean mattis erat ac tortor accumsan, vitae tincidunt dui feugiat. Vestibulum hendrerit metus id justo tristique, a pharetra nibh lobortis. Sed eu dolor nec metus blandit egestas ac at elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ac mollis mauris. Sed aliquet ipsum in dapibus euismod.</p></article>
 	</div>
-	<div class="column two">
+	<div class="marginalized column two">
 		<article><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dolor neque, scelerisque quis mauris quis, fringilla eleifend est. Phasellus purus leo, commodo sit amet ipsum ac, lacinia auctor nulla. Nam sed nunc fermentum, condimentum ligula sit amet, facilisis urna. Vestibulum pharetra dui turpis, vitae elementum dui gravida in. Quisque ut lectus aliquet, lobortis risus vitae, placerat metus. Duis nisl eros, mattis non fermentum eget, luctus sed tortor. Nunc tempus nulla eget erat ornare, quis mattis turpis tincidunt. Vivamus semper elit at metus consequat, vitae dapibus urna posuere. Nunc iaculis arcu sed ante mollis, vitae varius orci rhoncus. Nullam luctus tristique pretium. Ut tincidunt, velit ullamcorper aliquet molestie, nisl lectus interdum felis, quis blandit nisi tortor non elit. Ut sit amet ipsum consectetur, tempor tellus at, ultrices elit. Sed a mauris enim. Sed vitae odio vestibulum massa vulputate lacinia.</p></article>
 	</div>
 	<div class="column three">
 		<article><p>Nam a dolor diam. Sed bibendum sit amet arcu id vehicula. Duis dictum rhoncus velit vel porttitor. Nullam scelerisque fermentum massa. Proin suscipit facilisis tincidunt. Aenean et tempor augue. Nullam gravida feugiat diam, vel blandit turpis ornare et. Sed sed arcu quis augue ultricies porta id vitae ante. Donec at ante sed mauris mollis rutrum eu sit amet lectus. <hr> .equalize makes columns equally tall... or short</p></article>
 	</div>
 </section>
+
+<!--
 
 <section class="row thirds marginalize gutter equalize">
 	<div class="column one">
@@ -573,15 +623,7 @@ dt a:hover {
 	
 </section>
 
-<section class="row halves">
-	<div class="column one">
 
-	</div>
-	<div class="column two row">
-		<div class="column four-twelfths"></div>
-		<div class="column two-twelfths"></div>
-	</div>
-</section>
 
 <footer class="local">
 	<br>	
