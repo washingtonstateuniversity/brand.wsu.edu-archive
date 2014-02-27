@@ -1,5 +1,3 @@
-<?php /* Template Name: Wires */ ?>
-
 <?php get_header(); ?>
 
 <style>
@@ -37,10 +35,10 @@ button {
 	display: block;
 	height: 3000px;
 	z-index: 99999;
-	background: transparent url('http://nbj.me/wp-content/themes/dev/depot/images/elements/grid.png') repeat-y left top;
+	background: transparent url('/wp-content/themes/brand/images/pages/wireframe/grid.png') repeat-y left top;
 	}
 .grid12 #grid {
-	background: transparent url('http://nbj.me/wp-content/themes/dev/depot/images/elements/grid12.png') repeat-y left top;
+	background: transparent url('/wp-content/themes/dev/depot/images/elements/grid12.png') repeat-y left top;
 	}
 	
 main:not(.wireframe) .wireframe-only {
@@ -358,13 +356,13 @@ dt a:hover {
 			</dl>
 			
 			<dl class="spine-grids clearfix size-gt-medium-only">
-				<dt>grid columns <a class="info "href="info">info</a></dt>
+				<dt>grid columns <a class="info hidden" href="info">info</a></dt>
 				<dd><button onclick="$('#jacket').addClass('grid');">container</button></dd> 
 				<dd><button onclick="$('#jacket').addClass('grid').addClass('grid12');">content</button></dd>
 			</dl>
 			
 			<dl class="spine-behavior clearfix">
-				<dt>grid behavior <a class="info" href="#spine-behavior">info</a></dt>
+				<dt>grid behavior <a class="info" href="#responsive">info</a></dt>
 				<dd><button data-grid="fluid">fluid</button></dd>
 				<dd><button data-grid="fixed">fixed</button></dd>
 				<dd><button data-grid="hybrid">hybrid</button></dd>
