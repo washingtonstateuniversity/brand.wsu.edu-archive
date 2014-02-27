@@ -21,6 +21,11 @@ x#cropping {
 	background-color: #424a4f;
 	height: 400px;
 	}
+	
+button {
+	width: auto;
+	}	
+
 #grid {
 	display: none;
 	}
@@ -209,15 +214,46 @@ section > big {
 	position: relative;
 	}
 #unprecedented .column.two aside {
-	position: absolute;
-	bottom: 0px;
-	padding-bottom: 20px;
+	xposition: absolute;
+	xbottom: 0px;
+	xxpadding-bottom: 20px;
 	}
 	
 button {
 	padding: 2px 4px;
 	}
-	
+#controls {
+	padding-top: 150px;
+	}
+
+#controls dl {
+	border-top: 1px gray dotted;
+	margin-top: 5px;
+	padding-top: 5px;
+	}
+#controls dl dt {
+	display: block;
+	}
+#controls dl dd {
+	display: block; float: left;
+	padding: 0px; margin: 0px;
+	}
+#controls dl a.info {
+	float: right;
+	}
+.spine-colors dd {
+	display: block;
+	float: left;
+	padding: 2px 0px;
+	width: 33%;
+	}
+.spine-wireframe button::before {
+	content: "show ";
+	}
+.wireframe .spine-wireframe button::before {
+	content: "hide ";
+	}
+
 </style>
 
 <script>
@@ -232,7 +268,7 @@ button {
 	});
 	
 	// Change Spine color
-	$('#spine-palettes dd').on('click', function() {
+	$('.spine-colors dd').on('click', function() {
 		var color = $(this).attr('data-color');
 		$('#spine').removeClass('white lightest lighter light gray dark darker darkest crimson transparent');
 		$('#spine').addClass(color);
@@ -272,7 +308,7 @@ button {
 
 <?php get_template_part('parts/headers'); ?>
 
-<section id="unprecedented" class="row sidebar equalize">
+<section id="unprecedented" class="row sidebar equalize gutter marginalize wide">
 
 	<div class="column one">
 
@@ -287,20 +323,48 @@ button {
 
 	</div><!--/column-->
 
-	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/www.png') 0% -10px no-repeat;">
+	<div id="controls" class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/www.png') 0% -10px no-repeat;">
 		
-		<aside>
-		<h5>Under the hood</h5>
-		<p>The Spine includes an underlying framework which is responsible for providing the mobile friendly responsive design and more.
-			<button onclick="$('main').toggleClass('wireframe');">show framework</button>
+			<dl class="spine-colors clearfix">
+				<dt>spine colors <a class="info "href="info">info</a></dt>
+				<dd class="white-back" data-color="white" style="box-shadow: inset 0 0 1px black;">Default</dd> 
+				<dd class="lightest-back light-text" data-color="lightest" style="box-shadow: inset 0 0 1px black;">Lightest</dd>
+				<dd class="lighter-back gray-text" data-color="lighter">Lighter</dd>
+				<dd class="light-back dark-text" data-color="light">Light</dd>
+				<dd class="gray-back lightly-text" data-color="gray">Gray</dd>
+				<dd class="dark-back lighter-text" data-color="dark">Dark</dd>
+				<dd class="darker-back light-text" data-color="darker">Darker</dd>
+				<dd class="darkest-back light-text" data-color="darkest">Darkest</dd>
+				<dd class="crimson-back white-text" data-color="crimson">Crimson</dd><br>
+				<dd style="transparent-back" data-color="transparent" style="box-shadow: inset 0 0 1px black;">Transparent</dd>
+			</dl>
 			
-		</aside>
+			<dl class="spine-grids clearfix">
+				<dt>grid columns <a class="info "href="info">info</a></dt>
+				<dd><button onclick="$('#jacket').addClass('grid');">container</button></dd> 
+				<dd><button onclick="$('#jacket').addClass('grid').addClass('grid12');">content</button></dd>
+			</dl>
+			
+			<dl class="spine-behavior clearfix">
+				<dt>grid behavior <a class="info "href="info">info</a></dt>
+				<dd><button data-grid="fluid">fluid</button></dd>
+				<dd><button data-grid="fixed">fixed</button></dd>
+				<dd><button data-grid="hybrid">hybrid</button></dd>
+			</dl>
+			
+			<dl class="spine-framework">
+				<dt>Under the hood <a class="info "href="info">info</a></dt>
+				<dd><button onclick="$('main').toggleClass('wireframe');">framework</button></dd>
+			</dl>
+					
+			
+			
 
 	</div><!--/column-->
 
 </section>
 
-<section id="flexible" class="row sideleft equalize">
+<section id="flexible" class="row sideleft marginalize gutter wide equalize">
 	<div class="column one" style="background: url('/wp-content/themes/brand/images/pages/web/squarecircle.png') center center no-repeat; background-size: auto 80%">
 	</div>
 	<div class="column two">
@@ -311,11 +375,11 @@ button {
 	</div>
 </section>
 
-<section id="responsive" class="row sidebar equalize">
+<section id="responsive" class="row sidebar equalize marginalize gutter wide">
 	<div class="column one">
 	<article class="marginalize">
 	<header><h2>responsive</h2></header>
-	<p><b>Big brother, meet your kid brother, the smartphone. We love him too.</b> The Spine framework provides a responsive grid that enables sites to flex and fold to fit whatever device. The default width is comprised of <button onclick="$('#jacket').addClass('grid');">fifteen</button> 66 pixel columns, the main content area being <button onclick="$('#jacket').addClass('grid').addClass('grid12');">twelve</button> of those.</p>
+	<p><b>Big brother, meet your kid brother, the smartphone. We love him too.</b> The Spine framework provides a responsive grid that enables sites to flex and fold to fit whatever device. The default width is comprised of  66 pixel columns, the main content area being  of those.</p>
 	</article>
 	</div>
 	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/folds.png') center 10px no-repeat; background-size: auto 105%;"></div>
@@ -323,7 +387,7 @@ button {
 
 
 
-<section id="spine-palettes" class="row sidebar equalize reverse">
+<section id="spine-palettes" class="row sidebar equalize reverse marginalize gutter wide">
 	<style>
 	#spine-palettes dd { padding: .25em .5em; margin-bottom: .25em; }
 	#spine-palettes dd:hover { color: white; background-color: #A6192E; }
@@ -334,18 +398,7 @@ button {
 		<header><h2>spine palettes</h2></header>
 		<p>To complement the style and tone of your design, the Spine can be easily switched between six sets of tints within our primary colors of gray and crimson. <strong>Try it out ...</strong></p>
 		
-		<dl>
-			<dd class="lightest-back light-text" data-color="lightest" style="box-shadow: inset 0 0 1px black;">Lightest</dd>
-			<dd class="lighter-back gray-text" data-color="lighter">Lighter</dd>
-			<dd class="light-back dark-text" data-color="light">Light</dd>
-			<dd class="gray-back lightly-text" data-color="gray">Gray</dd>
-			<dd class="dark-back lighter-text" data-color="dark">Dark</dd>
-			<dd class="darker-back light-text" data-color="darker">Darker</dd>
-			<dd class="darkest-back light-text" data-color="darkest">Darkest</dd>
-			<dd class="crimson-back white-text" data-color="crimson">Crimson</dd><br>
-			<dd class="white-back" data-color="white">Default White</dd> 
-			<dd style="transparent-back" data-color="transparent">Transparent</dd>
-		</dl>
+		
 		</article>
 	</div>
 	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/darkspine.png') right 20px no-repeat; background-size: 100%;">
@@ -356,7 +409,7 @@ button {
 	</div>
 </section>
 
-<section id="cropping-bleeding" class="row sidebar equalize">
+<section id="cropping-bleeding" class="row sidebar equalize marginalize gutter wide">
 	
 	<div class="column one">
 		<article>
@@ -370,7 +423,7 @@ button {
 	
 </section>
 
-<section id="tool-belt" class="row sideleft equalize">
+<section id="tool-belt" class="row sideleft equalize marginalize gutter wide">
 	
 	<div class="column one" style="background: url('/wp-content/themes/brand/images/pages/web/tools.png') 70% center no-repeat; background-size: 80% auto;">
 	</div>
@@ -383,7 +436,7 @@ button {
 	
 </section>
 
-<section id="nesting" class="row halves reverse">
+<section id="nesting" class="row halves reverse marginalize gutter wide">
 	
 	<div class="twelve-twelfths-max">
 	<div class="column one">
@@ -392,10 +445,10 @@ button {
 		<p>Related articles and images can be nested so that they hang together in groups when the page flexes and folds for mobile. Notice how these nested color blocks hang together if you pull your browser window to a narrow width.</p>
 		</article>
 	</div>
-	<div class="column two row thirds">
-		<div class="column one orange-back three-twelfths-tall"></div>
-		<div class="column two green-back three-twelfths-tall"></div>
-		<div class="column three blue-back three-twelfths-tall"></div>
+	<div class="column two row thirds padless">
+		<div class="column one orange-back four-twelfths-tall"></div>
+		<div class="column two green-back four-twelfths-tall"></div>
+		<div class="column three blue-back four-twelfths-tall"></div>
 		<!--<div class="column four yellow-back three-twelfths-tall"></div>-->
 	</div>
 	</div>
