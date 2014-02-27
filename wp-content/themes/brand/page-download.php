@@ -98,8 +98,8 @@ dl.downloads dd:only-of-type a {
 	text-align: right;
 	}
 .size-lt-medium #campuses dl.downloads {
-	width: 90%;
-	padding-left: 10%;
+	width: 100%;
+	padding-left: 0%;
 	padding-top: 100px;
 	}
 #campuses dl.downloads dd {
@@ -141,7 +141,7 @@ dl.downloads dd:only-of-type a {
 		<h2>university <small> <span>signatures</span> <span>shield</span> <span>social media badges</span></small></h2>
 		
 		<dl class="downloads">
-			<dd><a href="">university wide</a></dd>
+			<dd><a href="/wp-content/themes/brand/downloads/university/WSU-Univ-wide_Logos.zip">university wide</a></dd>
 		</dl>
 		
 	</div>
@@ -211,7 +211,7 @@ dl.downloads dd:only-of-type a {
 	<div class="column one">
 		
 		<h3 style="display: inline-block; padding-right: 30px;">stationery and business cards </h3>
-		<a class="brand-button" href="">Order</a>
+		<a class="brand-button" href="http://publishing.wsu.edu/onlineorders.html">Order</a>
 
 		
 	</div>
