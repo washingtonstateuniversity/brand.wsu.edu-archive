@@ -11,7 +11,7 @@
 	padding: 15px 0px;
 	}
 #letterforms {
-	padding-top: 50px;
+	padding-top: 35px;
 	}
 
 .size-gt-small #stones figure {
@@ -20,6 +20,9 @@
 	}
 .stonesans {
 	
+	}
+xmain section ~ section {
+	background: #f4f4f5;
 	}
 #stones h2 {
 	padding-bottom: 1em;
@@ -40,6 +43,11 @@ h2 + h5 {
 	margin-top: 0px; 
 	padding-top: 0px;
 	}
+.column h4:first-child,
+.column figure h2:first-child {
+	padding-top: 0px;
+	margin-top: 0px;
+	}
 
 </style>
 
@@ -47,22 +55,22 @@ h2 + h5 {
 
 <?php get_template_part('parts/headers'); ?>
 
-<section id="letterforms" class="row equalize">
+<section id="letterforms" class="row equalize marginalize-bottom">
 
 	<div class="column one four-twelfths" style="text-align: right;">
 		<figure>
-			<img src="/wp-content/themes/brand/images/pages/type/Aa.png" width="200px">
+			<img src="/wp-content/themes/brand/images/pages/type/Aa.png" width="210px">
 		</figure>
 	</div>
 	<div class="column two eight-twelfths">
 		<figure>
-			<img src="/wp-content/themes/brand/images/pages/type/letters.png" style="margin: 40px 0px 0px 20px;">
+			<img src="/wp-content/themes/brand/images/pages/type/letters.png" style="margin: 47px 0px 0px 20px;">
 		</figure>
 	</div>
 
 </section>
 
-<section id="stones" class="row single gutter wide">
+<section id="stones" class="row single gutter wide marginalize-top alternate">
 
 	<div class="column one">
 		<figure>
@@ -73,7 +81,7 @@ h2 + h5 {
 
 </section>
 
-<section id="stones" class="row halves gutter wide">
+<section id="stones" class="row halves gutter wide alternate">
 
 	<div class="column one">
 		<figure>
@@ -87,35 +95,50 @@ h2 + h5 {
 			<img src="/wp-content/themes/brand/images/pages/type/stone-sans-col2.png">
 		</figure>
 	</div>
-
-</section>
-
-<section class="row halves gutter wide">
-
-<hr class="tall">
-
-<article class="padless">
-
-	<div class="column one marginalized-bottom">
-		<?php 
-		$column = get_post_meta( get_the_ID(), 'section-2-1', true );
-		if( ! empty( $column ) ) { echo $column; }
-		?>
-	</div>
-	<div class="column two">
-		<?php 
-		$column = get_post_meta( get_the_ID(), 'section-2-2', true );
-		if( ! empty( $column ) ) { echo $column; }
-		?>
-	</div>
 	
-</article>
+	
 
 </section>
 
-<section id="webfonts" class="row single gutter wide">
+<section class="row single alternate">	
+	
+	<div class="column one row halves marginalize gutter wide">
+	
+	<button class="detail">
+		<header>
+			<h3> </h3>
+		</header>
+	</button>
+	
+	<div class="details">
+	
+		<hr class="short">
+		
+		<article class="padless">
+		
+			<div class="column one">
+				<?php 
+				$column = get_post_meta( get_the_ID(), 'section-2-1', true );
+				if( ! empty( $column ) ) { echo $column; }
+				?>
+			</div>
+			<div class="column two">
+				<?php 
+				$column = get_post_meta( get_the_ID(), 'section-2-2', true );
+				if( ! empty( $column ) ) { echo $column; }
+				?>
+			</div>
+			
+		</article>
+		
+	</div><!--/details-->	
+	
+	</div>
 
-	<hr class="tall">
+</section>
+
+
+<section id="webfonts" class="row single gutter wide marginalize">
 
 	<div class="column one">
 		<h2>web</h2>
