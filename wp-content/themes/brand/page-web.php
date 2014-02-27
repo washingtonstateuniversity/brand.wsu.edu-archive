@@ -413,7 +413,7 @@ dt a:hover {
 	<div class="column one">
 	<article class="marginalize">
 	<header><h2>responsive</h2></header>
-	<p><b>Big brother, meet your kid brother, the smartphone. We love him too.</b> The Spine framework provides a responsive grid that enables sites to flex and fold to fit whatever device. The default width is comprised of  66 pixel columns, the main content area being  of those.</p>
+	<p><b>Big brother, meet your kid brother, the smartphone. We love him too.</b> The Spine framework provides a responsive grid that enables sites to flex and fold to fit whatever device. The default width is comprised of fifteen 66 pixel columns, the main content area being twelve of those.</p>
 	</article>
 	</div>
 	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/folds.png') center 10px no-repeat; background-size: auto 105%;"></div>
@@ -448,7 +448,7 @@ dt a:hover {
 	<div class="column one">
 		<article>
 		<header><h2>cropping and bleeding</h2></header>
-		<p><b>It may be gruesome</b>, but for site cover pages, the Spine's head can be "severed" or .</p>
+		<p><b>It's gruesome</b>, but for site cover pages, the Spine's head can be "severed" or cropped for an even blanker canvas for your engaging design. Additionally, the Spine — which by default is 198px wide and the full height of the browser's window — can be bled off the left side of the window.</p>
 		</article>
 	</div>
 	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/cropped.png') left 10px no-repeat; background-size: 130% auto;">
@@ -563,7 +563,7 @@ dt a:hover {
 		
 		<article>
 		<header><h2>campus ready</h2></header>
-		<p>Related articles and images can be nested so that they hang together in groups when the page flexes and stacks for mobile: </p>
+		<p>The signatures of urban campuses and other top level units are readily available.</p>
 		</article>
 	</div>
 	
