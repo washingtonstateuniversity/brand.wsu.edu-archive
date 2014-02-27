@@ -576,7 +576,7 @@ pre code {
 		
 		<article>
 		<header><h2>campus ready</h2></header>
-		<p>The signatures for each urban campus and for other top level units are pre-baked into the Spine, both the vertical signature for large devices and the horizontal for small. <pre>The campus signatures are activated by adding, for example, a <code>.wsu-vancouver-signature</code> or <code>.wsu-tricities-signature</code> class to html or body.</pre></p>
+		<p>The signatures for each urban campus and for other top level units are pre-baked into the Spine, both the vertical signature for large devices and the horizontal for small. <pre>The campus signatures are activated by adding, for example , a <code>.wsu-vancouver-signature</code> or <code>.wsu-tricities-signature</code> class to html or body.</pre></p>
 		</article>
 	</div>
 	
