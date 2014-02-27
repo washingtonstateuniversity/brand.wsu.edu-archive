@@ -38,7 +38,7 @@ button {
 	background: transparent url('/wp-content/themes/brand/images/pages/wireframe/grid.png') repeat-y left top;
 	}
 .grid12 #grid {
-	background: transparent url('/wp-content/themes/dev/depot/images/elements/grid12.png') repeat-y left top;
+	background: transparent url('/wp-content/themes/brand/images/pages/wireframe/grid12.png') repeat-y left top;
 	}
 	
 main:not(.wireframe) .wireframe-only {
@@ -263,6 +263,18 @@ dt a:hover {
 .wireframe .spine-wireframe button::before {
 	content: "hide ";
 	}
+pre,code {
+	display: none;
+	}
+.wirefram pre, .wireframe code {
+	display: block;
+	}
+pre {
+	white-space: normal;
+	}
+pre code {
+	font-style: italic;
+	}
 
 </style>
 
@@ -295,6 +307,7 @@ dt a:hover {
 	
 	// Change Campus
 	$('.spine-campuses button').on('click', function() {
+		$('#spine').removeClass('white lightest lighter light gray dark darker darkest crimson transparent');
 		var campus = $(this).attr('data-campus');
 			campus = campus + '-signature';
 		$('#jacket').removeClass().addClass(campus);
@@ -349,10 +362,19 @@ dt a:hover {
 				<dd><button class="transparent-back gray-lighter-text" data-color="transparent">Transparent</button></dd>
 			</dl>
 			
+			<dl class="spine-campuses clearfix">
+				<dt>campus ready <a class="info" href="#campus-ready">info</a></dt>
+				<dd><button data-campus="spokane">Spokane</button></dd>
+				<dd><button data-campus="tricities">Tri-Cities</button></dd>
+				<dd><button data-campus="vancouver">Vancouver</button></dd>
+				<dd><button data-campus="globalcampus">Global Campus</button></dd>
+				<dd><button data-campus="extension">Extension</button></dd>
+			</dl>
+			
 			<dl class="spine-column-options clearfix">
 				<dt>spine options <a class="info" href="#cropping-bleeding">info</a></dt>
 				<dd><button onclick="$('#spine').removeClass('bleed').toggleClass('cropped');">severed</button></dd> 
-				<dd><button onclick="$('#spine').removeClass('bloodless bleed');">bleeding</button></dd>
+				<dd><button onclick="location.href = '#cropping-bleeding';">bleeding</button></dd>
 			</dl>
 			
 			<dl class="spine-grids clearfix size-gt-medium-only">
@@ -378,14 +400,7 @@ dt a:hover {
 				<dd><button data-max="max-1980">1980</button></dd>
 			</dl>
 			
-			<dl class="spine-campuses clearfix">
-				<dt>campus ready <a class="info" href="#campus-ready">info</a></dt>
-				<dd><button data-campus="spokane">Spokane</button></dd>
-				<dd><button data-campus="tricities">Tri-Cities</button></dd>
-				<dd><button data-campus="vancouver">Vancouver</button></dd>
-				<dd><button data-campus="globalcampus">Global Campus</button></dd>
-				<dd><button data-campus="extension">Extension</button></dd>
-			</dl>
+			
 			
 			<dl class="spine-wireframe">
 				<dt>under the hood</dt>
@@ -402,7 +417,7 @@ dt a:hover {
 	<div class="column two">
 		<article class="marginalize">
 		<header><h2>consistency and flexibility</h2></header>
-		<p>The framework makes every effort to achieve consistent positioning, graphics, and behavior within the Spine's vertical column while at the same time preserving the greatest degree of flexibility besides. For example, with a switch, the Spine supports three kinds of commonly used grids: <strong>Fluid</strong>, <strong>Fixed</strong>, and <strong>Hybrid</strong>. Feel free to click one and observe its behavior as you shrink your window size. The default is "hybrid".</p>
+		<p>The framework makes every effort to achieve consistent positioning, graphics, and behavior within the Spine's vertical column while at the same time preserving the greatest degree of flexibility besides. For example, with a switch, the Spine supports three kinds of commonly used grids: <strong>Fluid</strong>, <strong>Fixed</strong>, and <strong>Hybrid</strong>. Feel free to click one above and observe the page's behavior as you shrink your window size. The default is "hybrid".</p>
 		</article>
 	</div>
 </section>
@@ -446,10 +461,10 @@ dt a:hover {
 	<div class="column one">
 		<article>
 		<header><h2>cropping and bleeding</h2></header>
-		<p><b>It's gruesome</b>, but for site cover pages, the Spine's head can be "severed" or cropped for an even blanker canvas for your engaging design. Additionally, the Spine — which by default is 198px wide and the full height of the browser's window — can be bled off the left side of the window.</p>
+		<p><b>It's gruesome</b>, but for site cover pages, the Spine's head can be "severed" or cropped for an even blanker canvas for your design. Additionally, the Spine — which by default is 198px wide and the full height of the browser's window — can be bled off the left side of the window.</p>
 		</article>
 	</div>
-	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/cropped.png') left 10px no-repeat; background-size: 130% auto;">
+	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/murrow.png') left 10px no-repeat; background-size: 396px auto;">
 		<br>
 	</div>
 	
@@ -462,7 +477,7 @@ dt a:hover {
 	<div class="column two">
 		<article>
 		<header><h2>tool belt included</h2></header>
-		<p>Out-of-the-box, the Spine includes local and WSU-wide <strong>search</strong>, a consistent presentation of <strong>contact</strong> information, easy <strong>sharing</strong> via the most popular social networks, and a <strong>print</strong> tool that automatically formats the page for letter-sized paper.</p>
+		<p>Out-of-the-box, the Spine includes local and WSU-wide <strong>search</strong>, a consistent presentation of <strong>contact</strong> information, easy <strong>sharing</strong> via the most popular social networks, and a <strong>print</strong> tool that automatically formats the page for letter-sized paper. <span class="wireframe-only"><code>Search solution can be customized with alternate sources or even replaced entirely.</code></span></p>
 		</article>
 	</div>
 	
@@ -561,7 +576,7 @@ dt a:hover {
 		
 		<article>
 		<header><h2>campus ready</h2></header>
-		<p>The signatures of urban campuses and other top level units are readily available.</p>
+		<p>The signatures for each urban campus and for other top level units are pre-baked into the Spine, both the vertical signature for large devices and the horizontal for small. <pre>The campus signatures are activated by adding, for example, a <code>.wsu-vancouver-signature</code> or <code>.wsu-tricities-signature</code> class to html or body.</pre></p>
 		</article>
 	</div>
 	
