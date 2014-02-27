@@ -60,7 +60,7 @@ button {
 	border-color: #B5BABE;
 	background: white;
 	text-shadow: none;
-	width: 80px;
+	min-width: 80px;
 	}
 button:hover {
 	color: white;
@@ -73,7 +73,7 @@ div.details {
 	display: none;
 	padding-bottom: 20px;
 	}
-main .details hr:first-child {
+xxmain .details hr:first-child {
 	margin-bottom: 3em;
 	}
 .detailed .details {
@@ -283,7 +283,7 @@ dl.downloads dd:nth-of-type(even) {
 
 dl.downloads dd a,
 a.brand-button {
-	width: 75%;
+	xxwidth: 75%;
 	color: #ADA400;
 	display: inline-block;
 	background: white;
@@ -307,7 +307,7 @@ dl.downloads dd:only-of-type {
 	text-align: center;
 	}
 dl.downloads dd:only-of-type a {
-	width: 80px;
+	min-width: 80px;
 	margin: 0px auto;
 	}
 main hr {
