@@ -8,7 +8,7 @@
 
 section#our-brand .column.one {
 	background: rgba(0,0,0,0.55);
-	min-height: 650px;
+	
 	padding: 0;
 	}
 .column > article p {
@@ -17,6 +17,8 @@ section#our-brand .column.one {
 	line-height: 3em;
 	padding-left: 200px;
 	padding-top: 2em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	}
 body,main {
 	background: black;
@@ -28,18 +30,39 @@ section#our-brand {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-size: 978px 714px;
+	min-height: 650px;
 	}
-.size-gt-large section#our-brand {
-	background-position: left bottom;
-	background-size: 100% auto;
-	}
+
 section#our-brand article {
 	background-image: url('/wp-content/themes/brand/images/pages/home/ourbrand.png');
 	background-repeat: no-repeat;
-	background-position: 50px 25px;
+	background-position: 50px 32px;
 	background-size: auto 630px;
 	font-size: 12px;
-	min-height: 660px;
+	min-height: 710px;
+	}
+.size-lt-medium section#our-brand {
+	background-position: right bottom;
+	background-size: auto 100%;
+	min-height: 600px;
+	}
+.size-lt-medium section#our-brand article {
+	background-position: 20px 32px;
+	background-size: auto 480px;
+	min-height: 600px;
+	}
+.size-lt-medium .column > article p {
+	font-size: 2em;
+	padding-left: 140px;
+	line-height: 3em;
+	padding-top: 2em;
+	}
+.size-gt-large section#our-brand {
+	background-position: left bottom;
+	background-size: 110% auto;
+	}
+.size-gt-large section#our-brand article {
+	min-height: 690px;
 	}
 
 	
