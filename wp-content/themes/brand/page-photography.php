@@ -90,7 +90,7 @@ figcaption big {
 
 	<article class="padless">
 
-	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/current-3.jpg');">
+	<figure style="background-image: url('/wp-content/themes/brand/images/pages/photography/current-1.jpg');">
 		<figcaption><big>current</big></figcaption>
 	</figure>
 	
@@ -213,7 +213,7 @@ figcaption big {
 
 </section>
 
-<section id="library" class="row sidebar equalize">
+<section id="library" class="row sidebar marginalize gutter wide equalize">
 
 	<style>
 		dl.downloads { height: 50px; }
