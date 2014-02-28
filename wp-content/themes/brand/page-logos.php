@@ -56,33 +56,33 @@ div.details .column {
 			<div class="column one">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-1-1', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			<div class="column two">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-1-2', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			<hr>
 			<div class="column three">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-1-3', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			<div class="column four">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-1-4', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			<hr>
 			<div class="column five">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-1-5', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			<div class="column six">
@@ -92,13 +92,13 @@ div.details .column {
 			<div id="clear-space" class="column seven">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-1-7', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			<div class="column eight">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-1-8', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			
@@ -161,13 +161,13 @@ div.details .column {
 			<div class="column one">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-2-1', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			<div class="column two">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-2-2', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			
@@ -241,13 +241,13 @@ div.details .column {
 			<div class="column one">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-3-1', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			<div class="column two">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-3-2', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			
@@ -328,13 +328,13 @@ div.details .column {
 			<div class="column one">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-4-1', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			<div class="column two">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-4-2', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			
@@ -377,13 +377,13 @@ div.details .column {
 			<div class="column one">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-5-1', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			<div class="column two">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-5-2', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			
@@ -428,13 +428,13 @@ div.details .column {
 			<div class="column one">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-6-1', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			<div class="column two">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-6-2', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			
@@ -470,7 +470,7 @@ div.details .column {
 			<div class="column one">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-7-1', true );
-				if( ! empty( $column ) ) { echo $column; }
+				if( ! empty( $column ) ) { echo esc_html( $column ); }
 				?>
 			</div>
 			<div class="column two"></div>

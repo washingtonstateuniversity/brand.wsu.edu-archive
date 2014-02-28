@@ -628,7 +628,7 @@ $('.secondaries .switch.green-text').click( function() {
 		<article>
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-1-1', true );
-		if( ! empty( $column ) ) { echo $column; }
+		if( ! empty( $column ) ) { echo esc_html( $column ); }
 		?>
 		</article>
 		
@@ -638,7 +638,7 @@ $('.secondaries .switch.green-text').click( function() {
 	
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-1-2', true );
-		if( ! empty( $column ) ) { echo $column; }
+		if( ! empty( $column ) ) { echo esc_html( $column ); }
 		?>
 	
 	</div>

@@ -78,7 +78,7 @@ figcaption big {
 	<div class="column two marginalize">
 	
 		<header class="hidden">esteemed</header>
-		<?php  $column = get_post_meta( get_the_ID(), 'section-1-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-1-1', true ); if( ! empty( $column ) ) { echo esc_html( $column ); } ?>
 	
 	</div>
 	
@@ -99,7 +99,7 @@ figcaption big {
 	<div class="column two marginalize">
 	
 		<header class="hidden">current</header>
-		<?php  $column = get_post_meta( get_the_ID(), 'section-2-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-2-1', true ); if( ! empty( $column ) ) { echo esc_html( $column ); } ?>
 	
 	</div>
 	
@@ -120,7 +120,7 @@ figcaption big {
 	<div class="column two marginalize">
 	
 		<header class="hidden">friendly</header>
-		<?php  $column = get_post_meta( get_the_ID(), 'section-3-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-3-1', true ); if( ! empty( $column ) ) { echo esc_html( $column ); } ?>
 	
 	</div>
 	
@@ -141,7 +141,7 @@ figcaption big {
 	<div class="column two marginalize">
 	
 		<header class="hidden">impactful</header>
-		<?php  $column = get_post_meta( get_the_ID(), 'section-4-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-4-1', true ); if( ! empty( $column ) ) { echo esc_html( $column ); } ?>
 	
 	</div>
 	
@@ -162,7 +162,7 @@ figcaption big {
 	<div class="column two marginalize">
 	
 		<header class="hidden">enthusiastic</header>
-		<?php  $column = get_post_meta( get_the_ID(), 'section-5-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-5-1', true ); if( ! empty( $column ) ) { echo esc_html( $column ); } ?>
 	
 	</div>
 	
@@ -183,7 +183,7 @@ figcaption big {
 	<div class="column two marginalize">
 	
 		<header class="hidden">hands-on</header>
-		<?php  $column = get_post_meta( get_the_ID(), 'section-6-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-6-1', true ); if( ! empty( $column ) ) { echo esc_html( $column ); } ?>
 	
 	</div>
 	
@@ -205,7 +205,7 @@ figcaption big {
 	<div class="column two marginalize">
 	
 		<header class="hidden">hands-on</header>
-		<?php  $column = get_post_meta( get_the_ID(), 'section-7-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-7-1', true ); if( ! empty( $column ) ) { echo esc_html( $column ); } ?>
 	
 	</div>
 	
@@ -223,13 +223,13 @@ figcaption big {
 	
 	<div class="column one">
 		
-		<?php  $column = get_post_meta( get_the_ID(), 'section-8-1', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-8-1', true ); if( ! empty( $column ) ) { echo esc_html( $column ); } ?>
 		
 	</div>
 	
 	<div class="column two center absolutely">
 			
-		<?php  $column = get_post_meta( get_the_ID(), 'section-8-2', true ); if( ! empty( $column ) ) { echo $column; } ?>
+		<?php  $column = get_post_meta( get_the_ID(), 'section-8-2', true ); if( ! empty( $column ) ) { echo esc_html( $column ); } ?>
 	
 	</div>
 	

@@ -343,7 +343,7 @@ pre code {
 <?php if (has_post_thumbnail( $post->ID ) ): ?>
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 <style>
-	main { background-image: url(<?php echo $image[0]; ?>); }
+	main { background-image: url(<?php echo esc_attr( $image[0] ); ?>); }
 </style>
 <?php endif; ?>
 
