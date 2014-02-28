@@ -49,7 +49,7 @@ section figure {
 	} */
 
 main section article {
-	height: 330px;
+	height: 340px;
 	}
 
 main section article ul:first-of-type {
@@ -64,9 +64,11 @@ main section article ul li {
 	font-size: 2em;
 	line-height: 1.5em;
 	color: #a6adb0;
-	padding: 0px;
+	padding: .1em 0;
 	margin: 0px;
 	background: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	}
 article ul:first-of-type {
 	margin-left: 4em;
@@ -119,7 +121,7 @@ button.detail::after {
 	<ul>
 		<li>knowledgeable</li>
 		<li>trailblazers</li>
-		<li>hands on</li>
+		<li>hands-on</li>
 		<li>inclusive</li>
 		<li>genuine</li>
 	</ul>
@@ -200,7 +202,7 @@ button.detail::after {
 	<button class="detail"></button>
 	<div class="details">
 		
-		<hr class="short">
+		<hr>
 	
 		<div class="column one">
 			<?php 

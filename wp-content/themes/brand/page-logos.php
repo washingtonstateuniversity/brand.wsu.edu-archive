@@ -43,7 +43,6 @@ div.details .column {
 		<center><img src="/wp-content/themes/brand/images/pages/logos/wsu-signature-horizontal.svg" class="wsu-signature-horizontal"></center>
 		<center><img src="/wp-content/themes/brand/images/pages/logos/wsu-signature-vertical.svg" class="wsu-signature-vertical"></center>
 		
-		
 		<button class="detail">
 			<header>
 				<h3> </h3>
