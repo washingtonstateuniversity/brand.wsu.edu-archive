@@ -161,7 +161,7 @@ dl.downloads dd:only-of-type a {
 		<dl id="downloads-campuses" class="downloads">
 			<dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Spokane_Logos.zip">Spokane</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Tri-Cities_Logos.zip">Tri-Cities</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Vancouver_Logos.zip">Vancounver</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Vancouver_Logos.zip">Vancouver</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Global-Campus_Logos.zip">Global Campus</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Health-Sciences_Logos.zip">Health Sciences</a></dd>
 		    <!--<dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Extension_Logos.zip">Extension</a></dd>-->
