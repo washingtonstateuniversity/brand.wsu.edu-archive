@@ -17,19 +17,19 @@
 
 	<?php if ($section_1_1 != '') {
 	echo '<div class="column one">';
-	echo '<article>'.$section_1_1.'</article>'; 
+	echo '<article>' . esc_html( $section_1_1 ) . '</article>';
 	echo '</div>'; }
 	?>
 	
 	<?php if ($section_1_2 != '') {
 	echo '<div class="column two">';
-	echo '<article>'.$section_1_2.'</article>'; 
+	echo '<article>' . esc_html( $section_1_2 ) . '</article>';
 	echo '</div>'; }
 	?>
 	
 	<?php if ($section_1_3 != '') {
 	echo '<div class="column three">';
-	echo '<article>'.$section_1_3.'</article>'; 
+	echo '<article>' . esc_html( $section_1_3 ) . '</article>';
 	echo '</div>'; }
 	?>
 
