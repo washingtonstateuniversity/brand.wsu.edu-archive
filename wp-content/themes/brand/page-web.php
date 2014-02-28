@@ -239,7 +239,7 @@ button {
 	}
 dt a {
 	font-size: .8em;
-	color: ;
+	
 	}
 dt a:hover {
 	
@@ -362,6 +362,12 @@ pre code {
 				<dd><button class="transparent-back gray-lighter-text" data-color="transparent">Transparent</button></dd>
 			</dl>
 			
+			<dl class="spine-column-options clearfix">
+				<dt>spine options <a class="info" href="#cropping-bleeding">info</a></dt>
+				<dd><button onclick="location.href = '#cropping-bleeding';">severed</button></dd> 
+				<dd><button onclick="$('#spine').removeClass('cropped').addClass('gray').toggleClass('bleed');">bleeding</button></dd>
+			</dl>
+			
 			<dl class="spine-campuses clearfix">
 				<dt>campus ready <a class="info" href="#campus-ready">info</a></dt>
 				<dd><button data-campus="spokane">Spokane</button></dd>
@@ -369,12 +375,6 @@ pre code {
 				<dd><button data-campus="vancouver">Vancouver</button></dd>
 				<dd><button data-campus="globalcampus">Global Campus</button></dd>
 				<dd><button data-campus="extension">Extension</button></dd>
-			</dl>
-			
-			<dl class="spine-column-options clearfix">
-				<dt>spine options <a class="info" href="#cropping-bleeding">info</a></dt>
-				<dd><button onclick="$('#spine').removeClass('bleed').toggleClass('cropped');">severed</button></dd> 
-				<dd><button onclick="location.href = '#cropping-bleeding';">bleeding</button></dd>
 			</dl>
 			
 			<dl class="spine-grids clearfix size-gt-medium-only">
@@ -390,7 +390,7 @@ pre code {
 				<dd><button data-grid="hybrid">hybrid</button></dd>
 			</dl>
 			
-			<dl class="spine-sizes clearfix">
+			<dl class="spine-sizes clearfix wireframe-only">
 				<dt>extra large sizes <a class="info hidden" href="#spine-sizes">info</a></dt>
 				<dd><button data-max="max-990">default</button></dd>
 				<dd><button data-max="max-1188">1188</button></dd>
@@ -399,8 +399,6 @@ pre code {
 				<dd><button data-max="max-1782">1782</button></dd>
 				<dd><button data-max="max-1980">1980</button></dd>
 			</dl>
-			
-			
 			
 			<dl class="spine-wireframe">
 				<dt>under the hood</dt>
@@ -412,7 +410,18 @@ pre code {
 </section>
 
 <section id="spine-behavior" class="row sideleft marginalize gutter wide equalize">
-	<div class="column one" style="background: url('/wp-content/themes/brand/images/pages/web/squarecircle.png') right center no-repeat; background-size: auto 60%">
+	<style>
+	#spine-behavior .column.one {
+		background: url('/wp-content/themes/brand/images/pages/web/squarecircle.png') right center no-repeat;
+		background-size: auto 60%; 
+		}
+	.size-lt-large #spine-behavior .column.one {
+		background-position: center bottom;
+		background-size: auto 231px;
+		}
+	</style>
+	<div class="column one">
+		<br>
 	</div>
 	<div class="column two">
 		<article class="marginalize">
@@ -443,7 +452,7 @@ pre code {
 	<div class="column one">
 		<article>
 		<header><h2>spine colors</h2></header>
-		<p>To complement the style and tone of your design, the Spine can be easily switched between six sets of tints within our primary colors of gray and crimson.</p>
+		<p>To complement the style and tone of your design, the Spine can be easily switched between several sets of tints and shades within our primary colors of gray and crimson.</p>
 		
 		
 		</article>
@@ -461,7 +470,7 @@ pre code {
 	<div class="column one">
 		<article>
 		<header><h2>cropping or bleeding</h2></header>
-		<p><b>It's gruesome</b>, but for site cover pages, the Spine's head can be "severed" or cropped for an even blanker slate for your design. Alternatively, the spine — which by default is 198px wide and the full height of the browser's window — can be bled off the left side of the window.</p>
+		<p><b>It's gruesome</b>, but for site cover pages, the Spine's head can be "severed" or cropped for an even blanker slate for your design. Alternatively, the spine — which by default is 198px wide and the full height of the browser's window — can be bled off the left side of the window, as it is here.</p>
 		</article>
 	</div>
 	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/murrow.png') left 10px no-repeat; background-size: 396px auto;">
@@ -532,8 +541,10 @@ pre code {
 
 <section id="resolution" class="row sidebar gutter wide">
 	<style>
-	
-	#resolution .column.two { background: url('http://repo.wsu.edu/spine/1/marks/wsu-signature-vertical.svg') center center no-repeat; background-size: auto;  }
+	#resolution .column.two {
+		background: url('http://repo.wsu.edu/spine/1/marks/wsu-signature-vertical.svg') center center no-repeat;
+		background-size: auto; 
+		}
 	#resolution:hover .column.two {
 		background-position: center 10px;
 		background-size: 300%;
@@ -567,7 +578,18 @@ pre code {
 	</div>
 </section>
 
-<section id="campus-ready" class="row sideleft marginalize gutter wide">
+<section id="campus-ready" class="row sideleft equalize marginalize gutter wide">
+
+	<style>
+		#campus-ready .column.one {
+			background: url('http://repo.wsu.edu/spine/1/marks/wsu-spokane-signature-vertical.svg') center center no-repeat;
+			background-size: auto; 
+			}
+		#campus-ready::before,
+		#campus-ready:hover .column.one {
+			background: url('http://repo.wsu.edu/spine/1/marks/wsu-globalcampus-signature-vertical.svg') center center no-repeat;
+			}
+	</style>
 	
 	<div class="column one">
 		<br>

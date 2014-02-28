@@ -12,8 +12,8 @@ main section:first-of-type .column.one {
 	padding-top: 0;
 	}
 .descriptors {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 4em;
+	padding-bottom: 4em;
 	}
 .descriptors dl {
 	padding: 15px 0px;
