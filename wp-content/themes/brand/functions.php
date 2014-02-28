@@ -10,4 +10,12 @@ function brand_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'brand_scripts' );
 
+add_action('wp_head','brand_analytics');
+
+function brand_analytics() {
+	
+	?><script id="tracker_agent" src="http://images.wsu.edu/javascripts/tracking/bootstrap_v3.js?gacode=UA-48539105-1&loading=element_v2&loading=brand&domainName=brand.wsu.edu&id=2" type="text/javascript"></script>
+	<?php
+	}
+
 ?>
