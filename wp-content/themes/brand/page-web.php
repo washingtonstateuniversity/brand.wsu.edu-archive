@@ -332,7 +332,7 @@ pre code {
 		$('#spine').removeClass('white lightest lighter light gray dark darker darkest crimson transparent');
 		var campus = $(this).attr('data-campus');
 			campus = campus + '-signature';
-		$('#jacket').removeClass().addClass(campus);
+		$('html').removeClass().addClass(campus);
 		return false;
 	});
 	
