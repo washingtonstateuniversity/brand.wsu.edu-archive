@@ -460,8 +460,8 @@ pre code {
 	
 	<div class="column one">
 		<article>
-		<header><h2>cropping and bleeding</h2></header>
-		<p><b>It's gruesome</b>, but for site cover pages, the Spine's head can be "severed" or cropped for an even blanker canvas for your design. Additionally, the Spine — which by default is 198px wide and the full height of the browser's window — can be bled off the left side of the window.</p>
+		<header><h2>cropping or bleeding</h2></header>
+		<p><b>It's gruesome</b>, but for site cover pages, the Spine's head can be "severed" or cropped for an even blanker slate for your design. Alternatively, the spine — which by default is 198px wide and the full height of the browser's window — can be bled off the left side of the window.</p>
 		</article>
 	</div>
 	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/murrow.png') left 10px no-repeat; background-size: 396px auto;">
