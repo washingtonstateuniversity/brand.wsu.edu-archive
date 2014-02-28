@@ -7,6 +7,9 @@
 	xbox-shadow: inset -2px -2px 1px rgba(137,137,137,0.1);
 	box-shadow: inset 0px 0px 1px rgba(137,137,137,0.6);
 	}
+.inset {
+	box-shadow: inset 0px 0px 1px rgba(137,137,137,0.6);
+	}
 	
 /* GRID */
 
@@ -230,26 +233,45 @@ button {
 	}
 
 #controls dl {
-	border-top: 1px #D7DAD8 solid;
 	margin-top: 15px;
 	padding-top: 5px;
 	}
+#controls dl ~ dl {
+	border-top: 1px #D7DAD8 solid;
+	}
 #controls dl dt {
 	display: block;
-	}
-dt a {
-	font-size: .8em;
-	
 	}
 dt a:hover {
 	
 	}
 #controls dl dd {
 	display: block; float: left;
-	padding: 0px; margin: 0px;
+	padding: 0px; margin: 0px 0px 2px 0px;
 	}
 #controls dl a.info {
 	float: right;
+	display: block;
+	xtext-indent: -9000px;
+	overflow: hidden;
+	position: relative;
+	color: white;
+	opacity: .3;
+	}
+#controls dl a.info::before {
+	font-family: "Iconography";
+	content: "\2139";
+	font-size: 1.4em;
+	color: #b5babe;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 16px;
+	width: 30px;
+	text-align: center;
+	}
+#controls dl a.info:hover::before {
+	color: #5e6a71;
 	}
 .spine-colors dd {
 	display: block;
@@ -350,22 +372,22 @@ pre code {
 		
 			<dl class="spine-colors clearfix">
 				<dt>spine colors <a class="info" href="#spine-colors">info</a></dt>
-				<dd><button class="white-back gray-text" data-color="white">Default</button></dd> 
-				<dd><button class="lightest-back gray-text" data-color="lightest">Lightest</button></dd>
-				<dd><button class="lighter-text" data-color="lighter">Lighter</button></dd>
-				<dd><button class="light-text" data-color="light">Light</button></dd>
-				<dd><button class="gray-text" data-color="gray">Gray</button></dd>
-				<dd><button class="dark-text" data-color="dark">Dark</button></dd>
-				<dd><button class="darker-text" data-color="darker">Darker</button></dd>
-				<dd><button class="darkest-text" data-color="darkest">Darkest</button></dd>
-				<dd><button class="crimson-text" data-color="crimson">Crimson</button></dd>
+				<dd><button class="white-back gray-text inset" data-color="white">Default</button></dd> 
+				<dd><button class="lightest-back gray-text inset" data-color="lightest">Lightest</button></dd>
+				<dd><button class="lighter-back gray-text" data-color="lighter">Lighter</button></dd>
+				<dd><button class="light-back lightly-text" data-color="light">Light</button></dd>
+				<dd><button class="gray-back lighter-text" data-color="gray">Gray</button></dd>
+				<dd><button class="dark-back lighter-text" data-color="dark">Dark</button></dd>
+				<dd><button class="darker-back light-text" data-color="darker">Darker</button></dd>
+				<dd><button class="darkest-back light-text" data-color="darkest">Darkest</button></dd>
+				<dd><button class="crimson-back white-text" data-color="crimson">Crimson</button></dd>
 				<dd><button class="transparent-back gray-lighter-text" data-color="transparent">Transparent</button></dd>
 			</dl>
 			
 			<dl class="spine-column-options clearfix">
 				<dt>spine options <a class="info" href="#cropping-bleeding">info</a></dt>
-				<dd><button onclick="location.href = '#cropping-bleeding';">severed</button></dd> 
 				<dd><button onclick="$('#spine').removeClass('cropped').addClass('gray').toggleClass('bleed');">bleeding</button></dd>
+				<dd><button onclick="location.href = '#cropping-bleeding';">severed</button></dd> 
 			</dl>
 			
 			<dl class="spine-campuses clearfix">
@@ -379,8 +401,8 @@ pre code {
 			
 			<dl class="spine-grids clearfix size-gt-medium-only">
 				<dt>grid columns <a class="info hidden" href="info">info</a></dt>
-				<dd><button onclick="$('#jacket').addClass('grid');">container</button></dd> 
-				<dd><button onclick="$('#jacket').addClass('grid').addClass('grid12');">content</button></dd>
+				<dd><button onclick="$('#jacket').addClass('grid');">binder</button></dd> 
+				<dd><button onclick="$('#jacket').addClass('grid').addClass('grid12');">page</button></dd>
 			</dl>
 			
 			<dl class="spine-behavior clearfix">
@@ -411,14 +433,14 @@ pre code {
 
 <section id="spine-behavior" class="row sideleft marginalize gutter wide equalize">
 	<style>
-	#spine-behavior .column.one {
-		background: url('/wp-content/themes/brand/images/pages/web/squarecircle.png') right center no-repeat;
-		background-size: auto 60%; 
-		}
-	.size-lt-large #spine-behavior .column.one {
-		background-position: center bottom;
-		background-size: auto 231px;
-		}
+		#spine-behavior .column.one {
+			background: url('/wp-content/themes/brand/images/pages/web/squarecircle.png') right center no-repeat;
+			background-size: auto 60%; 
+			}
+		.size-lt-medium #spine-behavior .column.one {
+			background-position: center bottom;
+			background-size: auto 231px;
+			}
 	</style>
 	<div class="column one">
 		<br>
@@ -445,35 +467,41 @@ pre code {
 
 <section id="spine-colors" class="row sidebar equalize reverse marginalize gutter wide">
 	<style>
-	#spine-palettes dd { padding: .25em .5em; margin-bottom: .25em; }
-	#spine-palettes dd:hover { color: white; background-color: #A6192E; }
+		#spine-palettes dd { padding: .25em .5em; margin-bottom: .25em; }
+		#spine-palettes dd:hover { color: white; background-color: #A6192E; }
 	</style>
 	<div class="twelve-twelfths-max">
 	<div class="column one">
 		<article>
-		<header><h2>spine colors</h2></header>
-		<p>To complement the style and tone of your design, the Spine can be easily switched between several sets of tints and shades within our primary colors of gray and crimson.</p>
-		
-		
+			<header><h2>spine colors</h2></header>
+			<p><b>A chameleon of sorts</b>, to complement the style and tone of your design, the spine can be easily switched between several sets of tints and shades within our primary colors of gray and crimson.</p>
 		</article>
 	</div>
 	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/darkspine.png') right 20px no-repeat; background-size: 100%;">
-		
 		<br>
-		
 	</div>
 	</div>
 </section>
 
 <section id="cropping-bleeding" class="row sidebar equalize marginalize gutter wide">
-	
+	<style>
+	#cropping-bleeding .column.two {
+		background: url('/wp-content/themes/brand/images/pages/web/cropped.png') left -5px no-repeat;
+		background-size: auto 85%;
+		}
+	#cropping-bleeding .column.two::before,
+	#cropping-bleeding:hover .column.two {
+		background: url('/wp-content/themes/brand/images/pages/web/murrow.png') left 20px no-repeat;
+		background-size: auto 100%;
+		}
+	</style>
 	<div class="column one">
 		<article>
 		<header><h2>cropping or bleeding</h2></header>
 		<p><b>It's gruesome</b>, but for site cover pages, the Spine's head can be "severed" or cropped for an even blanker slate for your design. Alternatively, the spine — which by default is 198px wide and the full height of the browser's window — can be bled off the left side of the window, as it is here.</p>
 		</article>
 	</div>
-	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/murrow.png') left 10px no-repeat; background-size: 396px auto;">
+	<div class="column two">
 		<br>
 	</div>
 	
