@@ -5,18 +5,7 @@
 </script>
 
 <style>
-main {
-	xxpadding-bottom: 400px;
-	background: white;
-	xbackground: #EFF0F1;
-	}
 
-main section figure {
-	
-	}
-section {
-	background: url('/wp-content/themes/brand/images/elements/main-background-lightest.png') left top repeat-y;
-	}
 section figure {
 	background-repeat: no-repeat;
 	height: 400px;
@@ -24,30 +13,11 @@ section figure {
 	background-position: center center;
 	background-size: 100% auto;
 	}
-
-
- .size-lt-medium main section figure {
-	xheight: 400px;
+.size-lt-medium main section figure {
 	background-repeat: none;
 	background-position: center top;
 	background-size: auto 100%;
 	}
-/* .size-gt-small main section figure {
-	height: 300px;
-	background-position: center top;
-	background-size: 100% auto;
-	}
-.size-gt-medium main section figure {
-	height: 400px;
-	background-position: center top;
-	background-size: 100% auto;
-	}
-.size-gt-large main section figure {
-	height: 600px;
-	background-position: center top;
-	background-size: 100% auto;
-	} */
-
 main section article {
 	height: 340px;
 	}
@@ -99,8 +69,6 @@ button.detail::after {
 .size-gt-medium #we-offer ul li:nth-of-type(2) { padding-left: 2em; }
 .size-gt-medium #we-offer ul li:nth-of-type(3) { padding-left: 4em; }
 .size-gt-medium #we-offer ul li:nth-of-type(4) { padding-left: 6em; }
-
-
 
 </style>
 
