@@ -95,7 +95,7 @@ ol li {
 	<article>
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-2-1', true );
-		if( ! empty( $column ) ) { echo $column; }
+		if( ! empty( $column ) ) { echo esc_html( $column ); }
 		?>
 	</article>	
 	</div>
@@ -110,7 +110,7 @@ ol li {
 	<article>
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-3-1', true );
-		if( ! empty( $column ) ) { echo $column; }
+		if( ! empty( $column ) ) { echo esc_html( $column ); }
 		?>
 	</article>
 	</div>

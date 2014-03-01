@@ -93,13 +93,13 @@ samp ul {
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-2-1', true );
-			if( ! empty( $column ) ) { echo $column; }
+			if( ! empty( $column ) ) { echo esc_html( $column ); }
 			?>
 		</div>
 		<div class="column two">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-2-2', true );
-			if( ! empty( $column ) ) { echo $column; }
+			if( ! empty( $column ) ) { echo esc_html( $column ); }
 			?>
 		</div>
 	</article>
@@ -118,13 +118,13 @@ samp ul {
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-3-1', true );
-			if( ! empty( $column ) ) { echo $column; }
+			if( ! empty( $column ) ) { echo esc_html( $column ); }
 			?>
 		</div>
 		<div class="column two">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-3-2', true );
-			if( ! empty( $column ) ) { echo $column; }
+			if( ! empty( $column ) ) { echo esc_html( $column ); }
 			?>
 		</div>
 	</article>
@@ -145,13 +145,13 @@ samp ul {
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-4-1', true );
-			if( ! empty( $column ) ) { echo $column; }
+			if( ! empty( $column ) ) { echo esc_html( $column ); }
 			?>
 		</div>
 		<div class="column two">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-4-2', true );
-			if( ! empty( $column ) ) { echo $column; }
+			if( ! empty( $column ) ) { echo esc_html( $column ); }
 			?>
 		</div>
 	</article>
@@ -174,13 +174,13 @@ samp ul {
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-5-1', true );
-			if( ! empty( $column ) ) { echo $column; }
+			if( ! empty( $column ) ) { echo esc_html( $column ); }
 			?>
 		</div>
 		<div class="column two">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-5-2', true );
-			if( ! empty( $column ) ) { echo $column; }
+			if( ! empty( $column ) ) { echo esc_html( $column ); }
 			?>
 		</div>
 		
@@ -201,13 +201,13 @@ samp ul {
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-6-1', true );
-			if( ! empty( $column ) ) { echo $column; }
+			if( ! empty( $column ) ) { echo esc_html( $column ); }
 			?>
 		</div>
 		<div class="column two">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-6-2', true );
-			if( ! empty( $column ) ) { echo $column; }
+			if( ! empty( $column ) ) { echo esc_html( $column ); }
 			?>
 		</div>
 	</article>
