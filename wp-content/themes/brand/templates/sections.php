@@ -35,20 +35,6 @@
 
 <?php if (isset($sec1_columns)) :?></section><?php endif; ?>
 
-<?php
-
-	$section_2_1 = get_post_meta($post->ID, 'section-2-1', true);
-	$section_2_2 = get_post_meta($post->ID, 'section-2-2', true);
-	$section_2_3 = get_post_meta($post->ID, 'section-2-3', true);
-	$section_3_1 = get_post_meta($post->ID, 'section-3-1', true);
-	$section_3_2 = get_post_meta($post->ID, 'section-3-2', true);
-	$section_3_3 = get_post_meta($post->ID, 'section-3-3', true);
-	$section_4_1 = get_post_meta($post->ID, 'section-4-1', true);
-	$section_4_2 = get_post_meta($post->ID, 'section-4-2', true);
-	$section_4_3 = get_post_meta($post->ID, 'section-4-3', true);
-	
-	?>
-
 <article>
 	<?php the_content(); ?>
 </article><!-- #post -->
