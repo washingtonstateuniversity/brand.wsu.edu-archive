@@ -169,7 +169,7 @@ button.detail::after {
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-2-1', true );
-			if( ! empty( $column ) ) { echo esc_html( $column ); }
+			if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 			?>
 		</div>
 	</div><!--/.details-->
@@ -207,13 +207,13 @@ button.detail::after {
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-3-1', true );
-			if( ! empty( $column ) ) { echo esc_html( $column ); }
+			if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 			?>
 		</div>
 		<div class="column two">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-3-2', true );
-			if( ! empty( $column ) ) { echo esc_html( $column ); }
+			if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 			?>
 		</div>
 
@@ -249,7 +249,7 @@ button.detail::after {
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-4-1', true );
-			if( ! empty( $column ) ) { echo esc_html( $column ); }
+			if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 			?>
 		</div>
 	</div><!--/.details-->
@@ -283,7 +283,7 @@ button.detail::after {
 	<div class="details">
 		<?php 
 		$section_one_one = get_post_meta( get_the_ID(), 'section-5-1', true );
-		if( ! empty( $section_one_one ) ) { echo esc_html( $section_one_one ); }
+		if( ! empty( $section_one_one ) ) { echo wp_kses_post( $section_one_one ); }
 		?>
 	</div>-->
 

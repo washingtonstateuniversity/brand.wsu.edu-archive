@@ -50,7 +50,7 @@ main section:first-of-type {
 	<article class="padless">
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-1-1', true );
-		if( ! empty( $column ) ) { echo esc_html( $column ); }
+		if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 		?>
 	</article>
 	</div>
@@ -58,7 +58,7 @@ main section:first-of-type {
 		<aside class="serif striped padless">
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-1-2', true );
-		if( ! empty( $column ) ) { echo esc_html( $column ); }
+		if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 		?>
 		</aside>
 	</div>
@@ -70,7 +70,7 @@ main section:first-of-type {
 		<header>brand consistency checklist</header>
 		<?php 
 		$column = get_post_meta( get_the_ID(), 'section-2-1', true );
-		if( ! empty( $column ) ) { echo esc_html( $column ); }
+		if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 		?>
 
 </section>

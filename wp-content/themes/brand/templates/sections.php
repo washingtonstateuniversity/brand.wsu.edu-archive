@@ -17,37 +17,23 @@
 
 	<?php if ($section_1_1 != '') {
 	echo '<div class="column one">';
-	echo '<article>' . esc_html( $section_1_1 ) . '</article>';
+	echo '<article>' . wp_kses_post( $section_1_1 ) . '</article>';
 	echo '</div>'; }
 	?>
 	
 	<?php if ($section_1_2 != '') {
 	echo '<div class="column two">';
-	echo '<article>' . esc_html( $section_1_2 ) . '</article>';
+	echo '<article>' . wp_kses_post( $section_1_2 ) . '</article>';
 	echo '</div>'; }
 	?>
 	
 	<?php if ($section_1_3 != '') {
 	echo '<div class="column three">';
-	echo '<article>' . esc_html( $section_1_3 ) . '</article>';
+	echo '<article>' . wp_kses_post( $section_1_3 ) . '</article>';
 	echo '</div>'; }
 	?>
 
 <?php if (isset($sec1_columns)) :?></section><?php endif; ?>
-
-<?php
-
-	$section_2_1 = get_post_meta($post->ID, 'section-2-1', true);
-	$section_2_2 = get_post_meta($post->ID, 'section-2-2', true);
-	$section_2_3 = get_post_meta($post->ID, 'section-2-3', true);
-	$section_3_1 = get_post_meta($post->ID, 'section-3-1', true);
-	$section_3_2 = get_post_meta($post->ID, 'section-3-2', true);
-	$section_3_3 = get_post_meta($post->ID, 'section-3-3', true);
-	$section_4_1 = get_post_meta($post->ID, 'section-4-1', true);
-	$section_4_2 = get_post_meta($post->ID, 'section-4-2', true);
-	$section_4_3 = get_post_meta($post->ID, 'section-4-3', true);
-	
-	?>
 
 <article>
 	<?php the_content(); ?>

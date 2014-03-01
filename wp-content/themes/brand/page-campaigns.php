@@ -27,7 +27,7 @@
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-2-1', true );
-			if( ! empty( $column ) ) { echo esc_html( $column ); }
+			if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 			?>
 		</div>
 		<div class="column two">
@@ -47,13 +47,13 @@
 		<div class="column one">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-3-1', true );
-			if( ! empty( $column ) ) { echo esc_html( $column ); }
+			if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 			?>
 		</div>
 		<div class="column two">
 			<?php 
 			$column = get_post_meta( get_the_ID(), 'section-3-2', true );
-			if( ! empty( $column ) ) { echo esc_html( $column ); }
+			if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 			?>
 		</div>
 	</article>
