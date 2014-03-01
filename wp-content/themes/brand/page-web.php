@@ -314,6 +314,7 @@ pre code {
 	// Change Spine color
 	$('.spine-colors button').on('click', function() {
 		var color = $(this).attr('data-color');
+		$('html').removeClass('spokane-signtaure tricities-signature vancouver-signature globalcampus-signature extension-signature');
 		$('#spine').removeClass('white lightest lighter light gray dark darker darkest crimson transparent');
 		$('#spine').addClass(color);
 		return false;
@@ -332,7 +333,7 @@ pre code {
 		$('#spine').removeClass('white lightest lighter light gray dark darker darkest crimson transparent');
 		var campus = $(this).attr('data-campus');
 			campus = campus + '-signature';
-		$('html').removeClass().addClass(campus);
+		$('html').removeClass('spokane-signtaure tricities-signature vancouver-signature globalcampus-signature extension-signature').addClass(campus);
 		return false;
 	});
 	
