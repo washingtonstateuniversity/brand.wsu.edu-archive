@@ -26,7 +26,7 @@ main p {
 	line-height: 1.6em;
 	}
 	
-h6,h5,h4,h3,h2,h1 {
+h6,h5,h4,h3,h2,h1,big {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	}
@@ -61,6 +61,7 @@ button {
 	background: white;
 	text-shadow: none;
 	width: 80px;
+	font-weight: normal;
 	}
 button.brand-wider,
 dl.downloads dd:only-of-type a.brand-wider,
@@ -72,6 +73,8 @@ button:hover {
 	background-color: #ADA400;
 	border-color: #ADA400;
 	}
+	
+
 	
 /* Details */
 div.details {
@@ -110,6 +113,13 @@ button.detail:hover {
 .size-lt-xlarge button.detail {
 	border-right: 2em transparent solid;
 	}
+	
+button.detail header h2 {
+	padding: 0;
+	}
+button.detail:hover header h2 {
+	color: #8f7e35;
+	}
 
 button:focus {
 	outline: none;
@@ -122,15 +132,16 @@ article :not(p) big {
 	display: block;
 	}
 
-main > header {
+.brand-header {
 	left: 0;
 	height: 5em;
 	overflow: hidden;
 	background-color: #5e6a71;
 	padding: 0px;
 	position: relative;
+	z-index: 99164;
 	}
-main > header hgroup {
+.brand-header hgroup {
 	bottom: -5px;
 	bottom: 0px;
 	position: absolute;
@@ -142,13 +153,13 @@ main > header hgroup {
 	height: 5.34em;
 	border-top: 5px #5e6a71 solid;
 	}
-.size-lt-large main > header hgroup {
+.size-lt-large .brand-header hgroup {
 	left: 0px;
 	}
-main > header div:first-of-type {
+.brand-header div:first-of-type {
 	display: none;
 	}
-main > header div:last-of-type {
+.brand-header div:last-of-type {
 	display: block;
 	color: #464f54;
 	text-transform: lowercase;
@@ -429,9 +440,18 @@ body[class*="faq"] dl dt,
 	display: block;
 	margin-left: 4em;
 	}
-body[class*="faq"] dl:hover,
-.page-id-90 dl:hover {
-	cursor: hand;
+body[class*="faq"] dl dt:hover,
+.page-id-90 dl dt:hover {
+	cursor: pointer;
+	}
+body[class*="faq"] dl dt h4,
+.page-id-90 dl dt h4 {
+	text-transform: none;
+	}
+body[class*="faq"] dl dt:hover h4,
+.page-id-90 dl dt:hover h4 {
+	color: #00a5bd;
+	color: #8f7e35;
 	}
 .page-id-90 dl.disclosed dt {
 	background-image: url('/wp-content/themes/brand/images/elements/x-green-er.svg');

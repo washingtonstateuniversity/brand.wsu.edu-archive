@@ -1,16 +1,12 @@
 <?php
-
 	global $post;
-	
 	$site_name      = get_bloginfo('name');
 	$site_tagline   = get_bloginfo('description');
 	$first_category = get_the_category();
 	$section_title  = get_the_category();
 ?>
-<header>
+<header class="brand-header">
 <hgroup>
-	<div class="site"><a href="<?php home_url(); ?>" title="<?php echo esc_attr( $site_name ); ?>" rel="home"><?php echo esc_html( $site_name ); ?></a></div>
-	<div class="tagline"><a href="<?php home_url(); ?>" title="<?php echo esc_attr( $site_tagline ); ?>" rel="home"><?php echo esc_html( $site_tagline ); ?></a></div>
 	<?php
 
 	if ( spine_is_subpage() ) {
