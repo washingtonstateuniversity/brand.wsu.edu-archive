@@ -492,7 +492,7 @@ $('.secondaries .switch.green-text').click( function() {
 			<dd class="crimson-back"></dd>
 			<dd class="crimson-back"></dd>
 			<dd class="crimson-back"></dd>
-			<dd class="crimson-back spot"><dl class="specs"><dd class="cmyk">7 100 68 32</dd> <dd class="rgb">157 34 50</dd> <dd class="hex">#981e32</dd> <dd class="tone">201</dd></dl></dd>
+			<dd class="crimson-back spot"><dl class="specs"><dd class="cmyk">7 100 68 32</dd> <dd class="rgb">152 30 50</dd> <dd class="hex">#981e32</dd> <dd class="tone">201</dd></dl></dd>
 			<dd class="crimson-back"></dd>
 			<dd class="crimson-back"></dd>
 			<dd class="crimson-back"></dd>
