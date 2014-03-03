@@ -329,6 +329,10 @@ figure.color dl.specs.selected dd {
 figure.color dd[class*="light"] dl.specs.selected dd {
 	color: rgba(0,0,0,0.2);
 	}
+figure.color dd.crimson-back dl.specs.selected dd,
+figure.color dd.crimson-er-back dl.specs.selected dd {
+	color: rgba(255,255,255,1);
+	}
 figure.color.crimson-back dd dl,
 figure.color.crimson-back dd:hover dl {
 	color: white;
