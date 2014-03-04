@@ -514,7 +514,7 @@ $('.secondaries .switch.green-text').click( function() {
 			<dd class="crimson-back"></dd>
 			<dd class="crimson-back"></dd>
 			<dd class="crimson-back"></dd>
-			<dd class="crimson-er-back accent"><dl class="specs"><dd class="cmyk">0 100 81 4</dd> <dd class="rgb">198 10 48</dd> <dd class="hex">#c60a30</dd> <dd class="tone">186</dd></dl></dd>
+			<dd class="crimson-er-back accent"><dl class="specs"><dd class="cmyk">0 100 81 4</dd> <dd class="rgb">198 12 48</dd> <dd class="hex">#c60c30</dd> <dd class="tone">186</dd></dl></dd>
 		</dl>
 		</figure>
 	
@@ -536,7 +536,7 @@ $('.secondaries .switch.green-text').click( function() {
 			<dd class="crimson-back"></dd>
 			<dd class="crimson-back"></dd>
 			<dd class="crimson-back"></dd>
-			<dd class="crimson-er-back accent"><dl class="specs"><dd class="cmyk">0 100 81 4</dd> <dd class="rgb">198 10 48</dd> <dd class="hex">#c60a30</dd> <dd class="tone">186</dd></dl></dd>
+			<dd class="crimson-er-back accent"><dl class="specs"><dd class="cmyk">0 100 81 4</dd> <dd class="rgb">198 12 48</dd> <dd class="hex">#c60c30</dd> <dd class="tone">186</dd></dl></dd>
 		</dl>
 		</figure>
 	
@@ -572,13 +572,13 @@ $('.secondaries .switch.green-text').click( function() {
 	
 		<figure class="color spectrum gray gray-back unvalued unaccented">
 			<dl> 
-				<dd class="gray-lightest-back value"><dl class="specs"><dd class="cmyk">2 1 1 3</dd> <dd class="rgb">239 240 241</dd> <dd class="hex">#eff0f1</dd> <dd class="tone">5% 431</dd></dl></dd>
-				<dd class="gray-lightly-back value"><dl class="specs"><dd class="cmyk">7 4 2 9</dd> <dd class="rgb">215 218 219</dd> <dd class="hex">#d7dadb</dd> <dd class="tone">15% 431</dd></dl></dd>
-				<dd class="gray-lighter-back value"><dl class="specs"><dd class="cmyk">18 10 6 24</dd> <dd class="rgb">181 186 190</dd> <dd class="hex">#b5babe</dd> <dd class="tone">40% 431</dd></dl></dd>
-				<dd class="gray-light-back value"><dl class="specs"><dd class="cmyk">31 18 11 41</dd> <dd class="rgb">141 149 154</dd> <dd class="hex">#8d959a</dd> <dd class="tone">70% 431</dd></dl></dd>
-				<dd class="gray-gray-back spot"><dl class="specs"><dd class="cmyk">45 25 16 59</dd> <dd class="rgb">94 106 113</dd> <dd class="hex">#5e6a71</dd> <dd class="tone">431</dd></dl></dd>
-				<dd class="gray-dark-back value"><dl class="specs"><dd class="cmyk">53 36 29 67</dd> <dd class="rgb">70 78 84</dd> <dd class="hex">#464e54</dd> <dd class="tone">431+26%k</dd></dl></dd>
-				<dd class="gray-darker-back value"><dl class="specs"><dd class="cmyk">62 49 44 76</dd> <dd class="rgb">42 48 51</dd> <dd class="hex">#2a3033</dd> <dd class="tone">431+55%k</dd></dl></dd>
+				<dd class="gray-lightest-back value"><dl class="specs"><dd class="cmyk"> </dd> <dd class="rgb">239 240 241</dd> <dd class="hex">#eff0f1</dd> <dd class="tone">5% 431</dd></dl></dd>
+				<dd class="gray-lightly-back value"><dl class="specs"><dd class="cmyk"> </dd> <dd class="rgb">215 218 219</dd> <dd class="hex">#d7dadb</dd> <dd class="tone">15% 431</dd></dl></dd>
+				<dd class="gray-lighter-back value"><dl class="specs"><dd class="cmyk"> </dd> <dd class="rgb">181 186 190</dd> <dd class="hex">#b5babe</dd> <dd class="tone">40% 431</dd></dl></dd>
+				<dd class="gray-light-back value"><dl class="specs"><dd class="cmyk"> </dd> <dd class="rgb">141 149 154</dd> <dd class="hex">#8d959a</dd> <dd class="tone">70% 431</dd></dl></dd>
+				<dd class="gray-gray-back spot"><dl class="specs"><dd class="cmyk">11 0 0 65</dd> <dd class="rgb">94 106 113</dd> <dd class="hex">#5e6a71</dd> <dd class="tone">431</dd></dl></dd>
+				<dd class="gray-dark-back value"><dl class="specs"><dd class="cmyk"> </dd> <dd class="rgb">70 78 84</dd> <dd class="hex">#464e54</dd> <dd class="tone">431+26%k</dd></dl></dd>
+				<dd class="gray-darker-back value"><dl class="specs"><dd class="cmyk"> </dd> <dd class="rgb">42 48 51</dd> <dd class="hex">#2a3033</dd> <dd class="tone">431+55%k</dd></dl></dd>
 				<dd class="gray-darkest-back value"><dl class="specs"><dd class="cmyk">0 0 0 100</dd> <dd class="rgb">0 0 0</dd> <dd class="hex">#000</dd> <dd class="tone">100% blk</dd></dl></dd>
 				<dd class="gray-er-back accent"><dl class="specs"><dd class="cmyk">0 0 0 0</dd> <dd class="rgb">255 255 255</dd> <dd class="hex">#fff</dd> <dd class="tone">white</dd></dl></dd>
 			</dl>
@@ -621,13 +621,13 @@ $('.secondaries .switch.green-text').click( function() {
 	
 		<figure class="color spectrum gray gray-back unvalued unaccented">
 			<dl> 
-				<dd class="gray-lightest-back value"><dl class="specs"><dd class="cmyk">2 1 1 3</dd> <dd class="rgb">239 240 241</dd> <dd class="hex">#eff0f1</dd> <dd class="tone">5% 431</dd></dl></dd>
-				<dd class="gray-lightly-back value"><dl class="specs"><dd class="cmyk">7 4 2 9</dd> <dd class="rgb">215 218 219</dd> <dd class="hex">#d7dadb</dd> <dd class="tone">15% 431</dd></dl></dd>
-				<dd class="gray-lighter-back value"><dl class="specs"><dd class="cmyk">18 10 6 24</dd> <dd class="rgb">181 186 190</dd> <dd class="hex">#b5babe</dd> <dd class="tone">40% 431</dd></dl></dd>
-				<dd class="gray-light-back value"><dl class="specs"><dd class="cmyk">31 18 11 41</dd> <dd class="rgb">141 149 154</dd> <dd class="hex">#8d959a</dd> <dd class="tone">70% 431</dd></dl></dd>
+				<dd class="gray-lightest-back value"><dl class="specs"><dd class="cmyk"> </dd> <dd class="rgb">239 240 241</dd> <dd class="hex">#eff0f1</dd> <dd class="tone">5% 431</dd></dl></dd>
+				<dd class="gray-lightly-back value"><dl class="specs"><dd class="cmyk"> </dd> <dd class="rgb">215 218 219</dd> <dd class="hex">#d7dadb</dd> <dd class="tone">15% 431</dd></dl></dd>
+				<dd class="gray-lighter-back value"><dl class="specs"><dd class="cmyk"> </dd> <dd class="rgb">181 186 190</dd> <dd class="hex">#b5babe</dd> <dd class="tone">40% 431</dd></dl></dd>
+				<dd class="gray-light-back value"><dl class="specs"><dd class="cmyk"> </dd> <dd class="rgb">141 149 154</dd> <dd class="hex">#8d959a</dd> <dd class="tone">70% 431</dd></dl></dd>
 				<dd class="gray-gray-back spot"><dl class="specs"><dd class="cmyk">11 0 0 65</dd> <dd class="rgb">94 106 113</dd> <dd class="hex">#5e6a71</dd> <dd class="tone">431</dd></dl></dd>
-				<dd class="gray-dark-back value"><dl class="specs"><dd class="cmyk">53 36 29 67</dd> <dd class="rgb">70 78 84</dd> <dd class="hex">#464e54</dd> <dd class="tone">431+26%k</dd></dl></dd>
-				<dd class="gray-darker-back value"><dl class="specs"><dd class="cmyk">62 49 44 76</dd> <dd class="rgb">42 48 51</dd> <dd class="hex">#2a3033</dd> <dd class="tone">431+55%k</dd></dl></dd>
+				<dd class="gray-dark-back value"><dl class="specs"><dd class="cmyk"> </dd> <dd class="rgb">70 78 84</dd> <dd class="hex">#464e54</dd> <dd class="tone">431+26%k</dd></dl></dd>
+				<dd class="gray-darker-back value"><dl class="specs"><dd class="cmyk"> </dd> <dd class="rgb">42 48 51</dd> <dd class="hex">#2a3033</dd> <dd class="tone">431+55%k</dd></dl></dd>
 				<dd class="gray-darkest-back value"><dl class="specs"><dd class="cmyk">0 0 0 100</dd> <dd class="rgb">0 0 0</dd> <dd class="hex">#000</dd> <dd class="tone">100% blk</dd></dl></dd>
 				<dd class="gray-er-back accent"><dl class="specs"><dd class="cmyk">0 0 0 0</dd> <dd class="rgb">255 255 255</dd> <dd class="hex">#fff</dd> <dd class="tone">white</dd></dl></dd>
 			</dl>
