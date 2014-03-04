@@ -26,7 +26,7 @@ main p {
 	line-height: 1.6em;
 	}
 	
-h6,h5,h4,h3,h2,h1,big {
+h6,h5,h4,h3,h2,h1,big,dt {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	}
@@ -62,6 +62,7 @@ button {
 	text-shadow: none;
 	width: 80px;
 	font-weight: normal;
+	font-size: 1em;
 	}
 button.brand-wider,
 dl.downloads dd:only-of-type a.brand-wider,

@@ -27,9 +27,7 @@ main {
 	font-size: 1.2em;
 
 	}
-dl.primaries,
-dl.secondaries,
-dl.backgrounds {
+.controls dl {
 	margin-left: 4em;
 	}
 .controls dl dt {
@@ -79,36 +77,57 @@ dl.backgrounds dd:hover {
 dl.secondaries dd.on:hover,
 dl.secondaries dd.off,
 dl.tertiaries dd.off,
-dl.tertiaries dd.on:hover { opacity: .5; }
+dl.tertiaries dd.on:hover { opacity: 1; }
 dl.secondaries dd.off:hover,
 dl.tertiaries dd.off:hover { opacity: 1; }
 
-dl.secondaries dd::before,
-dl.tertiaries dd::before {
-	xfont-family: "Iconography";
-	width: 12px;
+dl.secondaries dd:before,
+dl.tertiaries dd:before {
+	content: "";
+	overflow: hidden;
+	border-radius: 10px;
+	border-width: 3px;
+	border-style: solid;
+	box-shadow: 1px 0px 0px rgba(94,106,113,0.3), 0px 1px 0px rgba(94,106,113,1), 0px -1px 0px rgba(94,106,113,0.4), -1px 0px 0px rgba(94,106,113,0.4);
+	/* outline: 1px solid #b67233; */
+	height: 10px;
+	width: 10px;
+	padding: 0px;
+	background: transparent;
+	margin-right: 5px;
 	display: inline-block;
-	padding-right: 3px;
-	padding-bottom: : 4px;
-	text-align: left;
-	margin-left: -3px;
+	margin-bottom: -3px;
+	border-color: white;
 	}
-dl.secondaries dd::before { content: "-"; }
-dl.secondaries dd.off::before { content: "+"; }
-dl.tertiaries dd::before { content: "+" }
-dl.tertiaries dd.on::before { content: "-" }
+dl.secondaries dd.orange-text:before {
+	background: #b67233;
+	box-shadow: 1px 0px 0px rgba(181,114,51,0.3), 0px 1px 0px rgba(181,114,51,1), 0px -1px 0px rgba(181,114,51,0.4), -1px 0px 0px rgba(181,114,51,0.4);
+	}
+dl.secondaries dd.green-text:before {
+	background: #8f7e35;
+	box-shadow: 1px 0px 0px rgba(143,126,53,0.3), 0px 1px 0px rgba(143,126,53,1), 0px -1px 0px rgba(143,126,53,0.4), -1px 0px 0px rgba(143,126,53,0.4);
+	}
+dl.secondaries dd.blue-text:before {
+	background: #4f868e;
+	box-shadow: 1px 0px 0px rgba(81,135,143,0.3), 0px 1px 0px rgba(81,135,143,1), 0px -1px 0px rgba(81,135,143,0.4), -1px 0px 0px rgba(81,135,143,0.4);
+	}
+dl.secondaries dd.yellow-text:before {
+	background: #c69214;
+	box-shadow: 1px 0px 0px rgba(199,145,20,0.3), 0px 1px 0px rgba(199,145,20,1), 0px -1px 0px rgba(199,145,20,0.4), -1px 0px 0px rgba(199,145,20,0.4);
+	}
+dl.tertiaries dd.on:before {
+	background: #5e6a71;
+	}
+dl.secondaries dd.off:before,
+dl.tertiaries dd.off:before {
+	background: white;
+	}
 
-dl.tertiaries, dl.backgrounds {
-	display: inline-block;
-	}
 dl.backgrounds {
-	width: 100px;
-	padding-right: 10px;
 	text-align: right;
-	}
-dl.backgrounds dt {
-	width: auto;
-	
+	white-space: nowrap;
+	position: absolute;
+	right: -264px;
 	}
 dl.backgrounds dt dd{
 	float: right;
@@ -133,13 +152,6 @@ main.gray-back dd.bg-gray {
 
 /* specified */
 
-/* .specified .green-gray,
-.specified .orange-gray,
-.specified .yellow-gray,
-.specified .blue-gray {
-	display: none;
-	} */
-
 #secondary-palettes figure.color.gray,
 #secondary-palettes figure.color.crimson {
 	position: absolute;
@@ -156,14 +168,8 @@ center .half {
 	min-width: ;
 	height: 100%;
 	float: left;
-	xposition: absolute;
 	}
-center .half:first-of-type {
 
-	}
-center .half:last-of-type {
-	xleft: 50%;
-	}
 center .half:first-of-type figure {
 	float: right;
 	}
@@ -174,7 +180,6 @@ center .half:first-of-type {
 center .half:last-of-type figure {
 	float: left;
 	}
-
 
 .size-small #secondary-palettes .crimson-back,
 .size-small #secondary-palettes .crimson-back {
@@ -195,11 +200,6 @@ center .half:last-of-type figure {
 	float: none;
 	width: 100%;
 	}
-
-button#switcher {
-	xfloat: right;
-	margin: 0px 10px 0px 0px;
-	}
 button#switcher::before{
 	content: "specs";
 	}
@@ -208,6 +208,7 @@ button#switcher::before{
 	}
 .size-small button#switcher {
 	display: none;
+	padding: 3px 6px;
 	}
 .specified .row.thirds .halves .column,
 .size-small .row.thirds .halves .column {
@@ -269,6 +270,7 @@ figure.color dl.specs.selected dd {
 	width: 100%;
 	}
 figure.color.unvalued.accented dl dd.spot dl:not(.selected),
+main:not(.specified) figure.color.valued dl dd.spot,
 .valued.unaccented dl dd.spot dl,
 .valued.accented dl dd.spot dl { padding-top: 75px; }
 
@@ -433,39 +435,41 @@ $('.secondaries .switch.green-text').click( function() {
 
 <?php get_template_part('parts/headers'); ?> 
 
-<section id="" class="row sidebar controls unequaled">
+<section id="" class="row sidebar controls equalize">
 
 	<div class="column one">
 		
 		<dl class="primaries">
-			<dt>primary</dt><dd class="crimson-text" onclick="$('.color.crimson').toggleClass('highlight');">crimson</dd><span class="black-text">and</span> 
+			<dt>primary</dt>
+			<dd class="crimson-text" onclick="$('.color.crimson').toggleClass('highlight');" style="padding-left: 2px;">crimson</dd><span class="black-text">and</span> 
 			<dd class="gray-text" onclick="$('figure.orange-back.visible, figure.green-back.visible, figure.blue-back.visible, figure.yellow-back.visible').toggleClass('visible invisible'); $('figure.color.unvalued').toggleClass('unvalued valued');">gray</dd>
 		</dl>
 		<dl class="secondaries">
-			
 			<dt>secondary</dt>
-			<dd class="switch on orange-text" onclick="$('figure.orange-back').toggleClass('visible invisible');">orange</dd>
-			<dd class="switch on green-text" onclick="$('figure.green-back').toggleClass('visible invisible');">green</dd>
-			<dd class="switch on blue-text" onclick="$('figure.blue-back').toggleClass('visible invisible');">blue</dd>
-			<dd class="switch on yellow-text" onclick="$('figure.yellow-back').toggleClass('visible invisible');">yellow</dd>
-		</dl>
-		<dl class="backgrounds">
-			<dd class="bg bg-white gray-er-back" onclick="$('main').removeClass('gray-darkest-back gray-back white-text').addClass('gray-er-back');"></dd>
-			<dd class="bg bg-black gray-darkest-back" onclick="$('main').removeClass('gray-er-back gray-back white-text').addClass('gray-darkest-back');"></dd>
-			<dd class="bg bg-gray gray-back" onclick="$('main').removeClass('gray-er-back gray-darkest-back').addClass('gray-back white-text');"></dd>
-			<dd class="bg-clear gray-lightly-text" onclick="$('main').removeClass('gray-back gray-er-back gray-darkest-back white-text')" style="position: relative; top: -1px; left: 2	px;">x</dd>
-			<!--<dd class="switch off gray-text values" onclick="$('main').css('background-color','#981e32');">on crimson</dd>-->
+			<dd class="switch on orange-text" onclick="$('figure.orange-back').toggleClass('visible invisible');" title="show hide orange">orange</dd>
+			<dd class="switch on green-text" onclick="$('figure.green-back').toggleClass('visible invisible');" title="show hide green">green</dd>
+			<dd class="switch on blue-text" onclick="$('figure.blue-back').toggleClass('visible invisible');" title="show hide blue">blue</dd>
+			<dd class="switch on yellow-text" onclick="$('figure.yellow-back').toggleClass('visible invisible');" title="show hide yellow">yellow</dd>
 		</dl>
 		<dl class="tertiaries">
-			<dd class="switch off accents" onclick="$('figure.color').toggleClass('unaccented accented');">accents</dd>
-			<dd class="switch off values" onclick="$('figure.color').toggleClass('unvalued valued');">values</dd>
+			<dt></dt>
+			<dd class="switch off accents" onclick="$('figure.color').toggleClass('unaccented accented');" title="show hide accents">accents</dd>
+			<dd class="switch off values" onclick="$('figure.color').toggleClass('unvalued valued');" title="show hide values">values</dd>
+		</dl>
+		<dl class="backgrounds size-gt-medium-only">
+			<dt></dt>
+			<dd class="bg bg-white gray-er-back" onclick="$('main').removeClass('gray-darkest-back gray-back white-text').addClass('gray-er-back');" title="switch to white background"></dd>
+			<dd class="bg bg-black gray-darkest-back" onclick="$('main').removeClass('gray-er-back gray-back white-text').addClass('gray-darkest-back');" title="switch to black background"></dd>
+			<dd class="bg bg-gray gray-back" onclick="$('main').removeClass('gray-er-back gray-darkest-back').addClass('gray-back white-text');" title="switch to gray background"></dd>
+			<dd class="bg-clear gray-lightly-text" onclick="$('main').removeClass('gray-back gray-er-back gray-darkest-back white-text')" style="position: relative; top: -1px; left: 2	px;" title="switch to default background">x</dd>
+			<!--<dd class="switch off gray-text values" onclick="$('main').css('background-color','#981e32');">on crimson</dd>-->
 		</dl>
 		
 	</div>
 	
-	<div class="column two center">
+	<div class="column two center guttered wide size-gt-medium-only">
 	
-		<button id="switcher" onclick="$('main').toggleClass('specified');"> </button>
+		<button id="switcher" class="centered-absolutely" onclick="$('main').toggleClass('specified');"> </button>
 	
 	</div>
 	
