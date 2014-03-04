@@ -16,9 +16,6 @@ main {
 .colors .column figure {
 	float: left;
 	}
-#secondary-palettes figure {
-	width: 50%;
-	}
 .controls {
 	padding: 30px 0px 30px 0px;
 	}
@@ -34,20 +31,6 @@ main {
 	width: 100px;
 	text-align: right;
 	padding-right: 10px;
-	}
-center {
-	display: block;
-	margin: 0px auto;
-	width: 264px;
-	}
-	
-center {
-	width: 100%;
-	}
-	
-center figure {
-	float: left;
-	text-align: left;
 	}
 
 /* Swatches */
@@ -151,31 +134,58 @@ main.gray-back dd.bg-gray {
 	}
 
 /* specified */
+#secondary-palettes figure {
+	width: 25%;
+	}
 
 #secondary-palettes figure.color.gray,
 #secondary-palettes figure.color.crimson {
 	position: absolute;
 	z-index: 0;
-	width: 100%;
+	width: 51%;
+	}
+#secondary-palettes figure.color.gray {
+	right: 0;
 	}
 center {
-	height: 100%;
-	width: 100%;
+	
+	}
+	
+center figure {
+	float: left;
+	text-align: left;
+	}
+center {
 	display: block;
+	width: 100%;
+	height: 100%;
+	width: 264px;
+	display: block;
+	margin: 0px auto;
 	}
 center .half {
 	width: 50%;
-	min-width: ;
+	xxmin-width: 50%;
 	height: 100%;
 	float: left;
 	}
+.visible-1 center { width: 66px; }
+.visible-2 center { width: 132px; }
+.visible-3 center { width: 196px; }
 
+#secondary-palettes.visible-1 center figure { width: 100%; }
+#secondary-palettes.visible-2 center figure { width: 50%; }
+#secondary-palettes.visible-3 center figure { width: 33%; }
+#secondary-palettes.visible-4 center figure { width: 25%; }
+
+xcenter .half:last-of-type {
+	float: right;
+	}
 center .half:first-of-type figure {
 	float: right;
 	}
-center .half:first-of-type {
+center {
 	background-color: #981e32;
-	}
 	}
 center .half:last-of-type figure {
 	float: left;
@@ -499,13 +509,9 @@ $('.secondaries .switch.green-text').click( function() {
 	
 	<div id="secondary-palettes" class="column two unequaled">
 	
-	<center>
-	
-	<div class="half">
-	
-		<figure class="color crimson crimson-back unvalued unaccented">
+	<figure class="color crimson crimson-back unvalued unaccented underling">
 		<dl>
-			<dd class="crimson-back"></dd>
+			<dd class="crimson-back"> </dd>
 			<dd class="crimson-back"></dd>
 			<dd class="crimson-back"></dd>
 			<dd class="crimson-back"></dd>
@@ -516,7 +522,25 @@ $('.secondaries .switch.green-text').click( function() {
 			<dd class="crimson-er-back accent"><dl class="specs"><dd class="cmyk">0 100 81 4</dd> <dd class="rgb">198 12 48</dd> <dd class="hex">#c60c30</dd> <dd class="tone">186</dd></dl></dd>
 		</dl>
 		</figure>
+		
+	<figure class="color spectrum gray gray-back unvalued unaccented underling">
+		<dl> 
+			<dd class="gray-lightest-back value"><dl class="specs"><dd class="cmyk">1 0 0 3</dd> <dd class="rgb">239 240 241</dd> <dd class="hex">#eff0f1</dd> <dd class="tone">5% 431</dd></dl></dd>
+			<dd class="gray-lightly-back value"><dl class="specs"><dd class="cmyk">2 0 0 10</dd> <dd class="rgb">215 218 219</dd> <dd class="hex">#d7dadb</dd> <dd class="tone">15% 431</dd></dl></dd>
+			<dd class="gray-lighter-back value"><dl class="specs"><dd class="cmyk">4 0 0 26</dd> <dd class="rgb">181 186 190</dd> <dd class="hex">#b5babe</dd> <dd class="tone">40% 431</dd></dl></dd>
+			<dd class="gray-light-back value"><dl class="specs"><dd class="cmyk">8 0 0 45</dd> <dd class="rgb">141 149 154</dd> <dd class="hex">#8d959a</dd> <dd class="tone">70% 431</dd></dl></dd>
+			<dd class="gray-gray-back spot"><dl class="specs"><dd class="cmyk">11 0 0 65</dd> <dd class="rgb">94 106 113</dd> <dd class="hex">#5e6a71</dd> <dd class="tone">431</dd></dl></dd>
+			<dd class="gray-dark-back value"><dl class="specs"><dd class="cmyk">27 18 17 72</dd> <dd class="rgb">70 78 84</dd> <dd class="hex">#464e54</dd> <dd class="tone">431+26%k</dd></dl></dd>
+			<dd class="gray-darker-back value"><dl class="specs"><dd class="cmyk">46 37 37 79</dd> <dd class="rgb">42 48 51</dd> <dd class="hex">#2a3033</dd> <dd class="tone">431+55%k</dd></dl></dd>
+			<dd class="gray-darkest-back value"><dl class="specs"><dd class="cmyk">0 0 0 100</dd> <dd class="rgb">0 0 0</dd> <dd class="hex">#000</dd> <dd class="tone">100% blk</dd></dl></dd>
+			<dd class="gray-er-back accent"><dl class="specs"><dd class="cmyk">0 0 0 0</dd> <dd class="rgb">255 255 255</dd> <dd class="hex">#fff</dd> <dd class="tone">white</dd></dl></dd>
+		</dl>
+	</figure>
 	
+	<center>
+	
+	
+			
 		<figure class="color spectrum green green-back visible unvalued unaccented">
 			<dl>
 				<dd class="green-lightest-back value"><dl class="specs"><dd class="cmyk">1 1 4 2</dd> <dd class="rgb">244 242 235</dd> <dd class="hex">#f4f2eb</dd> <dd class="tone">5% 7768</dd></dl></dd>
@@ -544,23 +568,7 @@ $('.secondaries .switch.green-text').click( function() {
 			</dl>
 		</figure>
 		
-	</div>
-	<div class="half clearfix">
-	
-		<figure class="color spectrum gray gray-back unvalued unaccented">
-			<dl> 
-				<dd class="gray-lightest-back value"><dl class="specs"><dd class="cmyk">1 0 0 3</dd> <dd class="rgb">239 240 241</dd> <dd class="hex">#eff0f1</dd> <dd class="tone">5% 431</dd></dl></dd>
-				<dd class="gray-lightly-back value"><dl class="specs"><dd class="cmyk">2 0 0 10</dd> <dd class="rgb">215 218 219</dd> <dd class="hex">#d7dadb</dd> <dd class="tone">15% 431</dd></dl></dd>
-				<dd class="gray-lighter-back value"><dl class="specs"><dd class="cmyk">4 0 0 26</dd> <dd class="rgb">181 186 190</dd> <dd class="hex">#b5babe</dd> <dd class="tone">40% 431</dd></dl></dd>
-				<dd class="gray-light-back value"><dl class="specs"><dd class="cmyk">8 0 0 45</dd> <dd class="rgb">141 149 154</dd> <dd class="hex">#8d959a</dd> <dd class="tone">70% 431</dd></dl></dd>
-				<dd class="gray-gray-back spot"><dl class="specs"><dd class="cmyk">11 0 0 65</dd> <dd class="rgb">94 106 113</dd> <dd class="hex">#5e6a71</dd> <dd class="tone">431</dd></dl></dd>
-				<dd class="gray-dark-back value"><dl class="specs"><dd class="cmyk">27 18 17 72</dd> <dd class="rgb">70 78 84</dd> <dd class="hex">#464e54</dd> <dd class="tone">431+26%k</dd></dl></dd>
-				<dd class="gray-darker-back value"><dl class="specs"><dd class="cmyk">46 37 37 79</dd> <dd class="rgb">42 48 51</dd> <dd class="hex">#2a3033</dd> <dd class="tone">431+55%k</dd></dl></dd>
-				<dd class="gray-darkest-back value"><dl class="specs"><dd class="cmyk">0 0 0 100</dd> <dd class="rgb">0 0 0</dd> <dd class="hex">#000</dd> <dd class="tone">100% blk</dd></dl></dd>
-				<dd class="gray-er-back accent"><dl class="specs"><dd class="cmyk">0 0 0 0</dd> <dd class="rgb">255 255 255</dd> <dd class="hex">#fff</dd> <dd class="tone">white</dd></dl></dd>
-			</dl>
-		</figure>
-	
+		
 		<figure class="color spectrum blue blue-back visible unvalued unaccented">
 			<dl>     
 				<dd class="blue-lightest-back value"><dl class="specs"><dd class="cmyk">3 1 1 2</dd> <dd class="rgb">237 243 244</dd> <dd class="hex">#edf3f4</dd> <dd class="tone">5% 5483</dd></dl></dd>
@@ -587,8 +595,6 @@ $('.secondaries .switch.green-text').click( function() {
 				<dd class="yellow-er-back accent"><dl class="specs"><dd class="cmyk">0 31 98 0</dd> <dd class="rgb">255 184 28</dd> <dd class="hex">#ffb81c</dd> <dd class="tone">1235</dd></dl></dd>
 			</dl>
 		</figure>
-		
-	</div>
 		
 	</center>
 		
