@@ -85,7 +85,7 @@ h2 + h5 {
 
 	<div class="column one">
 		<figure>
-			<h2 class="not-lowercase">ITC Stone Serif</h2>
+			<h2 class="not-lowercase">ITC Stone Sans II</h2>
 			<img src="/wp-content/themes/brand/images/pages/type/stone-sans-col1.png">
 		</figure>
 	</div>
