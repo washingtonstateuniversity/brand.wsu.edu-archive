@@ -71,6 +71,7 @@ dl.tertiaries dd:before {
 	border-radius: 10px;
 	border-width: 3px;
 	border-style: solid;
+	border-color: rgba(255,255,255,0.85);
 	box-shadow: 1px 0px 0px rgba(94,106,113,0.3), 0px 1px 0px rgba(94,106,113,1), 0px -1px 0px rgba(94,106,113,0.4), -1px 0px 0px rgba(94,106,113,0.4);
 	/* outline: 1px solid #b67233; */
 	height: 10px;
@@ -80,7 +81,9 @@ dl.tertiaries dd:before {
 	margin-right: 5px;
 	display: inline-block;
 	margin-bottom: -3px;
-	border-color: white;
+	-moz-background-clip: content;
+	-webkit-background-clip: content;
+	background-clip: content-box; 
 	}
 dl.secondaries dd.orange-text:before {
 	background: #b67233;
