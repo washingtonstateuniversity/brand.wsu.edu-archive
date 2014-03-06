@@ -141,7 +141,7 @@ dl.downloads dd:only-of-type a {
 		<h2>university <small> <span>signatures</span> <span>shield</span> <span>social media badges</span></small></h2>
 		
 		<dl class="downloads">
-			<dd><a href="/wp-content/themes/brand/downloads/university/WSU-Univ-wide_Logos.zip">university wide</a></dd>
+			<dd><a href="/wp-content/themes/brand/downloads/university/WSU-Univ-wide_Logos.zip" title="download university wide logos">university wide</a></dd>
 		</dl>
 		
 	</div>
@@ -159,11 +159,11 @@ dl.downloads dd:only-of-type a {
 		<h2>campus</h2>
 		
 		<dl id="downloads-campuses" class="downloads">
-			<dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Spokane_Logos.zip">Spokane</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Tri-Cities_Logos.zip">Tri-Cities</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Vancouver_Logos.zip">Vancouver</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Global-Campus_Logos.zip">Global Campus</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Health-Sciences_Logos.zip">Health Sciences</a></dd>
+			<dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Spokane_Logos.zip" title="download Spokane logos">Spokane</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Tri-Cities_Logos.zip" title="download Tri-Cities logos">Tri-Cities</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Vancouver_Logos.zip" title="download Vancouver logos">Vancouver</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Global-Campus_Logos.zip" title="download Global Campus logos">Global Campus</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Health-Sciences_Logos.zip" title="download Health Sciences logos">Health Sciences</a></dd>
 		    <!--<dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Extension_Logos.zip">Extension</a></dd>-->
 		</dl>
 		
@@ -186,16 +186,16 @@ dl.downloads dd:only-of-type a {
 		<h2>college</h2>
 			
 		<dl id="downloads-colleges" class="downloads clearfix">
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-CAHNRS_Logos.zip">CAHNRS</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Arts-Sciences_Logos.zip">Arts & Sciences</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Business_Logos.zip">Business</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Education_Logos.zip">Education</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Communication_Logos.zip">Murrow</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Engr-Arch_Logos.zip">Eng. & Arch.</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Honors-College_Logos.zip">Honors</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Nursing_Logos.zip">Nursing</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Pharmacy_Logos.zip">Pharmacy</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-VetMed_Logos.zip">Veterinary Med.</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-CAHNRS_Logos.zip" title="download CAHNRS logos">CAHNRS</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Arts-Sciences_Logos.zip" title="download Arts & Sciences logos">Arts & Sciences</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Business_Logos.zip" title="download Business logos">Business</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Education_Logos.zip" title="download Education logos">Education</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Communication_Logos.zip" title="download Murrow logos">Murrow</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Engr-Arch_Logos.zip" title="download Eng. & Arch. logos">Eng. & Arch.</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Honors-College_Logos.zip" title="download Honors logos">Honors</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Nursing_Logos.zip" title="download Nursing logos">Nursing</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Pharmacy_Logos.zip" title="download Pharmacy logos">Pharmacy</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-VetMed_Logos.zip" title="download Veterinary Med. logos">Veterinary Med.</a></dd>
 		</dl>
 		
 	</div>
@@ -211,7 +211,7 @@ dl.downloads dd:only-of-type a {
 	<div class="column one">
 		
 		<h3 style="display: inline-block; padding-right: 30px;">stationery and business cards </h3>
-		<a class="brand-button" href="http://publishing.wsu.edu/onlineorders.html">Order</a>
+		<a class="brand-button" href="http://publishing.wsu.edu/onlineorders.html" title="order stationery and business cards">Order</a>
 
 		
 	</div>
