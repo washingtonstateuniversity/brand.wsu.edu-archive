@@ -35,7 +35,7 @@ section:nth-of-type(even) {
 main section ~ section button.detail {
 	background-position: 750px center;
 	border-right: 2em transparent solid;
-	padding-left: 4.7em;
+	padding-left: 4em;
 	padding-right: 6em;
 	}
 .size-lt-large main section ~ section button.detail {
