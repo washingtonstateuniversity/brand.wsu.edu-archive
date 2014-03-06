@@ -27,11 +27,14 @@ div.details .column {
 .detailed button.detail {
 	margin-bottom: 0px;
 	}
-button.detail header::after {
+button.detail header:after {
 	content: "details";
 	display: inline-block;
 	}
-.detailed button.detail header::after {
+button.detail:hover header:after {
+	color: #8f7e35;
+	}
+.detailed button.detail header:after {
 	content: "";
 	}
 
@@ -45,7 +48,6 @@ button.detail header::after {
 	
 	<div class="column one row halves gutter wide">
 	
-		
 		<center style="margin-top: 100px;"><img src="/wp-content/themes/brand/images/pages/logos/wsu-signature-default.svg" class="wsu-signature-default"></center>
 		<center><img src="/wp-content/themes/brand/images/pages/logos/wsu-signature-horizontal.svg" class="wsu-signature-horizontal"></center>
 		<center><img src="/wp-content/themes/brand/images/pages/logos/wsu-signature-vertical.svg" class="wsu-signature-vertical"></center>
