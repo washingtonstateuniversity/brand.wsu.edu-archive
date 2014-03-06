@@ -108,6 +108,9 @@ button.detail::before,
 button.detail:hover {
 	background-image: url('/wp-content/themes/brand/images/elements/plus-green.svg');
 	}
+button.detail:hover {
+	color: #8f7e35;
+	}
 .detailed button.detail {
 	background-image: url('/wp-content/themes/brand/images/elements/x-green-er.svg');
 	}

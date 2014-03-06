@@ -31,9 +31,6 @@ button.detail header:after {
 	content: "details";
 	display: inline-block;
 	}
-button.detail:hover header:after {
-	color: #8f7e35;
-	}
 .detailed button.detail header:after {
 	content: "";
 	}
