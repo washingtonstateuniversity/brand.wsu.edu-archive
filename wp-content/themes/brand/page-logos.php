@@ -27,6 +27,13 @@ div.details .column {
 .detailed button.detail {
 	margin-bottom: 0px;
 	}
+button.detail header::after {
+	content: "details";
+	display: inline-block;
+	}
+.detailed button.detail header::after {
+	content: "";
+	}
 
 </style>
 
@@ -44,9 +51,7 @@ div.details .column {
 		<center><img src="/wp-content/themes/brand/images/pages/logos/wsu-signature-vertical.svg" class="wsu-signature-vertical"></center>
 		
 		<button class="detail">
-			<header>
-				<h3> </h3>
-			</header>
+			<header></header>
 		</button>
 		
 		<div class="details">
@@ -147,9 +152,7 @@ div.details .column {
 	
 		
 		<button class="detail">
-			<header>
-				<h3> </h3>
-			</header>
+			<header></header>
 		</button>
 		
 		<div class="details">
@@ -227,9 +230,7 @@ div.details .column {
 	<div class="column one row halves gutter wide">
 		
 		<button class="detail">
-			<header>
-				<h3> </h3>
-			</header>
+			<header></header>
 		</button>
 		
 		<div class="details">
@@ -315,9 +316,7 @@ div.details .column {
 	<div class="column one row halves gutter wide">
 		
 		<button class="detail">
-			<header>
-				<h3> </h3>
-			</header>
+			<header></header>
 		</button>
 		<article class="padless">
 		
@@ -366,9 +365,7 @@ div.details .column {
 		</figure>
 		
 		<button class="detail">
-			<header>
-				<h3> </h3>
-			</header>
+			<header></header>
 		</button>
 		<div class="details">
 		
@@ -415,9 +412,7 @@ div.details .column {
 	<div class="column one row sidebar gutter wide">
 		
 		<button class="detail">
-			<header>
-				<h3> </h3>
-			</header>
+			<header></header>
 		</button>
 		
 		<article class="padless">
