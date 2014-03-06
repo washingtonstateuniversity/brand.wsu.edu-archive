@@ -17,7 +17,7 @@
 		"options":{
 			"category":"disclosure",
 			"action":"detail",
-			"label":"function(ele){ return ( ($(ele).attr('alt')!='' && typeof($(ele).attr('title')) !=='undefined' ) ? $(ele).attr('alt') : $(ele).attr('href') ) }",
+			"label":"function(ele){ return ( ($(ele).attr('alt')!='' && typeof($(ele).attr('title')) !=='undefined' ) ? $(ele).attr('alt') : $(ele).attr('id') ) }",
 			"overwrites":"true"
 			}
 	},{
