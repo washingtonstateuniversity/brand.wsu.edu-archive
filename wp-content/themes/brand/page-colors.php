@@ -466,8 +466,8 @@ $('.secondaries .switch.green-text').click( function() {
 		</dl>
 		<dl class="tertiaries">
 			<dt></dt>
-			<dd class="switch off accents" onclick="$('figure.color').toggleClass('unaccented accented');" title="show hide accents">accents</dd>
-			<dd class="switch off values" onclick="$('figure.color').toggleClass('unvalued valued');" title="show hide values">values</dd>
+			<dd class="switch off accents" onclick="$('figure.color').toggleClass('unaccented accented');" title="show hide accents">acc<span class="darkest-text">é</span>nts</dd>
+			<dd class="switch off values" onclick="$('figure.color').toggleClass('unvalued valued');" title="show hide values"><span class="darkest-text">v</span><span class="darker-text">a</span><span class="dark-text">l</span><span class="gray-text">u</span><span class="light-text">e</span><span class="lighter-text">s</span></dd>
 		</dl>
 		<dl class="backgrounds size-gt-medium-only">
 			<dt></dt>
