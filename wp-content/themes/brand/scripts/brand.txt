@@ -17,7 +17,7 @@
 		"options":{
 			"category":"disclosure",
 			"action":"detail",
-			"label":"function(ele){ return ( ($(ele).attr('alt')!='' && typeof($(ele).attr('alt')) !=='undefined' ) ? $(ele).attr('alt') : $(ele).attr('href') ) }",
+			"label":"function(ele){ return ( ($(ele).attr('alt')!='' && typeof($(ele).attr('title')) !=='undefined' ) ? $(ele).attr('alt') : $(ele).attr('href') ) }",
 			"overwrites":"true"
 			}
 	},{
@@ -25,7 +25,7 @@
 		"options":{
 			"category":"disclosure",
 			"action":"faq",
-			"label":"FAQ",
+			"label":"function(ele){ return ( ($(ele).attr('alt')!='' && typeof($(ele).attr('title')) !=='undefined' ) ? $(ele).attr('alt') : $(ele).text() ) }",
 			"overwrites":"true"
 			}
 	},{
@@ -33,7 +33,7 @@
 		"options":{
 			"action":"pdf",
 			"category":"download",
-			"label":"function(ele){ return ( ($(ele).attr('alt')!='' && typeof($(ele).attr('alt')) !=='undefined' ) ? $(ele).attr('alt') : $(ele).attr('href') ) }",
+			"label":"function(ele){ return ( ($(ele).attr('alt')!='' && typeof($(ele).attr('title')) !=='undefined' ) ? $(ele).attr('alt') : $(ele).attr('href') ) }",
 			"overwrites":"true"
 			}
 	},{
@@ -41,7 +41,7 @@
 		"options":{
 			"action":"zip",
 			"category":"download",
-			"label":"function(ele){ return ( ($(ele).attr('alt')!='' && typeof($(ele).attr('alt')) !=='undefined' ) ? $(ele).attr('alt') : $(ele).attr('href') ) }",
+			"label":"function(ele){ return ( ($(ele).attr('alt')!='' && typeof($(ele).attr('title')) !=='undefined' ) ? $(ele).attr('alt') : $(ele).attr('href') ) }",
 			"overwrites":"true"
 			}
 	},{
