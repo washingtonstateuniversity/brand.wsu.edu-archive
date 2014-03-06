@@ -8,5 +8,6 @@
 /wp-config.php
 /wp-content/uploads
 /wp-content/plugins
-/wp-content/themes
-!wp-content/themes/brand
+# /wp-content/themes/
+# !wp-content/themes/brand
+/wp-content/themes/spine
