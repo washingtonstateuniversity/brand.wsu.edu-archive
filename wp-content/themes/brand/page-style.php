@@ -22,6 +22,9 @@ button.detail header {
 	text-align: left;
 	padding: 2em 0px;
 	}
+button.detail header h2 {
+	padding: 0;
+	}
 button.detail header h3 {
 	display: inline-block;
 	margin: 0px;
@@ -41,7 +44,6 @@ main section ~ section button.detail {
 .size-lt-large main section ~ section button.detail {
 	background-position: 90% center;
 	border-right-width: 1em;
-	background-position: 
 	}
 .details li {
 	list-style: none;
