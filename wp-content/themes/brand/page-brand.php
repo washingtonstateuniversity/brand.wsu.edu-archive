@@ -25,10 +25,6 @@ main section article {
 main section article ul:first-of-type {
 	padding-top: 30px;
 	}
-xmain section article ul {
-	padding-bottom: 40px;
-	}
-
 main section article ul li {
 	list-style: none;
 	font-size: 2em;
@@ -55,8 +51,6 @@ article ul:first-of-type {
 .details .column.one {
 	padding-bottom: 40px;
 	}
-
-
 button.detail::after {
 	content: "more";
 	display: inline-block;
@@ -94,7 +88,7 @@ button.detail::after {
 		<li>genuine</li>
 	</ul>
 	
-	<button class="detail"></button>
+	<button class="detail" alt="disclose we are"></button>
 	<div class="details">
 	
 		<hr>
@@ -131,16 +125,6 @@ button.detail::after {
 		<li>broadening beliefs</li>
 		<li>nurturing community</li>
 	</ul>
-	
-	<!--<button class="detail"></button>
-	<div class="details">
-		<div class="column one">
-			<?php 
-			$column = get_post_meta( get_the_ID(), 'section-2-1', true );
-			if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
-			?>
-		</div>
-	</div><!--/.details-->
 
 </article>
 
@@ -167,7 +151,7 @@ button.detail::after {
 		<li>informed graduates</li>
 	</ul>
 	
-	<button class="detail"></button>
+	<button class="detail" alt="disclose we emphasize"></button>
 	<div class="details">
 		
 		<hr>
@@ -211,16 +195,6 @@ button.detail::after {
 		<li>leadership opportunities</li>
 		<li>committed citizens</li>
 	</ul>
-	
-	<!--<button class="detail"></button>
-	<div class="details">
-		<div class="column one">
-			<?php 
-			$column = get_post_meta( get_the_ID(), 'section-4-1', true );
-			if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
-			?>
-		</div>
-	</div><!--/.details-->
 
 </article>
 
@@ -246,14 +220,6 @@ button.detail::after {
 		<li>engage, challenge, and equip you</li>
 		<li>for life-long success</li>
 	</ul>
-	
-	<!--<button class="detail"></button>
-	<div class="details">
-		<?php 
-		$section_one_one = get_post_meta( get_the_ID(), 'section-5-1', true );
-		if( ! empty( $section_one_one ) ) { echo wp_kses_post( $section_one_one ); }
-		?>
-	</div>-->
 
 </article>
 
