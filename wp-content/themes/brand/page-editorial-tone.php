@@ -33,7 +33,7 @@ button.detail header h3 {
 	}
 main section button.detail {
 	background-position: 750px center;
-	padding-left: 4.7em;
+	padding-left: 4em;
 	}
 .size-lt-large main section button.detail {
 	background-position: 90% center;
