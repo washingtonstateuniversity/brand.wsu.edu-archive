@@ -49,7 +49,7 @@ button.detail header:after {
 		<center><img src="/wp-content/themes/brand/images/pages/logos/wsu-signature-horizontal.svg" class="wsu-signature-horizontal"></center>
 		<center><img src="/wp-content/themes/brand/images/pages/logos/wsu-signature-vertical.svg" class="wsu-signature-vertical"></center>
 		
-		<button class="detail">
+		<button class="detail" alt="university signature details">
 			<header></header>
 		</button>
 		
@@ -150,7 +150,7 @@ button.detail header:after {
 	<div class="column one row halves wide gutter">
 	
 		
-		<button class="detail">
+		<button class="detail" alt="campus signature details">
 			<header></header>
 		</button>
 		
@@ -228,7 +228,7 @@ button.detail header:after {
 	
 	<div class="column one row halves gutter wide">
 		
-		<button class="detail">
+		<button class="detail" alt="unit signature details">
 			<header></header>
 		</button>
 		
@@ -314,7 +314,7 @@ button.detail header:after {
 	
 	<div class="column one row halves gutter wide">
 		
-		<button class="detail">
+		<button class="detail" alt="abbreviated signature details">
 			<header></header>
 		</button>
 		<article class="padless">
@@ -363,7 +363,7 @@ button.detail header:after {
 			<center class="column two" style="background-image: url(/wp-content/themes/brand/images/pages/logos/wsu-cougarhead.png)"></center>
 		</figure>
 		
-		<button class="detail">
+		<button class="detail" alt="spirit and shield mark details">
 			<header></header>
 		</button>
 		<div class="details">
@@ -410,7 +410,7 @@ button.detail header:after {
 	
 	<div class="column one row sidebar gutter wide">
 		
-		<button class="detail">
+		<button class="detail" alt="social badge details">
 			<header></header>
 		</button>
 		
@@ -450,7 +450,7 @@ button.detail header:after {
 	
 	<div class="column one row sidebar gutter wide">
 		
-		<button class="detail">
+		<button class="detail" alt="seal details">
 			<header>
 				<h3> </h3>
 			</header>
