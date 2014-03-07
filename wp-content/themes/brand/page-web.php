@@ -197,12 +197,6 @@ main:not(.wireframe) .wireframe-only {
 #binder main .note:hover::after {
 	display: block;
 	}
-#full-image.note::after {
-	content: ".picture-frame sets line-height to 0, .fill-width sets width to 100% and height to auto";
-	}
-#binder main #color-backs.note::after {
-	content: "standard colors can be applied with classes like .crimson-back and .green-back";
-	}
 	
 main section:nth-of-type(even):not(.wireframe-only):not(.hidden) {
 	background: rgba(0,0,0,0.05)
@@ -219,12 +213,6 @@ section > big {
 #unprecedented .column.two {
 	position: relative;
 	}
-#unprecedented .column.two aside {
-	xposition: absolute;
-	xbottom: 0px;
-	xxpadding-bottom: 20px;
-	}
-	
 button {
 	padding: 2px 4px;
 	}
@@ -328,6 +316,8 @@ pre code {
 		return false;
 	});
 	
+	
+	
 	// Change Campus
 	$('.spine-campuses button').on('click', function() {
 		$('#spine').removeClass('white lightest lighter light gray dark darker darkest crimson transparent');
@@ -388,7 +378,7 @@ pre code {
 			<dl class="spine-column-options clearfix">
 				<dt>spine options <a class="info" href="#cropping-bleeding">info</a></dt>
 				<dd><button onclick="$('#spine').removeClass('cropped').addClass('gray').toggleClass('bleed');">bleeding</button></dd>
-				<dd><button onclick="location.href = '#cropping-bleeding';">severed</button></dd> 
+				<dd><button onclick="location.href = '#cropping-bleeding';">cropped</button></dd> 
 			</dl>
 			
 			<dl class="spine-campuses clearfix">
@@ -475,7 +465,7 @@ pre code {
 	<div class="column one">
 		<article>
 			<header><h2>spine colors</h2></header>
-			<p><b>A chameleon of sorts</b>, to complement the style and tone of your design, the spine can be easily switched between several sets of tints and shades within our primary colors of gray and crimson.</p>
+			<p><b>A chameleon of sorts</b>, to complement the style and tone of your design, the spine can be easily switched between several sets of tints and shades within our primary colors of gray and crimson.</p> <code>Notice that the column order at full size is 2 -> 1. A .reverse class on the parent section switches the float direction to right at full-size, but flips it back left at mobile sizes for an alternative ordering. One day this will be supplanted by flexbox order.</code>
 		</article>
 	</div>
 	<div class="column two" style="background: url('/wp-content/themes/brand/images/pages/web/darkspine.png') right 20px no-repeat; background-size: 100%;">
