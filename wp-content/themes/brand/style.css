@@ -74,13 +74,26 @@ button:hover {
 	background-color: #ADA400;
 	border-color: #ADA400;
 	}
-	
+
+/* Blog */
+.column article.post {
+	padding: 2em 0em 2em 4em;
+	}
+.column article.post ~ article.post {
+	padding: 0em 0em 2em 4em;
+	}
+header cite {
+	display: none;
+	}
 
 	
 /* Details */
 div.details {
 	display: none;
 	padding-bottom: 20px;
+	}
+html.no-js div.details {
+	display: block;
 	}
 xxmain .details hr:first-child {
 	margin-bottom: 3em;
@@ -225,7 +238,7 @@ main h5 {
 	padding-top: .6em;
 	}
 
-.article-title {
+xx.article-title {
 	display: none;
 	}
 
