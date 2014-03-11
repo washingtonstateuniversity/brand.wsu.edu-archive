@@ -82,10 +82,12 @@ button:hover {
 .column article.post ~ article.post {
 	padding: 0em 0em 2em 4em;
 	}
-header cite {
+.article-header cite {
 	display: none;
 	}
-
+.article-footer .categorized dt:after {
+	content: "categorized as";
+	}
 	
 /* Details */
 div.details {
@@ -149,6 +151,16 @@ article :not(p) big {
 	display: block;
 	}
 
+.main-header .section-header:before,
+.main-header .sub-header:before {
+	content: attr(data-default);
+	}
+.brand-header .header-group div {
+	display: none;
+	}
+.brand-header .header-group div:last-of-type {
+	display: block;
+	}
 .brand-header {
 	left: 0;
 	height: 5em;
@@ -158,7 +170,7 @@ article :not(p) big {
 	position: relative;
 	z-index: 99164;
 	}
-.brand-header hgroup {
+.brand-header .header-group {
 	bottom: -5px;
 	bottom: 0px;
 	position: absolute;
@@ -170,13 +182,13 @@ article :not(p) big {
 	height: 5.34em;
 	border-top: 5px #5e6a71 solid;
 	}
-.size-lt-large .brand-header hgroup {
+.size-lt-large .brand-header .header-group {
 	left: 0px;
 	}
-.brand-header div:first-of-type {
+.brand-header .header-group div:first-of-type {
 	display: none;
 	}
-.brand-header div:last-of-type {
+.brand-header .header-group div:last-of-type {
 	display: block;
 	color: #464f54;
 	text-transform: lowercase;
@@ -184,6 +196,11 @@ article :not(p) big {
 	line-height: 1em;
 	letter-spacing: -5px;
 	}
+	
+
+	
+	
+
 main article { 
 	padding: 0px 2em;
 	}
@@ -237,8 +254,7 @@ main h5 {
 	padding-bottom: .3em;
 	padding-top: .6em;
 	}
-
-xx.article-title {
+body.page .article-title {
 	display: none;
 	}
 
@@ -484,11 +500,5 @@ body[class*="faq"] dl dd,
 .page-id-101 main section { background:	url('/wp-content/themes/brand/images/pages/misc/social.png') 85% -55px no-repeat }
 	
 .page-id-103 .size-gt-small main section .column.two { background:	url('/wp-content/themes/brand/images/pages/video/emotion.png') 0 -5px no-repeat; min-height: 600px; }
-xx.page-id-103 .size-gt-small main section .column.one { padding-top: 97px; }
 
 .page-id-105 .size-gt-small .column.two { background:	url('/wp-content/themes/brand/images/pages/misc/sign.png') 0 -15px no-repeat; height: 600px; }
-xx.page-id-105 .size-gt-small .column { padding-top: 97px; }
-
-xx.page-id-165 .size-gt-small .column { padding-top: 65px; }
-	
-	
