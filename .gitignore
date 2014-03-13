@@ -7,7 +7,7 @@
 /wordpress
 /wp-config.php
 /wp-content/uploads
-/wp-content/plugins
-# /wp-content/themes/
-# !wp-content/themes/brand
 /wp-content/themes/spine
+/wp-content/plugins/wordpress-importer
+/wp-content/plugins/wsuwp-sso-authentication
+/wp-content/plugins/wsuwp-plugin-custom-css
