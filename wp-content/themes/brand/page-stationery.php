@@ -49,13 +49,25 @@
 
 <section class="row single marginalize gutter wide">
 
-	<div class="column one">
-		<article class="padless">
+	<div class="fluid">
+	<div class="row sidebar column one">
+	
 			<h2>letterhead</h2>
-			<img src="/wp-content/themes/brand/images/pages/stationery/letterhead.png" class="max-width" width="752px;">
-			<p><br>Customized MS Word templates for use with a desktop printer are available.</p>
-		</article>
+			<img src="/wp-content/themes/brand/images/pages/stationery/letterhead.png" class="max-width" width="752px;" style="margin-bottom: 20px;">
+			
+			
+				<div class="column one marginless padless">
+					<p>For desktop printing onto pre-printed WSU letterhead, use this MS Word template to correctly position your content.</p>
+				</div>
+				<div class="column two marginless padless">
+					<dl class="downloads">
+						<dd><a href="/wp-content/themes/brand/downloads/stationery/WSU-letterhead-content-template.dotx.zip">download</a></dd>
+					</dl>
+				
+			</div>
+			</div>
 	</div>
+	
 
 </section>
 
