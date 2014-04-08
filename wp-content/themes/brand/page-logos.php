@@ -451,9 +451,7 @@ button.detail header:after {
 	<div class="column one row sidebar gutter wide">
 		
 		<button class="detail" alt="seal details">
-			<header>
-				<h3> </h3>
-			</header>
+			<header></header>
 		</button>
 		
 		<article class="padless">
