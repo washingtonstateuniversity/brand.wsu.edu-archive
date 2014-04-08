@@ -48,6 +48,10 @@ h2 + h5 {
 	padding-top: 0px;
 	margin-top: 0px;
 	}
+button.detail header::after {
+	content: "details";
+	display: inline-block;
+	}
 
 </style>
 
@@ -105,9 +109,7 @@ h2 + h5 {
 	<div class="column one row halves marginalize gutter wide">
 	
 	<button class="detail">
-		<header>
-			<h3> </h3>
-		</header>
+		<header></header>
 	</button>
 	
 	<div class="details">
