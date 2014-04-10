@@ -25,7 +25,7 @@ main {
 main p {
 	line-height: 1.6em;
 	}
-
+	
 h6,h5,h4,h3,h2,h1,big,dt {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -82,11 +82,13 @@ button:hover {
 .column article.post ~ article.post {
 	padding: 0em 0em 2em 4em;
 	}
-header cite {
+.article-header cite {
 	display: none;
 	}
-
-
+.article-footer .categorized dt:after {
+	content: "categorized as";
+	}
+	
 /* Details */
 div.details {
 	display: none;
@@ -118,7 +120,9 @@ button.detail {
 	-moz-box-sizing: border-box;
 	}
 button.detail::before,
-button.detail:hover {
+button.detail:hover,
+button.detail:focus,
+button.detail:active {
 	background-image: url('/wp-content/themes/brand/images/elements/plus-green.svg');
 	}
 button.detail:hover {
@@ -130,11 +134,13 @@ button.detail:hover {
 .size-lt-xlarge button.detail {
 	border-right: 2em transparent solid;
 	}
-
+	
 button.detail header h2 {
 	padding: 0;
 	}
-button.detail:hover header h2 {
+button.detail:hover header h2,
+button.detail:focus header h2,
+button.detail:active header h2 {
 	color: #8f7e35;
 	}
 
@@ -149,7 +155,17 @@ article :not(p) big {
 	display: block;
 	}
 
-.brand-header {
+/* Main Headers */
+.main-header sub:before {
+	content: attr(data-pagetitle);
+	display: block;
+	}
+.sup-header-default,
+.sub-header-default {
+	display: none;
+	}
+.main-header,
+.spine-bookmark.main-header {
 	left: 0;
 	height: 5em;
 	overflow: hidden;
@@ -157,8 +173,10 @@ article :not(p) big {
 	padding: 0px;
 	position: relative;
 	z-index: 99164;
+	height: 5.34em;
 	}
-.brand-header hgroup {
+.main-header .header-group,
+.spine-bookmark.main-header .header-group {
 	bottom: -5px;
 	bottom: 0px;
 	position: absolute;
@@ -167,39 +185,38 @@ article :not(p) big {
 	width: 2000px;
 	background: #5e6a71;
 	display: block;
-	height: 5.34em;
+	xxheight: 5.34em;
 	border-top: 5px #5e6a71 solid;
 	}
-.size-lt-large .brand-header hgroup {
+.size-lt-large .main-header .header-group {
 	left: 0px;
 	}
-.brand-header div:first-of-type {
-	display: none;
-	}
-.brand-header div:last-of-type {
+.main-header sub {
 	display: block;
-	color: #464f54;
 	text-transform: lowercase;
 	font-size: 5em;
 	line-height: 1em;
 	letter-spacing: -5px;
 	}
+.main-header sub,
+.main-header sub a,
+.main-header sub:hover {
+	color: #464f54 !important;
+	}
+
 main article { 
 	padding: 0px 2em;
 	}
-xx.row .column {
-	padding: 4em;
-	}
-main.spine-default-page .sidebar article {
+.spine-page-default .sidebar article {
 	padding: 0em;
 	}
-main.spine-default-page .sidebar .column {
+.spine-page-default .sidebar .column {
 	padding: 1em 4em 4em 4em;
 	}
-main.spine-default-page .sidebar > .column:first-child {
+.spine-page-default .sidebar > .column:first-child {
 	padding-top: 4em;
 	}
-main.spine-default-page section:first-of-type .column.one {
+.spine-page-default section:first-of-type .column.one {
 	padding-top: 9.5em;
 	}
 .column.nav-top {
@@ -237,7 +254,6 @@ main h5 {
 	padding-bottom: .3em;
 	padding-top: .6em;
 	}
-
 body.page .article-title {
 	display: none;
 	}
@@ -285,7 +301,7 @@ samp {
 main small, main p small {
 	line-height: .5em;
 	}
-
+	
 dl.downloads {
 	width: 100%;
 	}
@@ -479,14 +495,10 @@ body[class*="faq"] dl dd,
 .page-id-90 .size-lt-medium dl dd {
 	padding-right: 4em;
 	}
-
+	
 .page-id-101 main section .column.one { padding-top: 95px; }
 .page-id-101 main section { background:	url('/wp-content/themes/brand/images/pages/misc/social.png') 85% -55px no-repeat }
-
+	
 .page-id-103 .size-gt-small main section .column.two { background:	url('/wp-content/themes/brand/images/pages/video/emotion.png') 0 -5px no-repeat; min-height: 600px; }
-xx.page-id-103 .size-gt-small main section .column.one { padding-top: 97px; }
 
 .page-id-105 .size-gt-small .column.two { background:	url('/wp-content/themes/brand/images/pages/misc/sign.png') 0 -15px no-repeat; height: 600px; }
-xx.page-id-105 .size-gt-small .column { padding-top: 97px; }
-
-xx.page-id-165 .size-gt-small .column { padding-top: 65px; }
