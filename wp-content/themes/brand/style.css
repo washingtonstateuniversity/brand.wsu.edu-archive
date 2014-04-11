@@ -164,8 +164,7 @@ article :not(p) big {
 .sub-header-default {
 	display: none;
 	}
-.main-header,
-.spine-bookmark.main-header {
+.main-header {
 	left: 0;
 	height: 5em;
 	overflow: hidden;
@@ -175,8 +174,7 @@ article :not(p) big {
 	z-index: 99164;
 	height: 5.34em;
 	}
-.main-header .header-group,
-.spine-bookmark.main-header .header-group {
+.main-header .header-group {
 	bottom: -5px;
 	bottom: 0px;
 	position: absolute;
@@ -191,12 +189,17 @@ article :not(p) big {
 .size-lt-large .main-header .header-group {
 	left: 0px;
 	}
+.main-header sup {
+	display: none;
+	}
 .main-header sub {
 	display: block;
 	text-transform: lowercase;
 	font-size: 5em;
 	line-height: 1em;
 	letter-spacing: -5px;
+	padding-bottom: 0;
+	padding-left: 0;
 	}
 .main-header sub,
 .main-header sub a,
