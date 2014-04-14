@@ -291,11 +291,11 @@ button.detail header:after {
 	<div class="column one row halves gutter wide">
 	
 		<div class="column one">
-			<img src="/wp-content/themes/brand/images/pages/logos/abbreviated/wsu-engineeringarchitecture-abbreviated-horizontal.svg" style="height: 100px;">
+			<img src="/wp-content/themes/brand/images/pages/logos/abbreviated/wsu-engineeringarchitecture-abbreviated-horizontal.svg" style="height: 75px;">
 		</div>
 		
 		<div class="column two">
-			<img src="/wp-content/themes/brand/images/pages/logos/abbreviated/wsu-viticulture-abbreviated-horizontal.svg" style="height: 100px;">
+			<img src="/wp-content/themes/brand/images/pages/logos/abbreviated/wsu-viticulture-abbreviated-horizontal.svg" style="height: 62px;">
 		</div>
 	
 	</div>
