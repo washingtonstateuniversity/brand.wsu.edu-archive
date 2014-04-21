@@ -149,7 +149,6 @@ button.detail header:after {
 	
 	<div class="column one row halves wide gutter">
 	
-		
 		<button class="detail" alt="campus signature details">
 			<header></header>
 		</button>
@@ -266,7 +265,7 @@ button.detail header:after {
 		#abbreviated-signatures .abbreviated-vertical img { margin-bottom: 0px; }
 	</style>
 
-	<h2 class="marginalized">abbreviated campus and unit</h2>
+	<h2 class="marginalized">abbreviated campus and unit - limited use only</h2>
 	
 	<div class="column one row halves gutter wide">
 	
