@@ -26,7 +26,7 @@ main p {
 	line-height: 1.6em;
 	}
 	
-h6,h5,h4,h3,h2,h1,big,dt {
+h6,h5,h4,h3,h2,h1,big,dt,header,dd a {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	}
@@ -175,8 +175,7 @@ article :not(p) big {
 	height: 5.34em;
 	}
 .main-header .header-group {
-	bottom: -5px;
-	bottom: 0px;
+	bottom: 7px;
 	position: absolute;
 	left: 0;
 	padding-left: 3.9em;
