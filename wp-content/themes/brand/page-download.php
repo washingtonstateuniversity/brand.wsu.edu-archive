@@ -163,7 +163,6 @@ dl.downloads dd:only-of-type a {
 		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Tri-Cities_Logos.zip" title="download Tri-Cities logos">Tri-Cities</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Vancouver_Logos.zip" title="download Vancouver logos">Vancouver</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Global-Campus_Logos.zip" title="download Global Campus logos">Global Campus</a></dd>
-		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Health-Sciences_Logos.zip" title="download Health Sciences logos">Health Sciences</a></dd>
 		    <!--<dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Extension_Logos.zip">Extension</a></dd>-->
 		</dl>
 		
