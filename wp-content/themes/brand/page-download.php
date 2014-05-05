@@ -92,7 +92,7 @@ dl.downloads dd:only-of-type a {
 	width: auto;
 	}
 #campuses dl.downloads {
-	width: 496px;
+	width: 396px;
 	padding-left: 18%;
 	padding-top: 65px;
 	text-align: right;
