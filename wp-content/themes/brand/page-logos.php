@@ -140,7 +140,7 @@ button.detail header:after {
 	
 	</div>
 	
-	<div class="row single vertical-sigs">
+	<div class="row halves vertical-sigs">
 	
 		<center class="column one"><img src="/wp-content/themes/brand/images/pages/logos/campus/wsu-tricities-signature-vertical.svg"></center>
 		<center class="column two"><br/></center>
