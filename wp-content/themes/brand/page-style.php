@@ -29,7 +29,7 @@ button.detail header h3 {
 	display: inline-block;
 	margin: 0px;
 	}
-section:nth-of-type(even) {
+main section:nth-of-type(even) {
 	background-color: #f4f4f5;
 	}
 main section ~ section button.detail {
