@@ -18,7 +18,7 @@ img.wsu-signature-horizontal { width: 594px; }
 .size-lt-large img.wsu-signature-horizontal { width: 75%; }
 img.wsu-signature-vertical { width: 264px; }
 
-section:nth-of-type(even) {
+main section:nth-of-type(even) {
 	background-color: #EFF0F1;
 	}
 div.details .column {
@@ -33,6 +33,62 @@ button.detail header:after {
 	}
 .detailed button.detail header:after {
 	content: "";
+	}
+.fixed .column.third,
+.hybrid .column.third {
+	width: 264px !important;
+	}
+.size-lt-large .fixed .column.third,
+.size-lt-large .hybrid .column.third {
+	width: 100% !important;
+	}
+#wsu-signatures .donot {
+	min-height: 600px;
+	}
+#shield-spirit-marks .donot {
+	min-height: 792px;
+	}
+.donot {
+	position: relative;
+	}
+.donot span.x-overunder {
+	background: url('/wp-content/themes/brand/images/elements/x-not-50.png') center center no-repeat;
+	background-size: 550px auto;
+	display: block;
+	width: 792px;
+	height: 600px;
+	position: absolute;
+	left: 0; top: 0;
+	z-index: 100;
+	display: none;
+	}
+.size-gt-medium .donot span.x-overunder {
+	display: block;
+	}
+.donot:hover span.x-overunder {
+	z-index: 0;
+	}
+.donot .column {
+	min-height: 198px;
+	z-index: 2;
+	}
+#wsu-signatures .donot img {
+	width: 250px;
+	}
+#shield-spirit-marks .donot span.x-overunder {
+	background-size: 700px auto;
+	min-height: 792px;
+	width: 792px;
+	}
+.size-lt-large .donot {
+	background: url('/wp-content/themes/brand/images/elements/x-not-50.png') center center repeat-y;
+	background-size: 550px auto;
+	}
+
+	
+/* temp */
+.row.halves .column:nth-of-type(odd) {
+	clear: none;
 	}
 
 </style>
@@ -105,6 +161,42 @@ button.detail header:after {
 				if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 				?>
 			</div>
+			
+			<hr style="clear: both;">
+			
+			<section class="row donot clearfix">
+				
+				<span class="x-overunder"></span>
+				
+				<div class="column three third center absolutely padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/signature-altered.png">
+				</div>
+				<div class="column four third center absolutely padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/signature-beveled.png">
+				</div>
+				<div class="column five third center absolutely padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/signature-contained.png">
+				</div>
+				<div class="column six third center absolutely padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/signature-distorted.png">
+				</div>
+				<div class="column seven third center absolutely padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/signature-prefixed.png">
+				</div>
+				<div class="column eight third center absolutely padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/signature-ruled.png">
+				</div>
+				<div class="column nine third center absolutely padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/signature-sans.png">
+				</div>
+				<div class="column ten third center absolutely padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/signature-tilted.png">
+				</div>
+				<div class="column eleven third center absolutely padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/signature-busied.png">
+				</div>
+							
+			</section>
 			
 		</article>
 			
@@ -382,11 +474,46 @@ button.detail header:after {
 				?>
 			</div>
 			
+			<hr>
+			
+			<div class="donot clearfix">
+				
+				<span class="x-overunder"></span>
+				
+				<div class="column three third center padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/shield-missingchevron.png">
+				</div>
+				<div class="column four third center padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/shield-textblock.png">
+				</div>
+				<div class="column five third center padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/shield-beveled.png">
+				</div>
+				<div class="column six third center padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/shield-background.png">
+				</div>
+				<div class="column seven third center padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/shield-banner.png">
+				</div>
+				<div class="column eight third center padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/cougarhead-board.png">
+				</div>
+				<div class="column nine third center padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/cougarhead-mask.png" class="center absolutely">
+				</div>
+				<div class="column nine third center padless">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/cougarhead-mixed.png">
+				</div>
+			
+			</div>
+					
 		</div><!--/.details-->
 
 		</article>
 		
 	</div>
+	
+	
 	
 </section>
 
