@@ -227,7 +227,6 @@ button.detail header:after {
 	
 	<div class="row single horizontal-sigs">
 	
-		<center class="column one"><img src="/wp-content/themes/brand/images/pages/logos/campus/wsu-vancouver-signature-horizontal.svg"></center>
 		<center class="column two"><img src="/wp-content/themes/brand/images/pages/logos/campus/wsu-extension-signature-horizontal.svg"></center>
 	
 	</div>
@@ -235,7 +234,7 @@ button.detail header:after {
 	<div class="row halves vertical-sigs">
 	
 		<center class="column one"><img src="/wp-content/themes/brand/images/pages/logos/campus/wsu-tricities-signature-vertical.svg"></center>
-		<center class="column two"><br/></center>
+		<center class="column one"><img src="/wp-content/themes/brand/images/pages/logos/campus/wsu-vancouver-signature-vertical.svg"></center>
 	
 	</div>
 	
