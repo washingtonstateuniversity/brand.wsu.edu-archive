@@ -22,6 +22,7 @@ main section h2 {
 	letter-spacing: -5px;
 	padding: 0px;
 	margin: 0px;
+	pointer-events: none;
 	}
 #university {
 	background: #f4f4f5 url('/wp-content/themes/brand/images/pages/misc/downarrow.png') left -25px no-repeat;
@@ -32,15 +33,16 @@ main section h2 {
 	text-align: right;
 	padding-right: 20px;
 	}
+
 #university h2 small {
-	font-size: 14px;
+	font-size: 12px;
 	letter-spacing: 0px;
 	display: block;
-	padding-right: 60px;
+	padding-right: 40px;
 	line-height: 1em;
 	}
 #university h2 small span {
-	padding-right: 10px;
+	padding-right: 7px;
 	}
 	
 #campuses h2,
@@ -50,7 +52,10 @@ main section h2 {
 #campuses h2 {
 	text-align: right;
 	left: 60px;
-	top: 20px;
+	top: 130px;
+	}
+.size-lt-large #campuses h2 {
+	top: 35px;
 	}
 #colleges h2 {
 	right: 20px;
@@ -64,8 +69,6 @@ main section h2 {
 .size-lt-large #university dl.downloads {
 	padding-top: 135px;
 	}
-
-
 .size-gt-small #university dl.downloads {
 	width: 100%;
 	text-align: center;
@@ -74,7 +77,7 @@ main section h2 {
 	}
 dl.downloads {
 	z-index: 100;
-	xposition: absolute;
+	xxposition: absolute;
 	}
 dl.downloads dd,
 dl.downloads dd:nth-of-type(1n+1) {
@@ -90,10 +93,11 @@ dl.downloads dd a,
 dl.downloads dd:only-of-type a {
 	display: block;
 	width: auto;
+	
 	}
 #campuses dl.downloads {
-	width: 396px;
-	padding-left: 18%;
+	xwidth: 396px;
+	xpadding-left: 12%;
 	padding-top: 65px;
 	text-align: right;
 	}
@@ -104,7 +108,7 @@ dl.downloads dd:only-of-type a {
 	}
 #campuses dl.downloads dd {
 	float: none;
-	margin-left: 20px;
+	margin-left: 15px;
 	margin-bottom: 20px;
 	}
 	
@@ -112,6 +116,7 @@ dl.downloads dd:only-of-type a {
 	padding-top: 60px;
 	width: 100%;
 	max-width: 100%;
+	
 	}
 
 .size-lt-large #colleges dl.downloads {
@@ -146,6 +151,8 @@ dl.downloads dd:only-of-type a {
 		
 	</div>
 	
+	<br class="clearfix">
+	
 </article>
 
 </section>
@@ -156,15 +163,16 @@ dl.downloads dd:only-of-type a {
 
 	<div class="column one">
 		
-		<h2>campus</h2>
 		
+		<h2>campus</h2>
 		<dl id="downloads-campuses" class="downloads">
 			<dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Spokane_Logos.zip" title="download Spokane logos">Spokane</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Tri-Cities_Logos.zip" title="download Tri-Cities logos">Tri-Cities</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Vancouver_Logos.zip" title="download Vancouver logos">Vancouver</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Global-Campus_Logos.zip" title="download Global Campus logos">Global Campus</a></dd>
-		    <!--<dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Extension_Logos.zip">Extension</a></dd>-->
+		    <dd><a href="/wp-content/themes/brand/downloads/campus/WSU-Extension_Logos.zip">Extension</a></dd>
 		</dl>
+		
 		
 	</div>
 	
