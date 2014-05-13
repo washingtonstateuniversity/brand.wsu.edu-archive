@@ -347,14 +347,10 @@ button.detail header:after {
 				$column = get_post_meta( get_the_ID(), 'section-3-3', true );
 				if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 				?>
+				<p>
+				<img src="/wp-content/themes/brand/images/pages/logos/figures/clearspace-single.png" class="max-width"></p>
 			</div>
 			<div class="column four">
-				<br>
-			</div>
-			<div class="column five">
-				<img src="/wp-content/themes/brand/images/pages/logos/figures/clearspace-single.png" class="max-width">
-			</div>
-			<div class="column six">
 				<img src="/wp-content/themes/brand/images/pages/logos/figures/clearspace-stacked.png" class="max-width">
 			</div>
 			
