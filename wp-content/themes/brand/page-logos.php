@@ -333,13 +333,31 @@ button.detail header:after {
 				$column = get_post_meta( get_the_ID(), 'section-3-1', true );
 				if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 				?>
-			</div>
+			</div>			
 			<div class="column two">
 				<?php 
 				$column = get_post_meta( get_the_ID(), 'section-3-2', true );
 				if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
 				?>
 			</div>
+			
+			<hr>
+			<div class="column three">
+				<?php 
+				$column = get_post_meta( get_the_ID(), 'section-3-3', true );
+				if( ! empty( $column ) ) { echo wp_kses_post( $column ); }
+				?>
+			</div>
+			<div class="column four">
+				<br>
+			</div>
+			<div class="column five">
+				<img src="/wp-content/themes/brand/images/pages/logos/figures/clearspace-single.png" class="max-width">
+			</div>
+			<div class="column six">
+				<img src="/wp-content/themes/brand/images/pages/logos/figures/clearspace-stacked.png" class="max-width">
+			</div>
+			
 			
 		</article>
 			
@@ -498,7 +516,7 @@ button.detail header:after {
 					<img src="/wp-content/themes/brand/images/pages/logos/examples/cougarhead-board.png">
 				</div>
 				<div class="column nine third center padless">
-					<img src="/wp-content/themes/brand/images/pages/logos/examples/cougarhead-mask.png" class="center absolutely">
+					<img src="/wp-content/themes/brand/images/pages/logos/examples/cougarhead-mask.png">
 				</div>
 				<div class="column nine third center padless">
 					<img src="/wp-content/themes/brand/images/pages/logos/examples/cougarhead-mixed.png">
