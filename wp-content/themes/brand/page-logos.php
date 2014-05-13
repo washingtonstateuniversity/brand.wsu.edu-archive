@@ -52,7 +52,7 @@ button.detail header:after {
 	position: relative;
 	}
 .donot span.x-overunder {
-	background: url('/wp-content/themes/brand/images/elements/x-not-50.png') center center no-repeat;
+	background: url('/wp-content/themes/brand/images/elements/x-not-75.png') center center no-repeat;
 	background-size: 550px auto;
 	display: block;
 	width: 792px;
@@ -81,7 +81,7 @@ button.detail header:after {
 	width: 792px;
 	}
 .size-lt-large .donot {
-	background: url('/wp-content/themes/brand/images/elements/x-not-50.png') center top repeat-y;
+	background: url('/wp-content/themes/brand/images/elements/x-not-75.png') center top repeat-y;
 	background-size: 550px auto;
 	}
 
