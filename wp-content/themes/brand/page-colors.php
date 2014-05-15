@@ -277,6 +277,19 @@ figure.color dl.specs dd.rgb {
 figure.color dl.specs dd.hex {
 	width: 7.5em;
 	text-transform: lowercase;
+	position: relative;
+	}
+xxfigure.color dl.specs dd.hex:after {
+	pointer-events: none;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 20px;
+	width: 100px;
+	background: pink;
+	z-index: 99164;
+	display: block;
+	content: "";
 	}
 
 figure.color dl.specs.selected dd {
@@ -343,6 +356,9 @@ figure.color.crimson-back dd:hover dl {
 figure.color dl.specs.selected dd::before {
 	color: rgba(0,0,0,0.3);
 	}
+figure.color .gray-darkest-back dl.specs.selected dd::before {
+	color: rgba(255,255,255,0.2);
+	}
 .size-gt-small main:not(.specified) #crimson-palette figure.color dl dd:first-of-type dl.specs.selected dd,
 .size-gt-small main:not(.specified) #gray-palette figure.color dl dd:first-of-type dl.specs.selected dd {
 	font-size: 2.5em;
@@ -399,7 +415,10 @@ $('body').click(function() {
 $('dl.specs').click(function() {
 	$('.selected').removeClass('selected');
 	$(this).not('.selected').toggleClass('selected');
-});
+	});
+$("dl.specs dd.hex").click(function(e) {
+    e.stopPropagation();
+	});
 
 
 /* $('.secondaries .switch.yellow-text').click( function() {
