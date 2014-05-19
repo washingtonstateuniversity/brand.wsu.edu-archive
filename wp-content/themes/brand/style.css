@@ -160,8 +160,11 @@ article :not(p) big {
 	content: attr(data-pagetitle);
 	display: block;
 	}
-.sup-header-default,
-.sub-header-default {
+.category .mainheader sub:before {
+	
+	}
+body:not(.category) .sup-header-default,
+body:not(.category) .sub-header-default {
 	display: none;
 	}
 .main-header {
@@ -188,17 +191,19 @@ article :not(p) big {
 .size-lt-large .main-header .header-group {
 	left: 0px;
 	}
-.main-header sup {
+body:not(.category) .main-header sup {
 	display: none;
 	}
 .main-header sub {
-	display: block;
 	text-transform: lowercase;
 	font-size: 5em;
 	line-height: 1em;
 	letter-spacing: -5px;
 	padding-bottom: 0;
 	padding-left: 0;
+	}
+body:not(.category) .main-header sub {
+	display: block;
 	}
 .main-header sub,
 .main-header sub a,
@@ -424,6 +429,11 @@ figcaption big {
 .size-lt-medium .gutter.wide .column:nth-of-type(1n+1) {
 	padding-left: 2em;
 	padding-right: 2em;
+	}
+	
+/* Blog */
+.categorized dt {
+	display: none;
 	}
 
 /* Pages */
