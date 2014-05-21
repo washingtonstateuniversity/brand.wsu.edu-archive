@@ -114,6 +114,8 @@ dl.downloads dd:only-of-type a {
 	
 #colleges dl.downloads {
 	padding-top: 60px;
+	padding-left: 100px;
+	padding-right: 250px;
 	width: 100%;
 	max-width: 100%;
 	
@@ -197,6 +199,7 @@ dl.downloads dd:only-of-type a {
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Arts-Sciences_Logos.zip" title="download Arts & Sciences logos">Arts & Sciences</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Business_Logos.zip" title="download Business logos">Business</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Education_Logos.zip" title="download Education logos">Education</a></dd>
+		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Medical-Sciences_Logos.zip" title="download Medical Sciences logos">Medical Sciences</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Communication_Logos.zip" title="download Murrow logos">Murrow</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Engr-Arch_Logos.zip" title="download Eng. & Arch. logos">Eng. & Arch.</a></dd>
 		    <dd><a href="/wp-content/themes/brand/downloads/college/WSU-Honors-College_Logos.zip" title="download Honors logos">Honors</a></dd>
