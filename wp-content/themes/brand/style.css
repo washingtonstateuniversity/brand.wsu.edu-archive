@@ -187,6 +187,7 @@ body:not(.category) .sub-header-default {
 	display: block;
 	xxheight: 5.34em;
 	border-top: 5px #5e6a71 solid;
+	padding-bottom: 0;
 	}
 .size-lt-large .main-header .header-group {
 	left: 0px;
