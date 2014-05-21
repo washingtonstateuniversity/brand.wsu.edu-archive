@@ -114,15 +114,17 @@ dl.downloads dd:only-of-type a {
 	
 #colleges dl.downloads {
 	padding-top: 60px;
-	padding-left: 100px;
-	padding-right: 250px;
+	padding-left: 50px;
+	padding-right: 0px;
 	width: 100%;
 	max-width: 100%;
-	
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	}
 
 .size-lt-large #colleges dl.downloads {
 	padding-top: 100px;
+	padding-left: 0px;
 	}
 
 #colleges dl.downloads dd {
