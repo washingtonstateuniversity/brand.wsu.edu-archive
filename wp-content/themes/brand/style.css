@@ -215,13 +215,13 @@ body:not(.category) .main-header sub {
 main article { 
 	padding: 0px 2em;
 	}
-.spine-page-default .sidebar article {
+.spine-page-default .side-right article {
 	padding: 0em;
 	}
-.spine-page-default .sidebar .column {
+.spine-page-default .side-right .column {
 	padding: 1em 4em 4em 4em;
 	}
-.spine-page-default .sidebar > .column:first-child {
+.spine-page-default .side-right > .column:first-child {
 	padding-top: 4em;
 	}
 .spine-page-default section:first-of-type .column.one {
@@ -386,9 +386,6 @@ main .wide hr {
 	}	
 article .unbound.recto {
 	margin-left: -4em;
-	}
-xx.sidebar .column.one .unbound.recto .rebound {
-	max-width: 468px;
 	}
 article .unbound.recto .rebound {
 	padding: 4em;
