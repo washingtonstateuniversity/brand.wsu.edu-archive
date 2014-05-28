@@ -68,7 +68,7 @@ main:not(.wireframe) .wireframe-only {
 .wireframe .row.quarters::before { content: "quarters"; }
 .wireframe .row.single::before { content: "single"; }
 .wireframe .row.halves::before { content: "halves"; }
-.wireframe .row.sidebar::before { content: "sidebar"; }
+.wireframe .row.side-right::before { content: "side-right"; }
 .wireframe .row.triptych::before { content: "triptych"; }
 .wireframe .row.thirds::before { content: "thirds"; }
 .wireframe .row.margin::before { content: "margin"; }
@@ -113,8 +113,8 @@ main:not(.wireframe) .wireframe-only {
 	text-align: center;
 	}
 .wireframe .single .column::before { content:"\2190 792 \2192"; }
-.wireframe .sidebar .column.one::before { content:"\2190 528 \2192"; }
-.wireframe .sidebar .column.two::before,
+.wireframe .side-right .column.one::before { content:"\2190 528 \2192"; }
+.wireframe .side-right .column.two::before,
 .wireframe .thirds .column::before { content:"\2190 264 \2192"; }
 .wireframe .margin .column.one::before { content:"\2190 594 \2192"; }
 .wireframe .margin .column.two::before,
@@ -153,15 +153,15 @@ main:not(.wireframe) .wireframe-only {
 	content:"nested";
 	}
 	
-.sidebar .column.two ul {
+.side-right .column.two ul {
 	padding: 0px; margin: 0px;
 	}
-.sidebar .column.two li {
+.side-right .column.two li {
 	list-style: none;
 	padding: 10px 0px;
 	margin: 0px;
 	}
-.sidebar .column.two li:last-of-type {
+.side-right .column.two li:last-of-type {
 	border-bottom: none;
 	}
 	
@@ -344,7 +344,7 @@ pre code {
 
 <?php get_template_part('parts/headers'); ?>
 
-<section id="unprecedented" class="row sidebar equalize gutter marginalize wide">
+<section id="unprecedented" class="row side-right equalize gutter marginalize wide">
 
 	<div class="column one">
 
@@ -422,7 +422,7 @@ pre code {
 
 </section>
 
-<section id="spine-behavior" class="row sideleft marginalize gutter wide equalize">
+<section id="spine-behavior" class="row side-left marginalize gutter wide equalize">
 	<style>
 		#spine-behavior .column.one {
 			background: url('/wp-content/themes/brand/images/pages/web/squarecircle.png') right center no-repeat;
@@ -444,7 +444,7 @@ pre code {
 	</div>
 </section>
 
-<section id="responsive" class="row sidebar equalize marginalize gutter wide">
+<section id="responsive" class="row side-right equalize marginalize gutter wide">
 	<div class="column one">
 	<article class="marginalize">
 	<header><h2>responsive</h2></header>
@@ -456,7 +456,7 @@ pre code {
 
 
 
-<section id="spine-colors" class="row sidebar equalize reverse marginalize gutter wide">
+<section id="spine-colors" class="row side-right equalize reverse marginalize gutter wide">
 	<style>
 		#spine-palettes dd { padding: .25em .5em; margin-bottom: .25em; }
 		#spine-palettes dd:hover { color: white; background-color: #A6192E; }
@@ -474,7 +474,7 @@ pre code {
 	</div>
 </section>
 
-<section id="cropping-bleeding" class="row sidebar equalize marginalize gutter wide">
+<section id="cropping-bleeding" class="row side-right equalize marginalize gutter wide">
 	<style>
 	#cropping-bleeding .column.two {
 		background: url('/wp-content/themes/brand/images/pages/web/cropped.png') left -5px no-repeat;
@@ -498,7 +498,7 @@ pre code {
 	
 </section>
 
-<section id="tool-belt" class="row sideleft equalize marginalize gutter wide">
+<section id="tool-belt" class="row side-left equalize marginalize gutter wide">
 	
 	<div class="column one" style="background: url('/wp-content/themes/brand/images/pages/web/tools.png') 70% center no-repeat; background-size: 80% auto;">
 	</div>
@@ -511,7 +511,7 @@ pre code {
 	
 </section>
 
-<section id="spine-sizes" class="row sidebar equalize marginalize gutter wide hidden">
+<section id="spine-sizes" class="row side-right equalize marginalize gutter wide hidden">
 	
 	<div class="column one" style="">
 		<article>
@@ -525,7 +525,7 @@ pre code {
 	
 </section>
 
-<section id="spine-sizes" class="row sidebar equalize marginalize gutter wide hidden">
+<section id="spine-sizes" class="row side-right equalize marginalize gutter wide hidden">
 	
 	<div class="column one" style="">
 		<article>
@@ -558,7 +558,7 @@ pre code {
 	
 </section>
 
-<section id="resolution" class="row sidebar gutter wide">
+<section id="resolution" class="row side-right gutter wide">
 	<style>
 	#resolution .column.two {
 		background: url('http://repo.wsu.edu/spine/1/marks/wsu-signature-vertical.svg') center center no-repeat;
@@ -597,7 +597,7 @@ pre code {
 	</div>
 </section>
 
-<section id="campus-ready" class="row sideleft equalize marginalize gutter wide">
+<section id="campus-ready" class="row side-left equalize marginalize gutter wide">
 
 	<style>
 		#campus-ready .column.one {
