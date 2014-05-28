@@ -4,7 +4,7 @@
 
 <?php get_template_part('parts/headers'); ?>
 
-<section class="row sidebar alternate marginalize wide">
+<section class="row side-right alternate marginalize wide">
 	
 	<div class="column one nav-top">
 		

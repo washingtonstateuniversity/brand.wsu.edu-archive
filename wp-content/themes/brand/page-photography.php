@@ -213,7 +213,7 @@ figcaption big {
 
 </section>
 
-<section id="library" class="row sidebar marginalize gutter wide equalize">
+<section id="library" class="row side-right marginalize gutter wide equalize">
 
 	<style>
 		dl.downloads { height: 50px; }

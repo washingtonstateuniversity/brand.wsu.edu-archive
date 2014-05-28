@@ -467,7 +467,7 @@ $('.secondaries .switch.green-text').click( function() {
 
 <?php get_template_part('parts/headers'); ?> 
 
-<section id="" class="row sidebar controls equalize">
+<section id="" class="row side-right controls equalize">
 
 	<div class="column one">
 		
@@ -644,7 +644,7 @@ $('.secondaries .switch.green-text').click( function() {
 
 </div>
 
-<section id="primary-secondary" class="row sidebar marginalize gutter wide">
+<section id="primary-secondary" class="row side-right marginalize gutter wide">
 	
 	<div class="column one">
 		

@@ -547,7 +547,7 @@ button.detail header:after {
 		</center>
 	</div>
 	
-	<div class="column one row sidebar gutter wide">
+	<div class="column one row side-right gutter wide">
 		
 		<button class="detail" alt="social badge details">
 			<header></header>
@@ -587,7 +587,7 @@ button.detail header:after {
 		<img src="/wp-content/themes/brand/images/pages/logos/wsu-seal.png">
 	</center>
 	
-	<div class="column one row sidebar gutter wide">
+	<div class="column one row side-right gutter wide">
 		
 		<button class="detail" alt="seal details">
 			<header></header>

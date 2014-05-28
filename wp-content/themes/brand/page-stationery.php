@@ -30,7 +30,7 @@
 
 <?php get_template_part('parts/headers'); ?>
 
-<section class="row sidebar marginalize gutter wide">
+<section class="row side-right marginalize gutter wide">
 
 	<div class="column one">
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -50,7 +50,7 @@
 <section class="row single marginalize gutter wide">
 
 	<div class="fluid">
-	<div class="row sidebar column one">
+	<div class="row side-right column one">
 	
 			<h2>letterhead</h2>
 			<img src="/wp-content/themes/brand/images/pages/stationery/letterhead.png" class="max-width" width="752px;" style="margin-bottom: 20px;">

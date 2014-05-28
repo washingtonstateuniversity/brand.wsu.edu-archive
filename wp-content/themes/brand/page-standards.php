@@ -44,7 +44,7 @@ main section:first-of-type {
 
 <?php get_template_part('parts/headers'); ?>
 
-<section class="row sidebar gutter wide">
+<section class="row side-right gutter wide">
 
 	<div class="column one" style="padding-top: 9.5em;">
 	<article class="padless">

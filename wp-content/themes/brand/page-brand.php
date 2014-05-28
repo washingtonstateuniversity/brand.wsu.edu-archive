@@ -74,7 +74,7 @@ button.detail::after {
 	<figcaption><big>we are</big></figcaption>
 </figure>
 
-<div class="column one row sidebar gutter wide">
+<div class="column one row side-right gutter wide">
 
 <article class="padless">
 
@@ -113,7 +113,7 @@ button.detail::after {
 	<figcaption><big>we believe in</big></figcaption>
 </figure>
 
-<div class="column one row sidebar">
+<div class="column one row side-right">
 
 <article class="padless">
 
@@ -183,7 +183,7 @@ button.detail::after {
 	<figcaption><big>we offer</big></figcaption>
 </figure>
 
-<div class="column one row sidebar">
+<div class="column one row side-right">
 
 <article class="padless">
 

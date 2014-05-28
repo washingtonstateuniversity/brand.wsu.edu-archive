@@ -48,7 +48,7 @@ main section button.detail {
 
 <?php get_template_part('parts/headers'); ?>
 
-<section id="our-voice" class="row sidebar gutter wide alternate">
+<section id="our-voice" class="row side-right gutter wide alternate">
 
 	<div class="column one">
 	<?php while ( have_posts() ) : the_post(); ?>
@@ -70,7 +70,7 @@ main section button.detail {
 
 </section>
 
-<section id="brand-drivers" class="row sidebar gutter wide">
+<section id="brand-drivers" class="row side-right gutter wide">
 	<button class="detail unbound recto guttered">
 		<header>
 			<h2>key messages and benefits</h2>
@@ -96,7 +96,7 @@ main section button.detail {
 
 </section>
 
-<section id="best-practices" class="row sidebar gutter wide alternate">
+<section id="best-practices" class="row side-right gutter wide alternate">
 	<button class="detail unbound recto guttered">
 		<header>
 			<h2>best practices</h2>

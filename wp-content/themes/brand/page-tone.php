@@ -61,7 +61,7 @@ ol li {
 #applying {
 	background: #f4f4f5;
 	}
-.size-gt-small .row.sidebar .column.one {
+.size-gt-small .row.side-right .column.one {
 	margin-left: 132px;
 	}
 
@@ -88,7 +88,7 @@ ol li {
 </section>
 
 
-<section id="attributes" class="row sidebar marginalize gutter wide">
+<section id="attributes" class="row side-right marginalize gutter wide">
 	
 	
 	<div class="column one">
@@ -103,7 +103,7 @@ ol li {
 	
 </section>
 
-<section id="applying" class="row sidebar unbound recto marginalize gutter wide">
+<section id="applying" class="row side-right unbound recto marginalize gutter wide">
 	
 	
 	<div class="column one">

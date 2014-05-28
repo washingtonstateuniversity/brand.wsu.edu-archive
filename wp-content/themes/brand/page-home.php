@@ -70,7 +70,7 @@ section#our-brand article {
 
 <main>
 
-<section id="our-brand" class="row sidebar unbound recto">
+<section id="our-brand" class="row side-right unbound recto">
 		
 	<div class="column one">
 		

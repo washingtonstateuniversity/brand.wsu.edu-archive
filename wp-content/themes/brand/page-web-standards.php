@@ -82,7 +82,7 @@ main > h2 {
 
 <?php get_template_part('parts/headers'); ?>
 
-<section id="intro" class="row sidebar gutter wide marginalize tall">
+<section id="intro" class="row side-right gutter wide marginalize tall">
 
 	<div class="column one">
 	
